@@ -1,0 +1,23 @@
+# Variables locales
+.env
+
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Migraciones 
+migrations/
+
+# Audio descargado
+audio_cache/
+
+# Archivos temporales
+*.log
+*.sqlite3
+
+# Entornos virtuales
+venv/
+.envrc
+s
