@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Agregar canción - miNoise{% endblock %}
+
+{% block content %}
+  <h2>Agregar nueva canción 🎵</h2>
+  <form method="POST">
+    <label>Título:</label><br>
+    <input type="text" name="title" required><br><br>
+
+    <label>Artista:</label><br>
+    <input type="text" name="artist" required><br><br>
+
+    <label>Año:</label><br>
+    <input type="number" name="year"><br><br>
+
+    <label>Género:</label><br>
+    <input type="text" name="genre"><br><br>
+
+    <button type="submit">Agregar</button>
+  </form>
+  <br>
+  <a href="{{ url_for('dashboard') }}">Volver al Dashboard</a>
+{% endblock %}
