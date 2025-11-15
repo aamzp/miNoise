@@ -1,7 +1,9 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { initGraph3D } from "./initGraph3D";
 
 const DATA_URL = "/data/tag_album_embedded_graph_FINAL.json";
+
+
 
 export default function Graph3D() {
     console.log(">>> Graph3D render");
@@ -29,7 +31,12 @@ export default function Graph3D() {
         return label.slice(0, MAX_TAG_LABEL_CHARS - 1) + "…";
     }
 
-
+    useEffect(() => {
+        document.documentElement.style.background = "#000";
+        document.body.style.background = "#000";
+        document.documentElement.style.margin = "0";
+        document.body.style.margin = "0";
+    }, []);
 
     // --- CARGAR LISTAS DE ÁLBUMES Y TAGS ---
     useEffect(() => {
@@ -219,7 +226,7 @@ export default function Graph3D() {
 
 
     return (
-        <div style={{ position: "relative", width: "100%", height: "100vh" }}>
+        <div style={{ position: "relative", width: "100%", height: "100dvh" }}>
 
             <style>
                 {`
@@ -536,9 +543,10 @@ export default function Graph3D() {
                     position: "absolute",
                     inset: 0,
                     width: "100%",
-                    height: "100vh",
+                    height: "100dvh",
+                    overflow: "hidden",
                     background:
-                        "radial-gradient(circle at 50% 30%, #1a1a1a 0%, #050505 70%)",
+                        "#0000",
                     backdropFilter: "blur(2px)"
                 }}
             />
@@ -551,8 +559,8 @@ export default function Graph3D() {
                     position: "absolute",
                     right: 0,
                     top: 0,
-                    width: "210px",
-                    height: "100%",
+                    width: "33vw",
+                    height: "100dvh",
                     background: "rgba(15,15,25,0.96)",
                     backdropFilter: "blur(12px)",
                     boxShadow: "0 0 22px rgba(0,0,0,0.5)",
@@ -562,7 +570,7 @@ export default function Graph3D() {
                     overflowY: "auto",
                     zIndex: 20,
                     fontFamily: "Inter, sans-serif",
-                    fontSize: "11px",
+                    fontSize: "16px",
                     lineHeight: "1.45",
                     letterSpacing: "0.2px"
                 }}

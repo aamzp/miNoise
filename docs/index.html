@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>miNoise — Repositorio para exploración nuevas tendencias musicales</title>
+
+    <!-- Tipografías -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        :root {
+            --bg: #05060a;
+            --bg2: #0b0d13;
+            --glass: rgba(255, 255, 255, 0.04);
+            --glass-strong: rgba(12, 18, 30, 0.9);
+            --text-main: #f3f4f8;
+            --text-sub: #9da3b7;
+            --accent: #58d7ff;
+            --accent-strong: #2bbfff;
+            --accent-pink: #ff4fd8;
+            --border: rgba(255, 255, 255, 0.1);
+            --shadow-strong: 0 0 40px rgba(0, 0, 0, 0.75);
+            --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.55);
+            --shadow-glow: 0 0 30px rgba(88, 215, 255, 0.5);
+            --radius: 14px;
+            --radius-lg: 22px;
+            --header-h: 70px;
+            --max-w: 1080px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-main);
+            background: radial-gradient(circle at 0% 0%, #181b2b 0, transparent 45%),
+                radial-gradient(circle at 100% 0%, #16293a 0, transparent 45%),
+                radial-gradient(circle at 50% 120%, #43153d 0, #05060a 60%);
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before,
+        body::after {
+            content: "";
+            position: fixed;
+            width: 380px;
+            height: 380px;
+            border-radius: 50%;
+            filter: blur(90px);
+            opacity: 0.55;
+            pointer-events: none;
+            z-index: -2;
+        }
+
+        body::before {
+            background: radial-gradient(circle, rgba(88, 215, 255, 0.9), transparent 60%);
+            top: -80px;
+            left: -120px;
+            animation: floatGlow1 18s ease-in-out infinite alternate;
+        }
+
+        body::after {
+            background: radial-gradient(circle, rgba(255, 79, 216, 0.9), transparent 60%);
+            bottom: -120px;
+            right: -140px;
+            animation: floatGlow2 22s ease-in-out infinite alternate;
+        }
+
+        @keyframes floatGlow1 {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(40px, 40px);
+            }
+        }
+
+        @keyframes floatGlow2 {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(-40px, -20px);
+            }
+        }
+
+        /* Loader */
+        .loader {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at top, #141726 0, #05060a 55%);
+            z-index: 40;
+            animation: loaderFade 1.25s ease 1.4s forwards;
+        }
+
+        .loader-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: conic-gradient(from 180deg, var(--accent), var(--accent-pink), var(--accent));
+            box-shadow: 0 0 20px rgba(88, 215, 255, 0.7);
+            position: relative;
+            animation: loaderPulse 0.8s ease-in-out infinite alternate;
+        }
+
+        .loader-icon::after {
+            content: "";
+            position: absolute;
+            inset: 6px;
+            border-radius: 50%;
+            background: #05060a;
+        }
+
+        @keyframes loaderPulse {
+            0% {
+                transform: scale(0.85);
+                opacity: 0.7;
+            }
+
+            100% {
+                transform: scale(1.12);
+                opacity: 1;
+            }
+        }
+
+        @keyframes loaderFade {
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        /* Header + nav */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            height: var(--header-h);
+            backdrop-filter: blur(16px);
+            background: linear-gradient(90deg, rgba(5, 6, 10, 0.96), rgba(8, 10, 16, 0.96));
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+        }
+
+        .header-inner {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 22px;
+            gap: 16px;
+        }
+
+        .header-title {
+            font-size: 15px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-main);
+            white-space: nowrap;
+        }
+
+        .header-title span.icon {
+            font-size: 18px;
+            filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.8));
+        }
+
+        nav {
+            display: flex;
+            gap: 16px;
+            font-size: 13px;
+            color: var(--text-sub);
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-sub);
+            padding: 6px 10px;
+            border-radius: 999px;
+            border: 1px solid transparent;
+            background: rgba(255, 255, 255, 0.02);
+            transition: all 0.18s ease-out;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+            border-color: rgba(88, 215, 255, 0.4);
+            box-shadow: 0 0 12px rgba(88, 215, 255, 0.3);
+            background: rgba(8, 12, 20, 0.9);
+        }
+
+        /* Layout main */
+        main {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 18px 22px 80px;
+        }
+
+
+        /* VISUALIZADOR (full width + más alto) */
+        .viewer-wrapper {
+            margin-top: 6px;
+            margin-bottom: 72px;
+            /* “muerde” los márgenes laterales para ocupar casi todo el viewport */
+            margin-left: -22px;
+            margin-right: -22px;
+        }
+
+        .viewer-container {
+            width: 100vw;
+            /* ocupa el ancho del viewport */
+            max-width: 100%;
+            height: min(920px,
+                    calc(100vh - var(--header-h) + 60px));
+            /* un poco más alto que antes */
+            border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: #000;
+            overflow: hidden;
+            box-shadow: var(--shadow-strong), var(--shadow-glow);
+        }
+
+        .viewer-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+
+        /* Text & sections */
+        h1,
+        h2,
+        h3 {
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            text-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+            transition: text-shadow 0.25s ease;
+        }
+
+        h1:hover,
+        h2:hover,
+        h3:hover {
+            text-shadow: 0 0 18px rgba(88, 215, 255, 0.9);
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        h2.section-title {
+            font-size: 24px;
+            margin-bottom: 6px;
+            margin-top: 52px;
+        }
+
+        h3 {
+            font-size: 17px;
+            margin-top: 22px;
+            margin-bottom: 6px;
+        }
+
+        .section-subtitle {
+            font-size: 14px;
+            color: var(--text-sub);
+            margin-bottom: 16px;
+            max-width: 700px;
+        }
+
+        p {
+            font-size: 14px;
+            color: var(--text-sub);
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            font-size: 14px;
+            color: var(--text-sub);
+            margin: 6px 0 12px 20px;
+            padding-left: 4px;
+        }
+
+        ul li {
+            margin-bottom: 4px;
+        }
+
+        .intro-block {
+            margin-bottom: 40px;
+            max-width: 760px;
+        }
+
+        .intro-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 11px;
+            color: var(--accent);
+            background: rgba(19, 116, 157, 0.2);
+            border: 1px solid rgba(88, 215, 255, 0.45);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        /* Cards (módulos / código) */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .card {
+            background: radial-gradient(circle at 0 0, rgba(88, 215, 255, 0.12), transparent 55%),
+                radial-gradient(circle at 100% 100%, rgba(255, 79, 216, 0.08), transparent 55%),
+                linear-gradient(to bottom right, rgba(7, 9, 15, 0.98), rgba(8, 12, 22, 0.98));
+            border-radius: var(--radius);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: var(--shadow-soft);
+            padding: 14px 14px 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            inset: -40%;
+            background: conic-gradient(from 210deg,
+                    transparent 0,
+                    rgba(88, 215, 255, 0.18) 18%,
+                    transparent 32%,
+                    transparent 70%,
+                    rgba(255, 79, 216, 0.18) 82%,
+                    transparent 100%);
+            opacity: 0;
+            mix-blend-mode: screen;
+            pointer-events: none;
+            transition: opacity 0.6s ease;
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 8px;
+            margin-bottom: 4px;
+        }
+
+        .card-title {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .card-chip {
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            color: var(--text-sub);
+            background: rgba(7, 10, 18, 0.85);
+            white-space: nowrap;
+        }
+
+        .card-body {
+            font-size: 13px;
+            color: var(--text-sub);
+        }
+
+        .card-list {
+            font-size: 12px;
+            margin-top: 4px;
+            margin-bottom: 6px;
+        }
+
+        .card-footer-link {
+            margin-top: 4px;
+            font-size: 12px;
+            text-decoration: none;
+            color: var(--accent);
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 9px;
+            border-radius: 999px;
+            background: rgba(16, 26, 40, 0.9);
+            border: 1px solid rgba(88, 215, 255, 0.5);
+            align-self: flex-start;
+            transition: all 0.18s ease-out;
+        }
+
+        .card-footer-link:hover {
+            background: rgba(23, 35, 55, 1);
+            box-shadow: 0 0 16px rgba(88, 215, 255, 0.45);
+            transform: translateY(-1px);
+        }
+
+        /* Pipeline steps */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+            margin-top: 18px;
+        }
+
+        .step {
+            background: linear-gradient(135deg, rgba(8, 10, 18, 0.96), rgba(11, 16, 26, 0.96));
+            border-radius: var(--radius);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 12px 13px;
+            box-shadow: var(--shadow-soft);
+            font-size: 13px;
+            color: var(--text-sub);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .step::before {
+            content: "";
+            position: absolute;
+            inset: -20%;
+            background: radial-gradient(circle at 0 0, rgba(88, 215, 255, 0.18), transparent 55%);
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .step-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            margin-bottom: 4px;
+        }
+
+        .step-title {
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-main);
+            margin-bottom: 4px;
+        }
+
+        .step-body {
+            font-size: 13px;
+        }
+
+        /* Code-style bits */
+        code {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 12px;
+            background: rgba(11, 16, 26, 0.9);
+            padding: 2px 5px;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            background: linear-gradient(to top, rgba(5, 6, 10, 0.98), rgba(6, 8, 14, 0.98));
+            padding: 20px 22px 30px;
+            font-size: 12px;
+            color: var(--text-sub);
+            box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.65);
+        }
+
+        .footer-inner {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .footer-credits {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: baseline;
+        }
+
+        .footer-credits span.version {
+            color: var(--accent);
+        }
+
+        .footer-links a {
+            color: var(--accent);
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 720px) {
+            .header-inner {
+                padding-inline: 14px;
+            }
+
+            .header-title {
+                font-size: 14px;
+            }
+
+            nav {
+                justify-content: flex-start;
+            }
+
+            main {
+                padding-inline: 10px;
+            }
+
+            .viewer-wrapper {
+                margin-left: -10px;
+                margin-right: -10px;
+                margin-bottom: 52px;
+            }
+
+            .viewer-container {
+                height: calc(100vh - var(--header-h));
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-icon"></div>
+    </div>
+
+    <!-- HEADER + NAV -->
+    <header>
+        <div class="header-inner">
+            <div class="header-title">
+                <span class="icon">🎵</span>
+                <span>miNoise — Repositorio para exploración nuevas tendencias musicales</span>
+            </div>
+            <nav>
+                <a href="#modulos">Módulos</a>
+                <a href="#pipeline">Pipeline</a>
+                <a href="#codigo">Código &amp; datos</a>
+                <a href="#filosofia">Filosofía</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- VISUALIZADOR ARRIBA -->
+        <section class="viewer-wrapper" id="visualizador">
+            <div class="viewer-container">
+                <iframe src="./visualizer/"></iframe>
+            </div>
+        </section>
+
+        <!-- INTRO -->
+        <section class="intro-block">
+            <div class="intro-chip">Proyecto experimental</div>
+            <h1>miNoise</h1>
+            <p>
+                <strong>miNoise</strong> es un laboratorio de exploración musical que se aleja de los
+                rankings y tendencias estándar. En vez de recomendar por popularidad, se apoya en
+                <strong>relaciones estructurales</strong>: escenas, microgéneros y co-ocurrencias reales
+                entre álbumes de Bandcamp.
+            </p>
+            <p>
+                La idea es ofrecer un repositorio creativo donde puedas descubrir música nueva
+                navegando un grafo tridimensional de <em>tags</em> y discos, combinando visualización,
+                embeddings y un recomendador híbrido explicable.
+            </p>
+        </section>
+
+        <!-- MÓDULOS -->
+        <section id="modulos">
+            <h2 class="section-title">Módulos del proyecto</h2>
+            <p class="section-subtitle">
+                El ecosistema miNoise está compuesto por un visualizador 3D, un recomendador híbrido y
+                un reproductor experimental conectado al grafo.
+            </p>
+
+            <div class="cards-grid">
+                <!-- Visualizador 3D -->
+                <article class="card">
+                    <div class="card-header">
+                        <div class="card-title">Visualizador 3D de tags & álbumes</div>
+                        <span class="card-chip">Three.js · ForceGraph3D</span>
+                    </div>
+                    <div class="card-body">
+                        Navega una nube de tags donde cada nodo representa un estilo musical y su vecindad
+                        se aprende a partir de co-ocurrencias de álbumes.
+                    </div>
+                    <ul class="card-list">
+                        <li>Exploración por tags con cámara orbital e idle motion.</li>
+                        <li>Expansión de un tag para ver los álbumes asociados.</li>
+                        <li>Panel lateral con embed de Bandcamp y metadatos.</li>
+                    </ul>
+                    <a class="card-footer-link" href="#visualizador">
+                        Abrir visualizador 3D →
+                    </a>
+                </article>
+
+                <!-- Recomendador híbrido -->
+                <article class="card">
+                    <div class="card-header">
+                        <div class="card-title">Recomendador híbrido</div>
+                        <span class="card-chip">contenido + redes</span>
+                    </div>
+                    <div class="card-body">
+                        Combina información de tags, proximidad en el grafo y relaciones de co-ocurrencia
+                        para sugerir álbumes cercanos a tus exploraciones.
+                    </div>
+                    <ul class="card-list">
+                        <li>Score híbrido: similitud de tags + vecindad en el grafo.</li>
+                        <li>Permite partir desde un tag o desde un álbum semilla.</li>
+                        <li>Diseñado para ser explicable (por qué se recomendó cada disco).</li>
+                    </ul>
+                    <a class="card-footer-link" href="#">
+                        Ver demo del recomendador →
+                    </a>
+                </article>
+
+                <!-- Reproductor -->
+                <article class="card">
+                    <div class="card-header">
+                        <div class="card-title">Reproductor integrado</div>
+                        <span class="card-chip">embeds Bandcamp</span>
+                    </div>
+                    <div class="card-body">
+                        Cada álbum del grafo puede reproducirse directamente desde la interfaz,
+                        manteniendo el contexto del tag o ruta de exploración.
+                    </div>
+                    <ul class="card-list">
+                        <li>Embeds de Bandcamp incrustados en el panel lateral.</li>
+                        <li>Reproducción rápida sin perder la vista del grafo.</li>
+                        <li>Ideal para “paseos sonoros” guiados por tags.</li>
+                    </ul>
+                    <a class="card-footer-link" href="#visualizador">
+                        Probar reproductor en el visualizador →
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- PIPELINE / CÓMO FUNCIONA -->
+        <section id="pipeline">
+            <h2 class="section-title">Cómo funciona por detrás</h2>
+            <p class="section-subtitle">
+                El proyecto se apoya en un pipeline de extracción, modelado y visualización que
+                transforma páginas de Bandcamp en un grafo navegable y utilizable para recomendaciones.
+            </p>
+
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-label">01 · extracción</div>
+                    <div class="step-title">Scraping & dataset</div>
+                    <div class="step-body">
+                        Scripts en Python/Node extraen metadatos de Bandcamp: título, artista, tags, año,
+                        URL y embed. Se normalizan tags y se construye una base de álbumes.
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-label">02 · capa 1</div>
+                    <div class="step-title">TAG → TAG (embeddings)</div>
+                    <div class="step-body">
+                        A partir de co-ocurrencias se entrena un modelo
+                        <code>Node2Vec</code> sobre la red de tags. Luego se proyecta con
+                        <code>UMAP</code> a 3D para obtener las coordenadas base que definen la “geografía”
+                        del espacio de etiquetas.
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-label">03 · capa 2</div>
+                    <div class="step-title">TAG → ÁLBUM (red bipartita)</div>
+                    <div class="step-body">
+                        Se construye una red bipartita tag–álbum. Cada disco hereda una posición derivada de
+                        las coordenadas de sus tags asociados, permitiendo que escenas y microgéneros se
+                        agrupen de forma natural.
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-label">04 · grafo final</div>
+                    <div class="step-title">Three.js + ForceGraph3D</div>
+                    <div class="step-body">
+                        Se unifican nodos y enlaces en un JSON como
+                        <code>tag_album_embedded_graph_FINAL.json</code>, que el visualizador carga para
+                        renderizar el grafo 3D, alimentar el recomendador híbrido y conectar con el
+                        reproductor.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CÓDIGO -->
+        <section id="codigo">
+            <h2 class="section-title">Código, dataset &amp; despliegue</h2>
+            <p class="section-subtitle">
+                El proyecto está dividido en varios componentes para facilitar la experimentación:
+                extracción de datos, procesamiento offline y un frontend estático para el visualizador 3D.
+            </p>
+
+            <div class="cards-grid">
+                <article class="card">
+                    <div class="card-header">
+                        <div class="card-title">Repositorio principal</div>
+                        <span class="card-chip">GitHub</span>
+                    </div>
+                    <div class="card-body">
+                        Contiene el código fuente del visualizador, scripts de procesamiento y la
+                        configuración para desplegar esta página en GitHub Pages.
+                    </div>
+                    <a class="card-footer-link" href="https://github.com/aamzp/miNoise" target="_blank">
+                        Ir al repo →
+                    </a>
+                </article>
+
+                <article class="card">
+                    <div class="card-header">
+                        <div class="card-title">Datos &amp; JSON de grafo</div>
+                        <span class="card-chip">/docs/visualizer/data/*.json</span>
+                    </div>
+                    <div class="card-body">
+                        Archivos como <code>tag_album_embedded_graph_FINAL.json</code> almacenan los nodos,
+                        links y coordenadas 3D usadas por el visualizador. Son la “memoria estructural” del
+                        ecosistema miNoise.
+                    </div>
+                    <a class="card-footer-link"
+                        href="https://github.com/aamzp/miNoise/blob/main/miNoise_processor/data/tag_album_embedded_graph_FINAL.json">
+                        Ver estructura del dataset →
+                    </a>
+                </article>
+
+                <article class="card">
+                    <div class="card-header">
+                        <div class="card-title">Despliegue estático</div>
+                        <span class="card-chip">GitHub Pages</span>
+                    </div>
+                    <div class="card-body">
+                        Esta <code>index.html</code> actúa como landing del proyecto. El visualizador vive en
+                        <code>/docs/visualizer/</code>, generado a partir del build de Vite de
+                        <code>minoise-frontend</code>.
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- FILOSOFÍA -->
+        <section id="filosofia">
+            <h2 class="section-title">Filosofía</h2>
+            <p class="section-subtitle">
+                miNoise entiende la música como un territorio que se recorre, no como un ranking que se
+                sube.
+            </p>
+            <p>
+                En vez de reforzar siempre los mismos nombres, la idea es abrir puertas a escenas
+                pequeñas, sellos escondidos y experimentos sonoros que suelen quedar fuera de los
+                algoritmos masivos. Los tags, las redes y los embeddings son sólo excusas técnicas para
+                algo más simple: <strong>invitar a escuchar con curiosidad</strong>.
+            </p>
+            <p>
+                Esta versión es un punto de partida. La intención es que el proyecto sirva tanto como
+                herramienta personal de descubrimiento musical, como sandbox creativo para explorar nuevas
+                formas de visualización y recomendación.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-credits">
+                <span class="version">miNoise v1.0</span>
+                <span>· Adolfo Maza · Carla Sepúlveda · Alfredo Ulloa</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/aamzp/miNoise" target="_blank">Repositorio en GitHub</a>
+            </div>
+            <span>Hecho con datos de Bandcamp, Three.js y mucho ruido bonito ✨</span>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -12,7 +12,7 @@ interface InitParams {
 // puedes ajustar estos dos números hasta que te guste
 const TAG_BASE_SIZE = 32;    // tamaño visual de los TAGS
 const ALBUM_BASE_SIZE = 34;  // tamaño visual de los ALBUMES
-const MAX_DESC_CHARS = 320; // máximo de caracteres en descripción del panel
+const MAX_DESC_CHARS = 280; // máximo de caracteres en descripción del panel
 
 // === Parámetros de cámara / rotación ===
 const CAMERA_BASE_RADIUS = 900;    // qué tan lejos está la cámara
@@ -25,7 +25,7 @@ const ZOOM_FIT_PADDING = 550;    // padding en zoomToFit
 // 0.15 → suave
 // 0.08 → bien chill
 // 0.04 → ultra lento pero visible
-const AUTO_ROTATE_SPEED = 0.04;
+const AUTO_ROTATE_SPEED = 0.08;
 
 // ==========================================
 // TEXTURE CACHE – evita recarga innecesaria
@@ -126,7 +126,7 @@ export function initGraph3D({
             id="inner-close-panel" 
             style="
                 cursor:pointer;
-                font-size:11px;
+                font-size:14px;
                 float:right;
                 opacity:0.8;
             "
@@ -136,7 +136,7 @@ export function initGraph3D({
 
         <h2 style="
             margin:0 0 4px 0;
-            font-size:13px;
+            font-size:18px;
             font-weight:600;
         ">
             ${node.title}
@@ -146,14 +146,14 @@ export function initGraph3D({
             margin:0 0 8px 0;
             color:#9ecbff;
             font-weight:400;
-            font-size:11px;
+            font-size:16px;
         ">
             ${node.artist}
         </h3>
 
         <div style="margin:8px 0 10px 0; text-align:center;">
             <iframe
-                style="border:0; width:100%; max-width:160px; height:160px;"
+                style="border:0; width:100%; width:300px; height:300px;"
                 src="${node.embed_url}"
                 seamless
             ></iframe>
@@ -170,14 +170,14 @@ export function initGraph3D({
 
         <p style="margin:6px 0 10px 0;">
             <strong>Description:</strong><br/>
-            <span style="opacity:0.9;font-size:8px;">
+            <span style="opacity:0.9;font-size:14px;">
                 ${safeDesc}
             </span>
         </p>
 
         <h3 style="
             margin:4px 0 4px 0;
-            font-size:11px;
+            font-size:16px;
             font-weight:600;
         ">
             Links
@@ -185,7 +185,7 @@ export function initGraph3D({
 
         ${node.url ? `
             <p style="margin:2px 0;">
-                <a href="${node.url}" target="_blank" style="color:#6cf; font-size:11px;">
+                <a href="${node.url}" target="_blank" style="color:#6cf; font-size:14px;">
                     Album page
                 </a>
             </p>
@@ -193,7 +193,7 @@ export function initGraph3D({
 
         ${node.artist_url ? `
             <p style="margin:2px 0;">
-                <a href="${node.artist_url}" target="_blank" style="color:#6cf; font-size:11px;">
+                <a href="${node.artist_url}" target="_blank" style="color:#6cf; font-size:14px;">
                     Artist page
                 </a>
             </p>
@@ -206,7 +206,31 @@ export function initGraph3D({
     // ==========================================
     // GRAFO 3D
     // ==========================================
-    const Graph = ForceGraph3D()(container)
+    //const DEFAULT_WIDTH = 1200;
+    //const DEFAULT_HEIGHT = 720;
+
+    // 🔧 Tamaños mínimos y máximos para evitar crecimiento infinito
+    const MIN_W = 1366;
+    const MIN_H = 798;
+    const MAX_W = 1600;
+    const MAX_H = 900;
+
+    function clamp(v: number, min: number, max: number) {
+        return Math.max(min, Math.min(max, v));
+    }
+
+    function getSize() {
+        const w = clamp(container.clientWidth, MIN_W, MAX_W);
+        const h = clamp(container.clientHeight, MIN_H, MAX_H);
+        return { w, h };
+    }
+
+    const { w, h } = getSize();
+
+    // Inicializar grafo con tamaño ACOTADO
+    const Graph = ForceGraph3D()
+        .width(w)
+        .height(h)(container);
 
 
     // 🔄 Activar auto-rotación global SUPER LENTA
@@ -503,13 +527,11 @@ export function initGraph3D({
 
             console.log("🎵 Grafo cargado:", json);
 
-            // 1) fijar coordenadas UMAP de todos
+            // ✨ Añadir movimiento vertical personal a cada nodo
             json.nodes.forEach(n => {
-                if (n.umap_x !== undefined) {
-                    n.fx = n.umap_x;
-                    n.fy = n.umap_y;
-                    n.fz = n.umap_z;
-                }
+                n._oscAmplitude = 6 + Math.random() * 10;       // entre 6 y 16 px
+                n._oscSpeed = 0.002 + Math.random() * 0.002;    // velocidad distinta por nodo
+                n._oscPhase = Math.random() * Math.PI * 2;      // fase inicial aleatoria
             });
 
             // 2) cargar todo el grafo (tags + álbumes)
@@ -530,22 +552,20 @@ export function initGraph3D({
     function handleResize() {
         if (!container) return;
 
-        const width = container.clientWidth;
-        const height = container.clientHeight;
+        const { w, h } = getSize();
 
-        // actualizar tamaño del canvas
-        Graph.width(width);
-        Graph.height(height);
+        Graph.width(w);
+        Graph.height(h);
 
-        // si estamos en modo "tags", re-encuadrar la nube
         if (currentMode === "tags") {
             Graph.zoomToFit(
-                1000,                     // duración animación (ajústalo a gusto)
-                350,                      // padding → MÁS chico = más cerca
+                1000,
+                350,
                 (n: any) => n.type === "tag"
             );
         }
     }
+
     window.addEventListener("resize", handleResize);
 
 
