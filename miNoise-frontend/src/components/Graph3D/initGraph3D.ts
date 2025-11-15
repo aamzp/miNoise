@@ -43,7 +43,7 @@ function getTexture(path: string) {
 // SPRITE: TAG
 // ==========================================
 function createTagSprite(node: any) {
-    const texPath = `/textures/tags/cluster_${node.cluster}.png`;
+    const texPath = `./textures/tags/cluster_${node.cluster}.png`;
     const texture = getTexture(texPath);
 
     const material = new THREE.SpriteMaterial({
@@ -69,7 +69,7 @@ function createTagSprite(node: any) {
 function createAlbumSprite(node: any) {
     const texIndex = Math.floor(Math.random() * 3); // 0,1,2
     // OJO: la carpeta es "album", no "albums"
-    const texPath = `/textures/album/album_${texIndex}.png`;
+    const texPath = `./textures/album/album_${texIndex}.png`;
     const texture = getTexture(texPath);
 
     const material = new THREE.SpriteMaterial({
