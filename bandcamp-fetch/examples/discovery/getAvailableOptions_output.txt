@@ -1,0 +1,1616 @@
+{
+  "categories": [
+    {
+      "name": "all categories",
+      "value": 0,
+      "slug": "all"
+    },
+    {
+      "name": "digital",
+      "value": 1,
+      "slug": "digital"
+    },
+    {
+      "name": "vinyl",
+      "value": 2,
+      "slug": "vinyl"
+    },
+    {
+      "name": "compact discs",
+      "value": 3,
+      "slug": "cd"
+    },
+    {
+      "name": "cassettes",
+      "value": 4,
+      "slug": "cassette"
+    },
+    {
+      "name": "t-shirts",
+      "value": 5,
+      "slug": "tshirt"
+    }
+  ],
+  "genres": [
+    {
+      "name": "electronic",
+      "value": "electronic",
+      "id": 10
+    },
+    {
+      "name": "rock",
+      "value": "rock",
+      "id": 23
+    },
+    {
+      "name": "metal",
+      "value": "metal",
+      "id": 18
+    },
+    {
+      "name": "alternative",
+      "value": "alternative",
+      "id": 2
+    },
+    {
+      "name": "hip-hop/rap",
+      "value": "hip-hop-rap",
+      "id": 14
+    },
+    {
+      "name": "experimental",
+      "value": "experimental",
+      "id": 11
+    },
+    {
+      "name": "punk",
+      "value": "punk",
+      "id": 20
+    },
+    {
+      "name": "folk",
+      "value": "folk",
+      "id": 12
+    },
+    {
+      "name": "pop",
+      "value": "pop",
+      "id": 19
+    },
+    {
+      "name": "ambient",
+      "value": "ambient",
+      "id": 3
+    },
+    {
+      "name": "soundtrack",
+      "value": "soundtrack",
+      "id": 24
+    },
+    {
+      "name": "world",
+      "value": "world",
+      "id": 26
+    },
+    {
+      "name": "jazz",
+      "value": "jazz",
+      "id": 15
+    },
+    {
+      "name": "acoustic",
+      "value": "acoustic",
+      "id": 1
+    },
+    {
+      "name": "funk",
+      "value": "funk",
+      "id": 13
+    },
+    {
+      "name": "r&b/soul",
+      "value": "r-b-soul",
+      "id": 21
+    },
+    {
+      "name": "devotional",
+      "value": "devotional",
+      "id": 9
+    },
+    {
+      "name": "classical",
+      "value": "classical",
+      "id": 5
+    },
+    {
+      "name": "reggae",
+      "value": "reggae",
+      "id": 22
+    },
+    {
+      "name": "podcasts",
+      "value": "podcasts",
+      "id": 27
+    },
+    {
+      "name": "country",
+      "value": "country",
+      "id": 7
+    },
+    {
+      "name": "spoken word",
+      "value": "spoken-word",
+      "id": 25
+    },
+    {
+      "name": "comedy",
+      "value": "comedy",
+      "id": 6
+    },
+    {
+      "name": "blues",
+      "value": "blues",
+      "id": 4
+    },
+    {
+      "name": "kids",
+      "value": "kids",
+      "id": 16
+    },
+    {
+      "name": "audiobooks",
+      "value": "audiobooks",
+      "id": 28
+    },
+    {
+      "name": "latin",
+      "value": "latin",
+      "id": 17
+    }
+  ],
+  "subgenres": {
+    "acoustic": [
+      {
+        "name": "folk",
+        "value": "folk",
+        "id": 1001
+      },
+      {
+        "name": "singer-songwriter",
+        "value": "singer-songwriter",
+        "id": 1002
+      },
+      {
+        "name": "rock",
+        "value": "rock",
+        "id": 1003
+      },
+      {
+        "name": "pop",
+        "value": "pop",
+        "id": 1004
+      },
+      {
+        "name": "guitar",
+        "value": "guitar",
+        "id": 1005
+      },
+      {
+        "name": "americana",
+        "value": "americana",
+        "id": 1006
+      },
+      {
+        "name": "electro-acoustic",
+        "value": "electro-acoustic",
+        "id": 1007
+      },
+      {
+        "name": "instrumental",
+        "value": "instrumental",
+        "id": 1008
+      },
+      {
+        "name": "piano",
+        "value": "piano",
+        "id": 1009
+      },
+      {
+        "name": "bluegrass",
+        "value": "bluegrass",
+        "id": 1010
+      },
+      {
+        "name": "roots",
+        "value": "roots",
+        "id": 1011
+      }
+    ],
+    "alternative": [
+      {
+        "name": "indie rock",
+        "value": "indie-rock",
+        "id": 1012
+      },
+      {
+        "name": "industrial",
+        "value": "industrial",
+        "id": 1013
+      },
+      {
+        "name": "shoegaze",
+        "value": "shoegaze",
+        "id": 1014
+      },
+      {
+        "name": "grunge",
+        "value": "grunge",
+        "id": 1015
+      },
+      {
+        "name": "goth",
+        "value": "goth",
+        "id": 1016
+      },
+      {
+        "name": "dream pop",
+        "value": "dream-pop",
+        "id": 1017
+      },
+      {
+        "name": "emo",
+        "value": "emo",
+        "id": 1018
+      },
+      {
+        "name": "math rock",
+        "value": "math-rock",
+        "id": 1019
+      },
+      {
+        "name": "britpop",
+        "value": "britpop",
+        "id": 1020
+      },
+      {
+        "name": "jangle pop",
+        "value": "jangle-pop",
+        "id": 1021
+      }
+    ],
+    "ambient": [
+      {
+        "name": "chill-out",
+        "value": "chill-out",
+        "id": 1022
+      },
+      {
+        "name": "drone",
+        "value": "drone",
+        "id": 1023
+      },
+      {
+        "name": "dark ambient",
+        "value": "dark-ambient",
+        "id": 1024
+      },
+      {
+        "name": "electronic",
+        "value": "electronic",
+        "id": 1025
+      },
+      {
+        "name": "soundscapes",
+        "value": "soundscapes",
+        "id": 1026
+      },
+      {
+        "name": "field recordings",
+        "value": "field-recordings",
+        "id": 1027
+      },
+      {
+        "name": "atmospheric",
+        "value": "atmospheric",
+        "id": 1028
+      },
+      {
+        "name": "meditation",
+        "value": "meditation",
+        "id": 1029
+      },
+      {
+        "name": "noise",
+        "value": "noise",
+        "id": 1030
+      },
+      {
+        "name": "new age",
+        "value": "new-age",
+        "id": 1031
+      },
+      {
+        "name": "idm",
+        "value": "idm",
+        "id": 1032
+      },
+      {
+        "name": "industrial",
+        "value": "industrial",
+        "id": 1033
+      }
+    ],
+    "blues": [
+      {
+        "name": "rhythm & blues",
+        "value": "rhythm-blues",
+        "id": 1034
+      },
+      {
+        "name": "blues rock",
+        "value": "blues-rock",
+        "id": 1035
+      },
+      {
+        "name": "country blues",
+        "value": "country-blues",
+        "id": 1036
+      },
+      {
+        "name": "boogie-woogie",
+        "value": "boogie-woogie",
+        "id": 1037
+      },
+      {
+        "name": "delta blues",
+        "value": "delta-blues",
+        "id": 1038
+      },
+      {
+        "name": "americana",
+        "value": "americana",
+        "id": 1039
+      },
+      {
+        "name": "electric blues",
+        "value": "electric-blues",
+        "id": 1040
+      },
+      {
+        "name": "gospel",
+        "value": "gospel",
+        "id": 1041
+      },
+      {
+        "name": "bluegrass",
+        "value": "bluegrass",
+        "id": 1042
+      }
+    ],
+    "classical": [
+      {
+        "name": "orchestral",
+        "value": "orchestral",
+        "id": 1043
+      },
+      {
+        "name": "neo-classical",
+        "value": "neo-classical",
+        "id": 1044
+      },
+      {
+        "name": "chamber music",
+        "value": "chamber-music",
+        "id": 1045
+      },
+      {
+        "name": "classical piano",
+        "value": "classical-piano",
+        "id": 1046
+      },
+      {
+        "name": "contemporary classical",
+        "value": "contemporary-classical",
+        "id": 1047
+      },
+      {
+        "name": "baroque",
+        "value": "baroque",
+        "id": 1048
+      },
+      {
+        "name": "opera",
+        "value": "opera",
+        "id": 1049
+      },
+      {
+        "name": "choral",
+        "value": "choral",
+        "id": 1050
+      },
+      {
+        "name": "modern classical",
+        "value": "modern-classical",
+        "id": 1051
+      },
+      {
+        "name": "avant garde",
+        "value": "avant-garde",
+        "id": 1052
+      }
+    ],
+    "comedy": [
+      {
+        "name": "improv",
+        "value": "improv",
+        "id": 1053
+      },
+      {
+        "name": "stand-up",
+        "value": "stand-up",
+        "id": 1054
+      }
+    ],
+    "country": [
+      {
+        "name": "bluegrass",
+        "value": "bluegrass",
+        "id": 1055
+      },
+      {
+        "name": "country rock",
+        "value": "country-rock",
+        "id": 1056
+      },
+      {
+        "name": "americana",
+        "value": "americana",
+        "id": 1057
+      },
+      {
+        "name": "country folk",
+        "value": "country-folk",
+        "id": 1058
+      },
+      {
+        "name": "alt-country",
+        "value": "alt-country",
+        "id": 1059
+      },
+      {
+        "name": "country blues",
+        "value": "country-blues",
+        "id": 1060
+      },
+      {
+        "name": "western",
+        "value": "western",
+        "id": 1061
+      },
+      {
+        "name": "singer-songwriter",
+        "value": "singer-songwriter",
+        "id": 1062
+      },
+      {
+        "name": "outlaw",
+        "value": "outlaw",
+        "id": 1063
+      },
+      {
+        "name": "honky-tonk",
+        "value": "honky-tonk",
+        "id": 1064
+      },
+      {
+        "name": "roots",
+        "value": "roots",
+        "id": 1065
+      },
+      {
+        "name": "hillbilly",
+        "value": "hillbilly",
+        "id": 1066
+      }
+    ],
+    "devotional": [
+      {
+        "name": "christian",
+        "value": "christian",
+        "id": 1067
+      },
+      {
+        "name": "gospel",
+        "value": "gospel",
+        "id": 1068
+      },
+      {
+        "name": "meditation",
+        "value": "meditation",
+        "id": 1069
+      },
+      {
+        "name": "spiritual",
+        "value": "spiritual",
+        "id": 1070
+      },
+      {
+        "name": "worship",
+        "value": "worship",
+        "id": 1071
+      },
+      {
+        "name": "inspirational",
+        "value": "inspirational",
+        "id": 1072
+      }
+    ],
+    "electronic": [
+      {
+        "name": "house",
+        "value": "house",
+        "id": 1073
+      },
+      {
+        "name": "electronica",
+        "value": "electronica",
+        "id": 1074
+      },
+      {
+        "name": "downtempo",
+        "value": "downtempo",
+        "id": 1075
+      },
+      {
+        "name": "techno",
+        "value": "techno",
+        "id": 1076
+      },
+      {
+        "name": "electro",
+        "value": "electro",
+        "id": 1077
+      },
+      {
+        "name": "dubstep",
+        "value": "dubstep",
+        "id": 1078
+      },
+      {
+        "name": "beats",
+        "value": "beats",
+        "id": 1079
+      },
+      {
+        "name": "dance",
+        "value": "dance",
+        "id": 1080
+      },
+      {
+        "name": "idm",
+        "value": "idm",
+        "id": 1081
+      },
+      {
+        "name": "drum & bass",
+        "value": "drum-bass",
+        "id": 1082
+      },
+      {
+        "name": "breaks",
+        "value": "breaks",
+        "id": 1083
+      },
+      {
+        "name": "trance",
+        "value": "trance",
+        "id": 1084
+      },
+      {
+        "name": "glitch",
+        "value": "glitch",
+        "id": 1085
+      },
+      {
+        "name": "chiptune",
+        "value": "chiptune",
+        "id": 1086
+      },
+      {
+        "name": "chillwave",
+        "value": "chillwave",
+        "id": 1087
+      },
+      {
+        "name": "dub",
+        "value": "dub",
+        "id": 1088
+      },
+      {
+        "name": "edm",
+        "value": "edm",
+        "id": 1089
+      },
+      {
+        "name": "instrumental",
+        "value": "instrumental",
+        "id": 1090
+      },
+      {
+        "name": "witch house",
+        "value": "witch-house",
+        "id": 1091
+      },
+      {
+        "name": "garage",
+        "value": "garage",
+        "id": 1092
+      },
+      {
+        "name": "juke",
+        "value": "juke",
+        "id": 1093
+      },
+      {
+        "name": "footwork",
+        "value": "footwork",
+        "id": 1094
+      },
+      {
+        "name": "vaporwave",
+        "value": "vaporwave",
+        "id": 1095
+      },
+      {
+        "name": "synthwave",
+        "value": "synthwave",
+        "id": 1096
+      }
+    ],
+    "experimental": [
+      {
+        "name": "noise",
+        "value": "noise",
+        "id": 1097
+      },
+      {
+        "name": "drone",
+        "value": "drone",
+        "id": 1098
+      },
+      {
+        "name": "avant garde",
+        "value": "avant-garde",
+        "id": 1099
+      },
+      {
+        "name": "experimental rock",
+        "value": "experimental-rock",
+        "id": 1100
+      },
+      {
+        "name": "improvisation",
+        "value": "improvisation",
+        "id": 1101
+      },
+      {
+        "name": "sound art",
+        "value": "sound-art",
+        "id": 1102
+      },
+      {
+        "name": "musique concrete",
+        "value": "musique-concrete",
+        "id": 1103
+      }
+    ],
+    "folk": [
+      {
+        "name": "singer-songwriter",
+        "value": "singer-songwriter",
+        "id": 1104
+      },
+      {
+        "name": "folk rock",
+        "value": "folk-rock",
+        "id": 1105
+      },
+      {
+        "name": "indie folk",
+        "value": "indie-folk",
+        "id": 1106
+      },
+      {
+        "name": "pop folk",
+        "value": "pop-folk",
+        "id": 1107
+      },
+      {
+        "name": "traditional",
+        "value": "traditional",
+        "id": 1108
+      },
+      {
+        "name": "experimental folk",
+        "value": "experimental-folk",
+        "id": 1109
+      },
+      {
+        "name": "roots",
+        "value": "roots",
+        "id": 1110
+      }
+    ],
+    "funk": [
+      {
+        "name": "funk jam",
+        "value": "funk-jam",
+        "id": 1111
+      },
+      {
+        "name": "deep funk",
+        "value": "deep-funk",
+        "id": 1112
+      },
+      {
+        "name": "funk rock",
+        "value": "funk-rock",
+        "id": 1113
+      },
+      {
+        "name": "jazz funk",
+        "value": "jazz-funk",
+        "id": 1114
+      },
+      {
+        "name": "boogie",
+        "value": "boogie",
+        "id": 1115
+      },
+      {
+        "name": "g-funk",
+        "value": "g-funk",
+        "id": 1116
+      },
+      {
+        "name": "rare groove",
+        "value": "rare-groove",
+        "id": 1117
+      },
+      {
+        "name": "electro",
+        "value": "electro",
+        "id": 1118
+      },
+      {
+        "name": "go-go",
+        "value": "go-go",
+        "id": 1119
+      }
+    ],
+    "hip-hop-rap": [
+      {
+        "name": "rap",
+        "value": "rap",
+        "id": 1120
+      },
+      {
+        "name": "underground hip-hop",
+        "value": "underground-hip-hop",
+        "id": 1121
+      },
+      {
+        "name": "instrumental hip-hop",
+        "value": "instrumental-hip-hop",
+        "id": 1122
+      },
+      {
+        "name": "trap",
+        "value": "trap",
+        "id": 1123
+      },
+      {
+        "name": "conscious hip-hop",
+        "value": "conscious-hip-hop",
+        "id": 1124
+      },
+      {
+        "name": "boom-bap",
+        "value": "boom-bap",
+        "id": 1125
+      },
+      {
+        "name": "beat-tape",
+        "value": "beat-tape",
+        "id": 1126
+      },
+      {
+        "name": "hardcore",
+        "value": "hardcore",
+        "id": 1127
+      },
+      {
+        "name": "grime",
+        "value": "grime",
+        "id": 1128
+      }
+    ],
+    "jazz": [
+      {
+        "name": "fusion",
+        "value": "fusion",
+        "id": 1129
+      },
+      {
+        "name": "big band",
+        "value": "big-band",
+        "id": 1130
+      },
+      {
+        "name": "nu jazz",
+        "value": "nu-jazz",
+        "id": 1131
+      },
+      {
+        "name": "modern jazz",
+        "value": "modern-jazz",
+        "id": 1132
+      },
+      {
+        "name": "swing",
+        "value": "swing",
+        "id": 1133
+      },
+      {
+        "name": "free jazz",
+        "value": "free-jazz",
+        "id": 1134
+      },
+      {
+        "name": "soul jazz",
+        "value": "soul-jazz",
+        "id": 1135
+      },
+      {
+        "name": "latin jazz",
+        "value": "latin-jazz",
+        "id": 1136
+      },
+      {
+        "name": "vocal jazz",
+        "value": "vocal-jazz",
+        "id": 1137
+      },
+      {
+        "name": "bebop",
+        "value": "bebop",
+        "id": 1138
+      },
+      {
+        "name": "spiritual jazz",
+        "value": "spiritual-jazz",
+        "id": 1139
+      }
+    ],
+    "kids": [
+      {
+        "name": "family music",
+        "value": "family-music",
+        "id": 1140
+      },
+      {
+        "name": "educational",
+        "value": "educational",
+        "id": 1141
+      },
+      {
+        "name": "music therapy",
+        "value": "music-therapy",
+        "id": 1142
+      },
+      {
+        "name": "lullaby",
+        "value": "lullaby",
+        "id": 1143
+      },
+      {
+        "name": "baby",
+        "value": "baby",
+        "id": 1144
+      }
+    ],
+    "latin": [
+      {
+        "name": "brazilian",
+        "value": "brazilian",
+        "id": 1145
+      },
+      {
+        "name": "cumbia",
+        "value": "cumbia",
+        "id": 1146
+      },
+      {
+        "name": "tango",
+        "value": "tango",
+        "id": 1147
+      },
+      {
+        "name": "latin rock",
+        "value": "latin-rock",
+        "id": 1148
+      },
+      {
+        "name": "flamenco",
+        "value": "flamenco",
+        "id": 1149
+      },
+      {
+        "name": "salsa",
+        "value": "salsa",
+        "id": 1150
+      },
+      {
+        "name": "reggaeton",
+        "value": "reggaeton",
+        "id": 1151
+      },
+      {
+        "name": "merengue",
+        "value": "merengue",
+        "id": 1152
+      },
+      {
+        "name": "bolero",
+        "value": "bolero",
+        "id": 1153
+      },
+      {
+        "name": "méxico d.f.",
+        "value": "méxico-d.f.",
+        "id": 1154
+      },
+      {
+        "name": "bachata",
+        "value": "bachata",
+        "id": 1155
+      }
+    ],
+    "metal": [
+      {
+        "name": "hardcore",
+        "value": "hardcore",
+        "id": 1156
+      },
+      {
+        "name": "black metal",
+        "value": "black-metal",
+        "id": 1157
+      },
+      {
+        "name": "death metal",
+        "value": "death-metal",
+        "id": 1158
+      },
+      {
+        "name": "thrash metal",
+        "value": "thrash-metal",
+        "id": 1159
+      },
+      {
+        "name": "grindcore",
+        "value": "grindcore",
+        "id": 1160
+      },
+      {
+        "name": "doom",
+        "value": "doom",
+        "id": 1161
+      },
+      {
+        "name": "post hardcore",
+        "value": "post-hardcore",
+        "id": 1162
+      },
+      {
+        "name": "progressive metal",
+        "value": "progressive-metal",
+        "id": 1163
+      },
+      {
+        "name": "metalcore",
+        "value": "metalcore",
+        "id": 1164
+      },
+      {
+        "name": "sludge metal",
+        "value": "sludge-metal",
+        "id": 1165
+      },
+      {
+        "name": "heavy metal",
+        "value": "heavy-metal",
+        "id": 1166
+      },
+      {
+        "name": "deathcore",
+        "value": "deathcore",
+        "id": 1167
+      },
+      {
+        "name": "noise",
+        "value": "noise",
+        "id": 1168
+      }
+    ],
+    "pop": [
+      {
+        "name": "indie pop",
+        "value": "indie-pop",
+        "id": 1169
+      },
+      {
+        "name": "synth pop",
+        "value": "synth-pop",
+        "id": 1170
+      },
+      {
+        "name": "power pop",
+        "value": "power-pop",
+        "id": 1171
+      },
+      {
+        "name": "new wave",
+        "value": "new-wave",
+        "id": 1172
+      },
+      {
+        "name": "dream pop",
+        "value": "dream-pop",
+        "id": 1173
+      },
+      {
+        "name": "noise pop",
+        "value": "noise-pop",
+        "id": 1174
+      },
+      {
+        "name": "experimental pop",
+        "value": "experimental-pop",
+        "id": 1175
+      },
+      {
+        "name": "electro pop",
+        "value": "electro-pop",
+        "id": 1176
+      },
+      {
+        "name": "adult contemporary",
+        "value": "adult-contemporary",
+        "id": 1177
+      },
+      {
+        "name": "jangle pop",
+        "value": "jangle-pop",
+        "id": 1178
+      },
+      {
+        "name": "j-pop",
+        "value": "j-pop",
+        "id": 1179
+      }
+    ],
+    "punk": [
+      {
+        "name": "hardcore punk",
+        "value": "hardcore-punk",
+        "id": 1180
+      },
+      {
+        "name": "garage",
+        "value": "garage",
+        "id": 1181
+      },
+      {
+        "name": "pop punk",
+        "value": "pop-punk",
+        "id": 1182
+      },
+      {
+        "name": "punk rock",
+        "value": "punk-rock",
+        "id": 1183
+      },
+      {
+        "name": "post-punk",
+        "value": "post-punk",
+        "id": 1184
+      },
+      {
+        "name": "post-hardcore",
+        "value": "post-hardcore",
+        "id": 1185
+      },
+      {
+        "name": "thrash",
+        "value": "thrash",
+        "id": 1186
+      },
+      {
+        "name": "crust punk",
+        "value": "crust-punk",
+        "id": 1187
+      },
+      {
+        "name": "folk punk",
+        "value": "folk-punk",
+        "id": 1188
+      },
+      {
+        "name": "emo",
+        "value": "emo",
+        "id": 1189
+      },
+      {
+        "name": "ska",
+        "value": "ska",
+        "id": 1190
+      },
+      {
+        "name": "no wave",
+        "value": "no-wave",
+        "id": 1191
+      }
+    ],
+    "r-b-soul": [
+      {
+        "name": "soul",
+        "value": "soul",
+        "id": 1192
+      },
+      {
+        "name": "r&b",
+        "value": "r-b",
+        "id": 1193
+      },
+      {
+        "name": "neo-soul",
+        "value": "neo-soul",
+        "id": 1194
+      },
+      {
+        "name": "gospel",
+        "value": "gospel",
+        "id": 1195
+      },
+      {
+        "name": "contemporary r&b",
+        "value": "contemporary-r-b",
+        "id": 1196
+      },
+      {
+        "name": "motown",
+        "value": "motown",
+        "id": 1197
+      },
+      {
+        "name": "urban",
+        "value": "urban",
+        "id": 1198
+      }
+    ],
+    "reggae": [
+      {
+        "name": "dub",
+        "value": "dub",
+        "id": 1199
+      },
+      {
+        "name": "ska",
+        "value": "ska",
+        "id": 1200
+      },
+      {
+        "name": "roots",
+        "value": "roots",
+        "id": 1201
+      },
+      {
+        "name": "dancehall",
+        "value": "dancehall",
+        "id": 1202
+      },
+      {
+        "name": "rocksteady",
+        "value": "rocksteady",
+        "id": 1203
+      },
+      {
+        "name": "ragga",
+        "value": "ragga",
+        "id": 1204
+      },
+      {
+        "name": "lovers rock",
+        "value": "lovers-rock",
+        "id": 1205
+      }
+    ],
+    "rock": [
+      {
+        "name": "indie",
+        "value": "indie",
+        "id": 1206
+      },
+      {
+        "name": "prog rock",
+        "value": "prog-rock",
+        "id": 1207
+      },
+      {
+        "name": "post-rock",
+        "value": "post-rock",
+        "id": 1208
+      },
+      {
+        "name": "rock & roll",
+        "value": "rock-roll",
+        "id": 1209
+      },
+      {
+        "name": "psychedelic rock",
+        "value": "psychedelic-rock",
+        "id": 1210
+      },
+      {
+        "name": "hard rock",
+        "value": "hard-rock",
+        "id": 1211
+      },
+      {
+        "name": "garage rock",
+        "value": "garage-rock",
+        "id": 1212
+      },
+      {
+        "name": "surf rock",
+        "value": "surf-rock",
+        "id": 1213
+      },
+      {
+        "name": "instrumental",
+        "value": "instrumental",
+        "id": 1214
+      },
+      {
+        "name": "math rock",
+        "value": "math-rock",
+        "id": 1215
+      },
+      {
+        "name": "rockabilly",
+        "value": "rockabilly",
+        "id": 1216
+      }
+    ],
+    "soundtrack": [
+      {
+        "name": "film music",
+        "value": "film-music",
+        "id": 1217
+      },
+      {
+        "name": "video game music",
+        "value": "video-game-music",
+        "id": 1218
+      },
+      {
+        "name": "video game",
+        "value": "video-game",
+        "id": 1219
+      },
+      {
+        "name": "ost",
+        "value": "ost",
+        "id": 1220
+      }
+    ],
+    "spoken-word": [
+      {
+        "name": "poetry",
+        "value": "poetry",
+        "id": 1221
+      },
+      {
+        "name": "inspirational",
+        "value": "inspirational",
+        "id": 1222
+      },
+      {
+        "name": "storytelling",
+        "value": "storytelling",
+        "id": 1223
+      },
+      {
+        "name": "self-help",
+        "value": "self-help",
+        "id": 1224
+      }
+    ],
+    "world": [
+      {
+        "name": "latin",
+        "value": "latin",
+        "id": 1225
+      },
+      {
+        "name": "roots",
+        "value": "roots",
+        "id": 1226
+      },
+      {
+        "name": "african",
+        "value": "african",
+        "id": 1227
+      },
+      {
+        "name": "tropical",
+        "value": "tropical",
+        "id": 1228
+      },
+      {
+        "name": "tribal",
+        "value": "tribal",
+        "id": 1229
+      },
+      {
+        "name": "brazilian",
+        "value": "brazilian",
+        "id": 1230
+      },
+      {
+        "name": "celtic",
+        "value": "celtic",
+        "id": 1231
+      },
+      {
+        "name": "world fusion",
+        "value": "world-fusion",
+        "id": 1232
+      },
+      {
+        "name": "cumbia",
+        "value": "cumbia",
+        "id": 1233
+      },
+      {
+        "name": "gypsy",
+        "value": "gypsy",
+        "id": 1234
+      },
+      {
+        "name": "new age",
+        "value": "new-age",
+        "id": 1235
+      },
+      {
+        "name": "balkan",
+        "value": "balkan",
+        "id": 1236
+      },
+      {
+        "name": "reggaeton",
+        "value": "reggaeton",
+        "id": 1237
+      }
+    ]
+  },
+  "customTags": [],
+  "sortBys": [
+    {
+      "name": "best-selling",
+      "value": "top"
+    },
+    {
+      "name": "new arrivals",
+      "value": "new"
+    },
+    {
+      "name": "surprise me",
+      "value": "rand"
+    }
+  ],
+  "locations": [
+    {
+      "name": "from anywhere",
+      "value": 0
+    },
+    {
+      "name": "amsterdam",
+      "value": 2759794
+    },
+    {
+      "name": "atlanta",
+      "value": 4180439
+    },
+    {
+      "name": "austin",
+      "value": 4671654
+    },
+    {
+      "name": "baltimore",
+      "value": 4347778
+    },
+    {
+      "name": "berlin",
+      "value": 2950159
+    },
+    {
+      "name": "boston",
+      "value": 4930956
+    },
+    {
+      "name": "brooklyn",
+      "value": 5110302
+    },
+    {
+      "name": "buenos aires",
+      "value": 3435907
+    },
+    {
+      "name": "chicago",
+      "value": 4887398
+    },
+    {
+      "name": "denver",
+      "value": 5419384
+    },
+    {
+      "name": "detroit",
+      "value": 4990729
+    },
+    {
+      "name": "dublin",
+      "value": 2964574
+    },
+    {
+      "name": "glasgow",
+      "value": 3333231
+    },
+    {
+      "name": "london",
+      "value": 2643743
+    },
+    {
+      "name": "los angeles",
+      "value": 5368361
+    },
+    {
+      "name": "madrid",
+      "value": 3117735
+    },
+    {
+      "name": "manchester",
+      "value": 2643123
+    },
+    {
+      "name": "melbourne",
+      "value": 2158177
+    },
+    {
+      "name": "mexico city",
+      "value": 3530597
+    },
+    {
+      "name": "miami",
+      "value": 4164138
+    },
+    {
+      "name": "minneapolis",
+      "value": 5037649
+    },
+    {
+      "name": "montreal",
+      "value": 6077243
+    },
+    {
+      "name": "nashville",
+      "value": 4644585
+    },
+    {
+      "name": "new orleans",
+      "value": 4335045
+    },
+    {
+      "name": "new york city",
+      "value": 5128581
+    },
+    {
+      "name": "oakland",
+      "value": 5378538
+    },
+    {
+      "name": "paris",
+      "value": 2988507
+    },
+    {
+      "name": "philadelphia",
+      "value": 4560349
+    },
+    {
+      "name": "portland",
+      "value": 5746545
+    },
+    {
+      "name": "san francisco",
+      "value": 5391959
+    },
+    {
+      "name": "seattle",
+      "value": 5809844
+    },
+    {
+      "name": "sydney",
+      "value": 2147714
+    },
+    {
+      "name": "toronto",
+      "value": 6167865
+    },
+    {
+      "name": "vancouver",
+      "value": 6173331
+    },
+    {
+      "name": "washington, dc",
+      "value": 4140963
+    }
+  ],
+  "times": [
+    {
+      "name": "fresh",
+      "value": -1,
+      "slug": "fresh"
+    },
+    {
+      "name": "today",
+      "value": 0,
+      "slug": "today"
+    },
+    {
+      "name": "this week",
+      "value": 1,
+      "slug": "this-week"
+    },
+    {
+      "name": "last week",
+      "value": 2,
+      "slug": "1w"
+    },
+    {
+      "name": "2 weeks ago",
+      "value": 3,
+      "slug": "2w"
+    },
+    {
+      "name": "3 weeks ago",
+      "value": 4,
+      "slug": "3w"
+    },
+    {
+      "name": "4 weeks ago",
+      "value": 5,
+      "slug": "4w"
+    },
+    {
+      "name": "5 weeks ago",
+      "value": 6,
+      "slug": "5w"
+    },
+    {
+      "name": "6 weeks ago",
+      "value": 7,
+      "slug": "6w"
+    }
+  ]
+}

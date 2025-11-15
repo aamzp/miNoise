@@ -1,0 +1,2443 @@
+Artist URL: https://musique.coeurdepirate.com
+[
+  {
+    "url": "https://musique.coeurdepirate.com/track/ch-teau-de-sable",
+    "type": "track",
+    "id": 2378877721,
+    "name": "Château de sable",
+    "artist": {
+      "name": "Cœur de pirate"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2168234083_16.jpg"
+  },
+  {
+    "url": "https://musique.coeurdepirate.com/track/cavale",
+    "type": "track",
+    "id": 3165072002,
+    "name": "Cavale",
+    "artist": {
+      "name": "Cœur de pirate"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2002688912_16.jpg"
+  },
+  {
+    "url": "https://musique.coeurdepirate.com/track/c-tait-salement-romantique-reprise",
+    "type": "track",
+    "id": 26263417,
+    "name": "C'était salement romantique (reprise)",
+    "artist": {
+      "name": "Cœur de pirate"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2225683825_16.jpg"
+  },
+  {
+    "url": "https://musique.coeurdepirate.com/track/parfait-no-l",
+    "type": "track",
+    "id": 2863393330,
+    "name": "Parfait Noël",
+    "artist": {
+      "name": "Cœur de pirate"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a0887598283_16.jpg"
+  },
+  {
+    "url": "https://musique.coeurdepirate.com/album/clou",
+    "type": "album",
+    "id": 1955655207,
+    "name": "Clou",
+    "artist": {
+      "name": "Cœur de pirate"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a0422319817_16.jpg"
+  },
+  {
+    "url": "https://musique.coeurdepirate.com/album/impossible-aimer",
+    "type": "album",
+    "id": 1204339409,
+    "name": "Impossible à aimer",
+    "artist": {
+      "name": "Cœur de pirate"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3147632514_16.jpg"
+  },
+  {
+    "url": "https://musique.coeurdepirate.com/track/on-saimera-toujours-2",
+    "type": "track",
+    "id": 822389203,
+    "name": "On s'aimera toujours",
+    "artist": {
+      "name": "Cœur de pirate"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a0599648879_16.jpg"
+  },
+  {
+    "url": "https://musique.coeurdepirate.com/track/plan-trois",
+    "type": "track",
+    "id": 1778183357,
+    "name": "Plan à trois",
+    "artist": {
+      "name": "Cœur de pirate"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a4236666126_16.jpg"
+  },
+  {
+    "url": "https://musique.coeurdepirate.com/album/pers-ides",
+    "type": "album",
+    "id": 3082251937,
+    "name": "Perséides",
+    "artist": {
+      "name": "Cœur de pirate"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3751956000_16.jpg"
+  },
+  {
+    "url": "https://musique.coeurdepirate.com/track/tes-belle",
+    "type": "track",
+    "id": 3387079907,
+    "name": "T'es belle",
+    "artist": {
+      "name": "Cœur de pirate"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a0774650359_16.jpg"
+  },
+  {
+    "url": "https://musique.coeurdepirate.com/track/ne-mappelle-pas",
+    "type": "track",
+    "id": 1968148031,
+    "name": "Ne m'appelle pas",
+    "artist": {
+      "name": "Cœur de pirate"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2603960871_16.jpg"
+  },
+  {
+    "url": "https://musique.coeurdepirate.com/album/en-cas-de-temp-te-ce-jardin-sera-ferm",
+    "type": "album",
+    "id": 2415776908,
+    "name": "en cas de tempête, ce jardin sera fermé.",
+    "artist": {
+      "name": "Cœur de pirate"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a0248413645_16.jpg"
+  },
+  {
+    "url": "https://musique.coeurdepirate.com/album/somnambule",
+    "type": "album",
+    "id": 2070714654,
+    "name": "Somnambule",
+    "artist": {
+      "name": "Cœur de pirate"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1903816474_16.jpg"
+  },
+  {
+    "url": "https://musique.coeurdepirate.com/album/pr-monition-2",
+    "type": "album",
+    "id": 2302189044,
+    "name": "Prémonition",
+    "artist": {
+      "name": "Cœur de pirate"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2454271957_16.jpg"
+  },
+  {
+    "url": "https://musique.coeurdepirate.com/album/chansons-tristes-pour-no-l",
+    "type": "album",
+    "id": 3888425306,
+    "name": "Chansons tristes pour Noël",
+    "artist": {
+      "name": "Cœur de pirate"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2476670277_16.jpg"
+  },
+  {
+    "url": "https://musique.coeurdepirate.com/album/roses",
+    "type": "album",
+    "id": 2263614154,
+    "name": "Roses",
+    "artist": {
+      "name": "Cœur de pirate"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3347055233_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/carry-on-2",
+    "type": "album",
+    "id": 2019722172,
+    "name": "Carry On",
+    "artist": {},
+    "imageUrl": "https://f4.bcbits.com/img/a4277887982_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/oublie-moi-carry-on",
+    "type": "album",
+    "id": 1867352774,
+    "name": "Oublie-moi (Carry On)",
+    "artist": {},
+    "imageUrl": "https://f4.bcbits.com/img/a891943451_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/child-of-light",
+    "type": "album",
+    "id": 2789088897,
+    "name": "Child of Light",
+    "artist": {},
+    "imageUrl": "https://f4.bcbits.com/img/a603109913_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/trauma",
+    "type": "album",
+    "id": 2305636330,
+    "name": "Trauma",
+    "artist": {},
+    "imageUrl": "https://f4.bcbits.com/img/a3799110102_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/blonde",
+    "type": "album",
+    "id": 838845289,
+    "name": "Blonde",
+    "artist": {},
+    "imageUrl": "https://f4.bcbits.com/img/a1328452291_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/comme-des-enfants-version-originale-et-remix-par-le-matos",
+    "type": "album",
+    "id": 2716284024,
+    "name": "Comme des enfants (Version originale et remix par Le Matos)",
+    "artist": {},
+    "imageUrl": "https://f4.bcbits.com/img/a1250129776_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/coeur-de-pirate",
+    "type": "album",
+    "id": 1555436085,
+    "name": "Coeur de pirate",
+    "artist": {},
+    "imageUrl": "https://f4.bcbits.com/img/a2201751482_16.jpg"
+  }
+]
+
+Label URL: https://randsrecords.bandcamp.com
+[
+  {
+    "url": "https://randsrecords.bandcamp.com/album/classics-2",
+    "type": "album",
+    "id": 3009833669,
+    "name": "Classics",
+    "artist": {
+      "name": "Joey Beltram"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2031869115_16.jpg"
+  },
+  {
+    "url": "https://randsrecords.bandcamp.com/album/classics",
+    "type": "album",
+    "name": "Classics",
+    "artist": {
+      "name": "Aphex Twin"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1820351389_16.jpg"
+  },
+  {
+    "url": "https://randsrecords.bandcamp.com/album/frisia",
+    "type": "album",
+    "id": 2983958330,
+    "name": "Frisia",
+    "artist": {
+      "name": "Quicche"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2143315036_16.jpg"
+  },
+  {
+    "url": "https://randsrecords.bandcamp.com/album/xenoverse",
+    "type": "album",
+    "id": 3894317623,
+    "name": "Xenoverse",
+    "artist": {
+      "name": "Chizawa Q"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a0749848309_16.jpg"
+  },
+  {
+    "url": "https://paulwhite.bandcamp.com/album/peace-in-chaos",
+    "type": "album",
+    "id": 742962498,
+    "name": "Peace In Chaos",
+    "artist": {
+      "name": "Paul White"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a4024642086_16.jpg"
+  },
+  {
+    "url": "https://randsrecords.bandcamp.com/album/gracie-ep",
+    "type": "album",
+    "id": 288648917,
+    "name": "Gracie EP",
+    "artist": {
+      "name": "Dharma"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a0309679303_16.jpg"
+  },
+  {
+    "url": "https://randsrecords.bandcamp.com/album/tagiog",
+    "type": "album",
+    "id": 959673134,
+    "name": "TAGIOG",
+    "artist": {
+      "name": "Quicche"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3769589095_16.jpg"
+  },
+  {
+    "url": "https://randsrecords.bandcamp.com/album/movement-ep",
+    "type": "album",
+    "id": 1557434599,
+    "name": "Movement EP",
+    "artist": {
+      "name": "Feiertag"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3680498410_16.jpg"
+  },
+  {
+    "url": "https://paulwhite.bandcamp.com/album/first-sight",
+    "type": "album",
+    "id": 716591014,
+    "name": "First Sight",
+    "artist": {
+      "name": "Paul White"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a4127217240_16.jpg"
+  },
+  {
+    "url": "https://randsrecords.bandcamp.com/album/zeit",
+    "type": "album",
+    "id": 1281991501,
+    "name": "Zeit",
+    "artist": {
+      "name": "Hatti Vatti"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1762764422_16.jpg"
+  },
+  {
+    "url": "https://randsrecords.bandcamp.com/album/lose-control-remixes",
+    "type": "album",
+    "id": 1236906347,
+    "name": "Lose Control (Remixes)",
+    "artist": {
+      "name": "Dino Lenny"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1163554332_16.jpg"
+  },
+  {
+    "url": "https://randsrecords.bandcamp.com/album/ueno",
+    "type": "album",
+    "id": 2028991284,
+    "name": "Ueno",
+    "artist": {
+      "name": "Hatti Vatti"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3046827947_16.jpg"
+  },
+  {
+    "url": "https://randsrecords.bandcamp.com/album/muse",
+    "type": "album",
+    "id": 3136059582,
+    "name": "Muse",
+    "artist": {
+      "name": "Mikahl Anthony"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a0564044473_16.jpg"
+  },
+  {
+    "url": "https://randsrecords.bandcamp.com/album/digeridoo-expanded-edition",
+    "type": "album",
+    "id": 2922091998,
+    "name": "Digeridoo (Expanded Edition)",
+    "artist": {
+      "name": "Aphex Twin"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3554439260_16.jpg"
+  },
+  {
+    "url": "https://randsrecords.bandcamp.com/album/mollyamory",
+    "type": "album",
+    "id": 1889081893,
+    "name": "MollyAmory",
+    "artist": {
+      "name": "Mikahl Anthony"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1332011899_16.jpg"
+  },
+  {
+    "url": "https://randsrecords.bandcamp.com/album/3rd-voyage-re-issue",
+    "type": "album",
+    "id": 2104612622,
+    "name": "3rd Voyage (re-issue)",
+    "artist": {
+      "name": "Dave Angel"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a0080959608_16.jpg"
+  },
+  {
+    "url": "https://randsrecords.bandcamp.com/album/lose-control",
+    "type": "album",
+    "id": 2282607348,
+    "name": "Lose Control",
+    "artist": {
+      "name": "Dino Lenny"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2405205306_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/sooth-sayings",
+    "type": "album",
+    "id": 1546791499,
+    "name": "Sooth Sayings",
+    "artist": {
+      "name": "Mikahl Anthony"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a831106826_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/la-flare",
+    "type": "album",
+    "id": 1855962650,
+    "name": "La Flare",
+    "artist": {
+      "name": "Mikahl Anthony"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1928316641_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/space-blue-deep-aint-it",
+    "type": "album",
+    "id": 1893709464,
+    "name": "Space Blue/Deep Aint' It",
+    "artist": {
+      "name": "Mikahl Anthony"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3407241769_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/self-manifest",
+    "type": "album",
+    "id": 4279067407,
+    "name": "Self Manifest",
+    "artist": {
+      "name": "Viclan"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2512104518_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/bad-thing-feat-dephree",
+    "type": "album",
+    "id": 3872314729,
+    "name": "Bad Thing (feat. Dephree)",
+    "artist": {
+      "name": "Subject 13, Dephree"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1552864403_16.jpg"
+  },
+  {
+    "url": "https://adakaleh.bandcamp.com/album/unravelling-feat-eric-leeds?label=999120622&tab=music",
+    "type": "album",
+    "id": 3042751647,
+    "name": "Unravelling (feat. Eric Leeds)",
+    "artist": {
+      "name": "Ada Kaleh"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3275888973_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/horizon",
+    "type": "album",
+    "id": 938312978,
+    "name": "Horizon",
+    "artist": {
+      "name": "Vromm"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a923892641_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/sax-paradiso",
+    "type": "album",
+    "id": 3362670698,
+    "name": "Sax Paradiso",
+    "artist": {
+      "name": "Human Safari"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1583424007_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/clothed-in-light",
+    "type": "album",
+    "id": 1259187305,
+    "name": "Clothed In Light",
+    "artist": {
+      "name": "Architectural"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2436410181_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/washington-street",
+    "type": "album",
+    "id": 4281008727,
+    "name": "Washington Street",
+    "artist": {
+      "name": "Dino Lenny"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2748722878_16.jpg"
+  },
+  {
+    "url": "https://elliotquartz.bandcamp.com/album/deity-spear?label=999120622&tab=music",
+    "type": "album",
+    "id": 3466924939,
+    "name": "Deity Spear",
+    "artist": {
+      "name": "Quartz"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2073263157_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/one-more-chance",
+    "type": "album",
+    "id": 3592771602,
+    "name": "One More Chance",
+    "artist": {
+      "name": "Subject 13"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a688216692_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/the-commencement",
+    "type": "album",
+    "id": 3532085744,
+    "name": "The Commencement",
+    "artist": {
+      "name": "Tainted Tazz"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a567195783_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/20hz-remixes",
+    "type": "album",
+    "id": 2784156171,
+    "name": "20HZ (Remixes)",
+    "artist": {
+      "name": "Capricorn"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2242386435_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/btvc",
+    "type": "album",
+    "id": 1368753126,
+    "name": "BTVC",
+    "artist": {
+      "name": "Batavia Collective"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1821875798_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/in-order-to-dance-40",
+    "type": "album",
+    "id": 737067932,
+    "name": "In Order To Dance 4.0",
+    "artist": {
+      "name": "Various Artists"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2214855589_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/ultimatum",
+    "type": "album",
+    "id": 1714348809,
+    "name": "Ultimatum",
+    "artist": {
+      "name": "Som.1"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a135985582_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/hold-on",
+    "type": "album",
+    "id": 4202478334,
+    "name": "Hold On",
+    "artist": {
+      "name": "Pascal Nuzzo"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1698391615_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/rites-ep",
+    "type": "album",
+    "id": 3906055419,
+    "name": "Rites EP",
+    "artist": {
+      "name": "Antagonist"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1018155367_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/something-flash",
+    "type": "album",
+    "id": 1884614668,
+    "name": "Something Flash",
+    "artist": {
+      "name": "Insider"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3932573284_16.jpg"
+  },
+  {
+    "url": "https://progedia.bandcamp.com/album/di-scuri?label=999120622&tab=music",
+    "type": "album",
+    "id": 1949979086,
+    "name": "Diõscuri",
+    "artist": {
+      "name": "PROGedia"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a994367687_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/red-tuna",
+    "type": "album",
+    "id": 3697214243,
+    "name": "Red Tuna",
+    "artist": {
+      "name": "Vromm"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3935902897_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/did-this",
+    "type": "album",
+    "id": 3723284538,
+    "name": "Did This",
+    "artist": {
+      "name": "Dino Lenny"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2817556781_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/beltram-volume-1-remastered",
+    "type": "album",
+    "id": 4037807866,
+    "name": "Beltram Volume 1 (Remastered)",
+    "artist": {
+      "name": "Joey Beltram"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3995752886_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/iyndub01-live",
+    "type": "album",
+    "id": 3294227644,
+    "name": "IYNDUB01 (Live)",
+    "artist": {
+      "name": "Saytek"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2135706255_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/stairway-to-heaven",
+    "type": "album",
+    "id": 1742960725,
+    "name": "Stairway To Heaven",
+    "artist": {
+      "name": "Dave Angel"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3899868680_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/rumble-around",
+    "type": "album",
+    "id": 936097066,
+    "name": "Rumble Around",
+    "artist": {
+      "name": "Nphonix & Matrika"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a204771946_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/1st-voyage",
+    "type": "album",
+    "id": 3453888684,
+    "name": "1st Voyage",
+    "artist": {
+      "name": "Dave Angel"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3826924267_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/dripping-sauce",
+    "type": "album",
+    "id": 575625799,
+    "name": "Dripping Sauce",
+    "artist": {
+      "name": "Subject 13 & Conscious Route"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a753969393_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/bapteme",
+    "type": "album",
+    "id": 1073886425,
+    "name": "Bapteme",
+    "artist": {
+      "name": "Paul Roux"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a864638093_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/winter-sky",
+    "type": "album",
+    "id": 4120000461,
+    "name": "Winter Sky",
+    "artist": {
+      "name": "Hyphen"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a4007624129_16.jpg"
+  },
+  {
+    "url": "https://synkro.bandcamp.com/album/information-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 1262167616,
+    "name": "Information EP",
+    "artist": {
+      "name": "Synkro"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1049512642_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/entrance-dave-angel-remix",
+    "type": "album",
+    "id": 2682538936,
+    "name": "Entrance (Dave Angel Remix)",
+    "artist": {
+      "name": "Sun Electric"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3225864825_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/lost-asia-ep",
+    "type": "album",
+    "id": 3321183344,
+    "name": "Lost Asia EP",
+    "artist": {
+      "name": "Chizawa Q"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1789331695_16.jpg"
+  },
+  {
+    "url": "https://bataviacollective.bandcamp.com/album/propulsion?label=999120622&tab=music",
+    "type": "album",
+    "id": 3470476448,
+    "name": "Propulsion",
+    "artist": {
+      "name": "Batavia Collective"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3366817764_16.jpg"
+  },
+  {
+    "url": "https://loxyink.bandcamp.com/album/spray-trains-of-thought?label=999120622&tab=music",
+    "type": "album",
+    "id": 953603286,
+    "name": "Spray Trains Of Thought",
+    "artist": {
+      "name": "Loxy & Ink"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2075117797_16.jpg"
+  },
+  {
+    "url": "https://progedia.bandcamp.com/album/nobody-screams?label=999120622&tab=music",
+    "type": "album",
+    "id": 1474343124,
+    "name": "Nobody Screams",
+    "artist": {
+      "name": "PROGedia"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3261990859_16.jpg"
+  },
+  {
+    "url": "https://blocksescher.bandcamp.com/album/shot-in-the-dark-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 517739407,
+    "name": "Shot In The Dark EP",
+    "artist": {
+      "name": "Blocks & Escher"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3719331016_16.jpg"
+  },
+  {
+    "url": "https://progedia.bandcamp.com/album/down-incl-the-bug-remix?label=999120622&tab=music",
+    "type": "album",
+    "id": 2793393831,
+    "name": "Down (incl. The Bug Remix)",
+    "artist": {
+      "name": "PROGedia"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1516236223_16.jpg"
+  },
+  {
+    "url": "https://progedia.bandcamp.com/album/we-are-the-night?label=999120622&tab=music",
+    "type": "album",
+    "id": 2021535812,
+    "name": "We Are The Night",
+    "artist": {
+      "name": "PROGedia"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3155966537_16.jpg"
+  },
+  {
+    "url": "https://bataviacollective.bandcamp.com/album/affirmation-feat-kamga?label=999120622&tab=music",
+    "type": "album",
+    "id": 1121217023,
+    "name": "Affirmation feat. Kamga",
+    "artist": {
+      "name": "Batavia Collective"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a436292227_16.jpg"
+  },
+  {
+    "url": "https://loxyink.bandcamp.com/album/manifested-visions?label=999120622&tab=music",
+    "type": "album",
+    "id": 1025086059,
+    "name": "Manifested Visions",
+    "artist": {
+      "name": "Loxy & Ink"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a75554190_16.jpg"
+  },
+  {
+    "url": "https://paulwhite.bandcamp.com/album/smile-see-the-light?label=999120622&tab=music",
+    "type": "album",
+    "id": 2859349561,
+    "name": "Smile (See The Light)",
+    "artist": {
+      "name": "Paul White feat. Iyamah & Remi"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a78770650_16.jpg"
+  },
+  {
+    "url": "https://saminterface.bandcamp.com/album/pink-dolphins-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 767501909,
+    "name": "Pink Dolphins EP",
+    "artist": {
+      "name": "Sam Interface"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a822271284_16.jpg"
+  },
+  {
+    "url": "https://forestdrivewest.bandcamp.com/album/terminus-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 2003458188,
+    "name": "Terminus EP",
+    "artist": {
+      "name": "Forest Drive West"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3636491375_16.jpg"
+  },
+  {
+    "url": "https://lone.bandcamp.com/album/lone-x-kettama?label=999120622&tab=music",
+    "type": "album",
+    "id": 2287303052,
+    "name": "Lone x KETTAMA",
+    "artist": {
+      "name": "Lone x KETTAMA"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3844432643_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/rv-trax-vol-5",
+    "type": "album",
+    "id": 3436824714,
+    "name": "RV Trax, Vol. 5",
+    "artist": {
+      "name": "R&S Records"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2129309811_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/in-order-to-care-deleted",
+    "type": "album",
+    "id": 190782067,
+    "name": "In Order To Care (DELETED)",
+    "artist": {
+      "name": "R&S Records"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1662919219_16.jpg"
+  },
+  {
+    "url": "https://architecturalrecs.bandcamp.com/album/planet-is-but-a-dream?label=999120622&tab=music",
+    "type": "album",
+    "id": 3792337040,
+    "name": "Planet Is But A Dream",
+    "artist": {
+      "name": "Architectural"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2801260386_16.jpg"
+  },
+  {
+    "url": "https://futurebeatalliance.bandcamp.com/album/never-forever?label=999120622&tab=music",
+    "type": "album",
+    "id": 1310847653,
+    "name": "Never Forever",
+    "artist": {
+      "name": "Future Beat Alliance"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a4088803645_16.jpg"
+  },
+  {
+    "url": "https://yansima.bandcamp.com/album/tweede-cans?label=999120622&tab=music",
+    "type": "album",
+    "id": 2326774742,
+    "name": "Tweede Cans",
+    "artist": {
+      "name": "Yansima"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1336844977_16.jpg"
+  },
+  {
+    "url": "https://more-time.bandcamp.com/album/r-s-presents-more-time-records-vol-1?label=999120622&tab=music",
+    "type": "album",
+    "id": 1130774497,
+    "name": "R&S presents: More Time Records Vol 1",
+    "artist": {
+      "name": "More Time"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a703436468_16.jpg"
+  },
+  {
+    "url": "https://spacedimensioncontroller.bandcamp.com/album/love-beyond-the-intersect?label=999120622&tab=music",
+    "type": "album",
+    "id": 2439311985,
+    "name": "Love Beyond The Intersect",
+    "artist": {
+      "name": "Space Dimension Controller"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a4057499431_16.jpg"
+  },
+  {
+    "url": "https://bartaub.bandcamp.com/album/marble-ya-betta-jam?label=999120622&tab=music",
+    "type": "album",
+    "id": 2415247524,
+    "name": "Marble / Ya Betta Jam",
+    "artist": {
+      "name": "Bärtaub "
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1656383403_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/rv-trax-vol-4",
+    "type": "album",
+    "id": 2270835333,
+    "name": "RV Trax Vol 4",
+    "artist": {
+      "name": "Various Artists"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2374816883_16.jpg"
+  },
+  {
+    "url": "https://afriqua.bandcamp.com/album/colored?label=999120622&tab=music",
+    "type": "album",
+    "id": 2226738195,
+    "name": "Colored",
+    "artist": {
+      "name": "Afriqua"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3931309346_16.jpg"
+  },
+  {
+    "url": "https://sportinglife.bandcamp.com/album/black-diamond-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 1099934636,
+    "name": "Black Diamond EP",
+    "artist": {
+      "name": "Sporting Life"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1752543133_16.jpg"
+  },
+  {
+    "url": "https://djrum.bandcamp.com/album/hard-to-say-tournesol?label=999120622&tab=music",
+    "type": "album",
+    "id": 3777133071,
+    "name": "Hard to Say / Tournesol",
+    "artist": {
+      "name": "Djrum"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1414096599_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/neverlasting-love",
+    "type": "album",
+    "id": 202864916,
+    "name": "Neverlasting Love",
+    "artist": {
+      "name": "East Of Oceans"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3334302883_16.jpg"
+  },
+  {
+    "url": "https://adakaleh.bandcamp.com/album/chemare-cosmic?label=999120622&tab=music",
+    "type": "album",
+    "id": 595339985,
+    "name": "Chemare cosmică",
+    "artist": {
+      "name": "Ada Kaleh"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a4225860793_16.jpg"
+  },
+  {
+    "url": "https://6siss.bandcamp.com/album/prisma?label=999120622&tab=music",
+    "type": "album",
+    "id": 947211007,
+    "name": "Prisma",
+    "artist": {
+      "name": "6SISS"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3746802060_16.jpg"
+  },
+  {
+    "url": "https://afriqua.bandcamp.com/album/jumpteenth?label=999120622&tab=music",
+    "type": "album",
+    "id": 2039425890,
+    "name": "Jumpteenth",
+    "artist": {
+      "name": "Afriqua"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3540548131_16.jpg"
+  },
+  {
+    "url": "https://lostsoulsofsaturn.bandcamp.com/album/lost-souls-of-saturn?label=999120622&tab=music",
+    "type": "album",
+    "id": 945534323,
+    "name": "Lost Souls Of Saturn",
+    "artist": {
+      "name": "Lost Souls Of Saturn"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3766159075_16.jpg"
+  },
+  {
+    "url": "https://yaksound.bandcamp.com/album/termina-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 921885260,
+    "name": "Termina EP",
+    "artist": {
+      "name": "Yak"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2700459812_16.jpg"
+  },
+  {
+    "url": "https://lostsoulsofsaturn.bandcamp.com/album/the-awakening-inc-james-holden-remix?label=999120622&tab=music",
+    "type": "album",
+    "id": 1182211683,
+    "name": "The Awakening [inc James Holden remix]",
+    "artist": {
+      "name": "Lost Souls Of Saturn"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a319633005_16.jpg"
+  },
+  {
+    "url": "https://spacedimensioncontroller.bandcamp.com/album/reseq-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 577253985,
+    "name": "ReSEQ EP",
+    "artist": {
+      "name": "Space Dimension Controller"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2561252353_16.jpg"
+  },
+  {
+    "url": "https://benhayes.bandcamp.com/album/see-sun-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 1108622040,
+    "name": "See Sun EP",
+    "artist": {
+      "name": "Ben Hayes"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2177273264_16.jpg"
+  },
+  {
+    "url": "https://lakker.bandcamp.com/album/poca?label=999120622&tab=music",
+    "type": "album",
+    "id": 590880334,
+    "name": "Época",
+    "artist": {
+      "name": "Lakker"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3481268406_16.jpg"
+  },
+  {
+    "url": "https://lostsoulsofsaturn.bandcamp.com/album/holes-in-the-holoverse-ep-inc-wolfgang-tillmans-remix?label=999120622&tab=music",
+    "type": "album",
+    "id": 3718575552,
+    "name": "Holes In The Holoverse EP [inc Wolfgang Tillmans remix]",
+    "artist": {
+      "name": "Lost Souls Of Saturn"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3422639050_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/rv-trax-vol-3",
+    "type": "album",
+    "id": 3055640054,
+    "name": "RV Trax Vol 3",
+    "artist": {
+      "name": "R&S Records"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1395065717_16.jpg"
+  },
+  {
+    "url": "https://benhayes.bandcamp.com/album/ready-yet-feat-nubya-garcia?label=999120622&tab=music",
+    "type": "album",
+    "id": 1780463167,
+    "name": "Ready Yet (feat Nubya Garcia)",
+    "artist": {
+      "name": "Ben Hayes"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3751006084_16.jpg"
+  },
+  {
+    "url": "https://shcaa.bandcamp.com/album/an-ungrateful-death?label=999120622&tab=music",
+    "type": "album",
+    "id": 2838656880,
+    "name": "An Ungrateful Death",
+    "artist": {
+      "name": "Shcaa"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2877713528_16.jpg"
+  },
+  {
+    "url": "https://nicolasjaar.bandcamp.com/album/nymphs-triple-lp?label=999120622&tab=music",
+    "type": "album",
+    "id": 401048615,
+    "name": "Nymphs - Triple LP",
+    "artist": {
+      "name": "Nicolas Jaar"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3174238166_16.jpg"
+  },
+  {
+    "url": "https://gabriels.bandcamp.com/album/loyalty?label=999120622&tab=music",
+    "type": "album",
+    "id": 817468313,
+    "name": "Loyalty",
+    "artist": {
+      "name": "Gabriels"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a407526073_16.jpg"
+  },
+  {
+    "url": "https://hermetics.bandcamp.com/album/techgnosis-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 1376937194,
+    "name": "Techgnosis EP",
+    "artist": {
+      "name": "Hermetics"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3133044058_16.jpg"
+  },
+  {
+    "url": "https://lone.bandcamp.com/album/ambivert-tools-one-four-japan-cd?label=999120622&tab=music",
+    "type": "album",
+    "id": 2243229417,
+    "name": "Ambivert Tools One-Four Japan CD",
+    "artist": {
+      "name": "Lone"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2292587669_16.jpg"
+  },
+  {
+    "url": "https://marielito.bandcamp.com/album/2000-2005?label=999120622&tab=music",
+    "type": "album",
+    "id": 781736305,
+    "name": "2000-2005",
+    "artist": {
+      "name": "Mariel Ito"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3837740573_16.jpg"
+  },
+  {
+    "url": "https://paulwhite.bandcamp.com/album/returning-rival-consoles-remix?label=999120622&tab=music",
+    "type": "album",
+    "id": 787266815,
+    "name": "Returning (Rival Consoles Remix)",
+    "artist": {
+      "name": "Paul White"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3475848676_16.jpg"
+  },
+  {
+    "url": "https://lone.bandcamp.com/album/ambivert-tools-volume-four?label=999120622&tab=music",
+    "type": "album",
+    "id": 636762676,
+    "name": "Ambivert Tools Volume Four",
+    "artist": {
+      "name": "Lone"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2380250227_16.jpg"
+  },
+  {
+    "url": "https://djrum.bandcamp.com/album/portrait-with-firewood?label=999120622&tab=music",
+    "type": "album",
+    "id": 2405195433,
+    "name": "Portrait With Firewood",
+    "artist": {
+      "name": "Djrum"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1924727225_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/rv-trax-vol-2",
+    "type": "album",
+    "id": 1417603670,
+    "name": "RV Trax Vol 2",
+    "artist": {
+      "name": "Various Artists"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a843418465_16.jpg"
+  },
+  {
+    "url": "https://paulwhite.bandcamp.com/album/ice-cream-man?label=999120622&tab=music",
+    "type": "album",
+    "id": 2962022738,
+    "name": "Ice Cream Man",
+    "artist": {
+      "name": "Paul White Feat. Shungudzo"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a488414899_16.jpg"
+  },
+  {
+    "url": "https://benjamindamage.bandcamp.com/album/malfunction?label=999120622&tab=music",
+    "type": "album",
+    "id": 1948045725,
+    "name": "Malfunction",
+    "artist": {
+      "name": "Benjamin Damage"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1569426334_16.jpg"
+  },
+  {
+    "url": "https://afriqua.bandcamp.com/album/vice-principle-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 3741744841,
+    "name": "Vice/Principle EP",
+    "artist": {
+      "name": "Afriqua"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1112113317_16.jpg"
+  },
+  {
+    "url": "https://talaboman.bandcamp.com/album/the-night-land-remixed?label=999120622&tab=music",
+    "type": "album",
+    "id": 3318160289,
+    "name": "The Night Land Remixed",
+    "artist": {
+      "name": "Talaboman"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1841699442_16.jpg"
+  },
+  {
+    "url": "https://paulwhite.bandcamp.com/album/rejuvenate?label=999120622&tab=music",
+    "type": "album",
+    "id": 4082799776,
+    "name": "Rejuvenate",
+    "artist": {
+      "name": "Paul White"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3202037917_16.jpg"
+  },
+  {
+    "url": "https://karimsahraoui.bandcamp.com/album/plenitude-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 3310308850,
+    "name": "Plenitude EP",
+    "artist": {
+      "name": "Karim Sahraoui"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2450943221_16.jpg"
+  },
+  {
+    "url": "https://blondes.bandcamp.com/album/quality-of-life-struction-remix?label=999120622&tab=music",
+    "type": "album",
+    "id": 2660408548,
+    "name": "Quality Of Life (Struction Remix)",
+    "artist": {
+      "name": "Blondes"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a167516807_16.jpg"
+  },
+  {
+    "url": "https://music.maartenvandervleuten.com/album/maarten-van-der-vleuten-presents-integrity-outrage?label=999120622&tab=music",
+    "type": "album",
+    "id": 3890710365,
+    "name": "Maarten van der Vleuten Presents Integrity - Outrage",
+    "artist": {
+      "name": "Maarten van der Vleuten"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1909170598_16.jpg"
+  },
+  {
+    "url": "https://lone.bandcamp.com/album/ambivert-tools-volume-three?label=999120622&tab=music",
+    "type": "album",
+    "id": 2216009877,
+    "name": "Ambivert Tools Volume Three",
+    "artist": {
+      "name": "Lone"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3303507735_16.jpg"
+  },
+  {
+    "url": "https://acidmondays.bandcamp.com/album/universal-rhythm?label=999120622&tab=music",
+    "type": "album",
+    "id": 1974474998,
+    "name": "Universal Rhythm",
+    "artist": {
+      "name": "ACID MONDAYS"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2763790377_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/rv-trax",
+    "type": "album",
+    "id": 4013238898,
+    "name": "RV Trax",
+    "artist": {
+      "name": "Various Artists"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2057042953_16.jpg"
+  },
+  {
+    "url": "https://afriqua.bandcamp.com/album/aleph-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 474716902,
+    "name": "Aleph EP",
+    "artist": {
+      "name": "Afriqua"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3629577728_16.jpg"
+  },
+  {
+    "url": "https://djrum.bandcamp.com/album/broken-glass-arch?label=999120622&tab=music",
+    "type": "album",
+    "id": 954101580,
+    "name": "Broken Glass Arch",
+    "artist": {
+      "name": "Djrum"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a4267147376_16.jpg"
+  },
+  {
+    "url": "https://benjamindamage.bandcamp.com/album/montreal-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 2204491526,
+    "name": "Montreal EP",
+    "artist": {
+      "name": "Benjamin Damage"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2262177785_16.jpg"
+  },
+  {
+    "url": "https://blondes.bandcamp.com/track/kdm-barker-baumecker-remix?label=999120622&tab=music",
+    "type": "track",
+    "id": 3523395352,
+    "name": "KDM (Barker & Baumecker remix)",
+    "artist": {
+      "name": "Blondes"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a4008618888_16.jpg"
+  },
+  {
+    "url": "https://lostsoulsofsaturn.bandcamp.com/album/bint-el-khandaq-vs-mashrou-leila?label=999120622&tab=music",
+    "type": "album",
+    "id": 982189557,
+    "name": "Bint El Khandaq (vs Mashrou' Leila)",
+    "artist": {
+      "name": "Lost Souls Of Saturn"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2811752237_16.jpg"
+  },
+  {
+    "url": "https://lone.bandcamp.com/album/ambivert-tools-volume-two?label=999120622&tab=music",
+    "type": "album",
+    "id": 1894752789,
+    "name": "Ambivert Tools Volume Two",
+    "artist": {
+      "name": "Lone"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a296687793_16.jpg"
+  },
+  {
+    "url": "https://blondes.bandcamp.com/album/warmth?label=999120622&tab=music",
+    "type": "album",
+    "id": 1439497627,
+    "name": "Warmth",
+    "artist": {
+      "name": "Blondes"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2313765301_16.jpg"
+  },
+  {
+    "url": "https://unknownarchetype.bandcamp.com/album/into-ether?label=999120622&tab=music",
+    "type": "album",
+    "id": 511240112,
+    "name": "Into Ether",
+    "artist": {
+      "name": "Unknown Archetype"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2044920027_16.jpg"
+  },
+  {
+    "url": "https://adakaleh.bandcamp.com/album/palatul-de-cle-tar?label=999120622&tab=music",
+    "type": "album",
+    "id": 3303263042,
+    "name": "Palatul de cleştar",
+    "artist": {
+      "name": "Ada Kaleh"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3022230788_16.jpg"
+  },
+  {
+    "url": "https://michelemininni.bandcamp.com/album/rave-oscillations-vortex-stasi?label=999120622&tab=music",
+    "type": "album",
+    "id": 3533698679,
+    "name": "Rave Oscillations / Vortex Stasi",
+    "artist": {
+      "name": "Michele Mininni"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2445110003_16.jpg"
+  },
+  {
+    "url": "https://slackk.bandcamp.com/album/a-little-light?label=999120622&tab=music",
+    "type": "album",
+    "id": 798234888,
+    "name": "A Little Light",
+    "artist": {
+      "name": "Slackk"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2384206037_16.jpg"
+  },
+  {
+    "url": "https://lone.bandcamp.com/album/ambivert-tools-volume-one?label=999120622&tab=music",
+    "type": "album",
+    "id": 1229012664,
+    "name": "Ambivert Tools Volume One",
+    "artist": {
+      "name": "Lone"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a389879254_16.jpg"
+  },
+  {
+    "url": "https://sportinglife.bandcamp.com/album/slam-dunk-remixes?label=999120622&tab=music",
+    "type": "album",
+    "id": 312846550,
+    "name": "Slam Dunk Remixes",
+    "artist": {
+      "name": "Sporting Life"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2896007633_16.jpg"
+  },
+  {
+    "url": "https://spacedimensioncontroller.bandcamp.com/album/exostack?label=999120622&tab=music",
+    "type": "album",
+    "id": 362734063,
+    "name": "EXOSTACK",
+    "artist": {
+      "name": "Space Dimension Controller"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2211118179_16.jpg"
+  },
+  {
+    "url": "https://talaboman.bandcamp.com/album/the-night-land?label=999120622&tab=music",
+    "type": "album",
+    "id": 2893872435,
+    "name": "The Night Land",
+    "artist": {
+      "name": "Talaboman"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a709795804_16.jpg"
+  },
+  {
+    "url": "https://paulwhite.bandcamp.com/album/accelerator?label=999120622&tab=music",
+    "type": "album",
+    "id": 1764076279,
+    "name": "Accelerator",
+    "artist": {
+      "name": "Paul White ft Danny Brown"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3525288854_16.jpg"
+  },
+  {
+    "url": "https://unknownarchetype.bandcamp.com/album/tripp-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 1212582200,
+    "name": "TRIPP EP",
+    "artist": {
+      "name": "Unknown Archetype"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a827482149_16.jpg"
+  },
+  {
+    "url": "https://sportinglife.bandcamp.com/album/slam-dunk-vinyl-lp?label=999120622&tab=music",
+    "type": "album",
+    "id": 2678396499,
+    "name": "Slam Dunk - Vinyl LP",
+    "artist": {
+      "name": "Sporting Life"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2750684373_16.jpg"
+  },
+  {
+    "url": "https://paulwhite.bandcamp.com/album/everything-youve-forgotten-free-beat-tape?label=999120622&tab=music",
+    "type": "album",
+    "id": 704784149,
+    "name": "Everything You've Forgotten (Free Beat Tape)",
+    "artist": {
+      "name": "Paul White"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a945396280_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/meditation-will-manifest",
+    "type": "album",
+    "id": 3407481776,
+    "name": "Meditation Will Manifest",
+    "artist": {
+      "name": "Josh Wink"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a983137742_16.jpg"
+  },
+  {
+    "url": "https://secondstoreyappleblim.bandcamp.com/album/gimme-6?label=999120622&tab=music",
+    "type": "album",
+    "id": 485540696,
+    "name": "Gimme 6",
+    "artist": {
+      "name": "Second Storey & Appleblim"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a962233606_16.jpg"
+  },
+  {
+    "url": "https://sportinglife.bandcamp.com/album/slam-dunk-vol-iii?label=999120622&tab=music",
+    "type": "album",
+    "id": 1901810344,
+    "name": "Slam Dunk Vol.III",
+    "artist": {
+      "name": "Sporting Life"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3532028448_16.jpg"
+  },
+  {
+    "url": "https://struction.bandcamp.com/album/gef-ge?label=999120622&tab=music",
+    "type": "album",
+    "id": 678176843,
+    "name": "Gefüge",
+    "artist": {
+      "name": "Struction"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3602953469_16.jpg"
+  },
+  {
+    "url": "https://sportinglife.bandcamp.com/album/slam-dunk-vol-ii?label=999120622&tab=music",
+    "type": "album",
+    "id": 1863587592,
+    "name": "Slam Dunk Vol. II",
+    "artist": {
+      "name": "Sporting Life"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a4186689811_16.jpg"
+  },
+  {
+    "url": "https://sportinglife.bandcamp.com/album/slam-dunk-vol-i?label=999120622&tab=music",
+    "type": "album",
+    "id": 3810650112,
+    "name": "Slam Dunk Vol. I",
+    "artist": {
+      "name": "Sporting Life"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2825265641_16.jpg"
+  },
+  {
+    "url": "https://lakker.bandcamp.com/album/alex-smoke-remixes?label=999120622&tab=music",
+    "type": "album",
+    "id": 888328936,
+    "name": "Alex Smoke Remixes",
+    "artist": {
+      "name": "Lakker"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a742598748_16.jpg"
+  },
+  {
+    "url": "https://lone.bandcamp.com/album/levitate?label=999120622&tab=music",
+    "type": "album",
+    "id": 1178239059,
+    "name": "Levitate",
+    "artist": {
+      "name": "Lone"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3368931730_16.jpg"
+  },
+  {
+    "url": "https://lakker.bandcamp.com/album/struggle-emerge?label=999120622&tab=music",
+    "type": "album",
+    "id": 884062129,
+    "name": "Struggle & Emerge",
+    "artist": {
+      "name": "Lakker"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a74389183_16.jpg"
+  },
+  {
+    "url": "https://slackk.bandcamp.com/album/aviary-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 2684704459,
+    "name": "Aviary EP",
+    "artist": {
+      "name": "Slackk"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1674870329_16.jpg"
+  },
+  {
+    "url": "https://alexsmoke.bandcamp.com/album/love-over-will?label=999120622&tab=music",
+    "type": "album",
+    "id": 3303401852,
+    "name": "Love Over Will",
+    "artist": {
+      "name": "Alex Smoke"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2637402387_16.jpg"
+  },
+  {
+    "url": "https://bluedaisy.bandcamp.com/track/pure-anarchy?label=999120622&tab=music",
+    "type": "track",
+    "id": 2392957924,
+    "name": "Pure Anarchy",
+    "artist": {
+      "name": "Blue Daisy"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3471736964_16.jpg"
+  },
+  {
+    "url": "https://primitiveworld.bandcamp.com/album/purple-caps-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 976334005,
+    "name": "Purple Caps EP",
+    "artist": {
+      "name": "Primitive World"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1182531443_16.jpg"
+  },
+  {
+    "url": "https://taleofus.bandcamp.com/album/north-star-silent-space?label=999120622&tab=music",
+    "type": "album",
+    "id": 986616009,
+    "name": "North Star / Silent Space",
+    "artist": {
+      "name": "Tale Of Us"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3260776828_16.jpg"
+  },
+  {
+    "url": "https://moire.bandcamp.com/album/gel-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 2197374929,
+    "name": "Gel EP",
+    "artist": {
+      "name": "Moiré"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a481708077_16.jpg"
+  },
+  {
+    "url": "https://nicolasjaar.bandcamp.com/album/fight?label=999120622&tab=music",
+    "type": "album",
+    "id": 315155981,
+    "name": "Fight",
+    "artist": {
+      "name": "Nicolas Jaar"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1781921428_16.jpg"
+  },
+  {
+    "url": "https://bluedaisy.bandcamp.com/album/darker-than-blue?label=999120622&tab=music",
+    "type": "album",
+    "id": 946122176,
+    "name": "Darker Than Blue",
+    "artist": {
+      "name": "Blue Daisy"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3951232_16.jpg"
+  },
+  {
+    "url": "https://sportinglife.bandcamp.com/album/55-5s?label=999120622&tab=music",
+    "type": "album",
+    "id": 3527819158,
+    "name": "55 5's",
+    "artist": {
+      "name": "Sporting Life"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a558215035_16.jpg"
+  },
+  {
+    "url": "https://lakker.bandcamp.com/album/tundra-remixed?label=999120622&tab=music",
+    "type": "album",
+    "id": 2545269179,
+    "name": "Tundra Remixed",
+    "artist": {
+      "name": "Lakker"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a4192171830_16.jpg"
+  },
+  {
+    "url": "https://lone.bandcamp.com/album/lemurian-2015-re-issue?label=999120622&tab=music",
+    "type": "album",
+    "id": 705931206,
+    "name": "Lemurian (2015 Re-Issue)",
+    "artist": {
+      "name": "Lone"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1897898710_16.jpg"
+  },
+  {
+    "url": "https://slackk.bandcamp.com/album/backwards-light-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 2532842499,
+    "name": "Backwards Light EP",
+    "artist": {
+      "name": "Slackk"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2575436869_16.jpg"
+  },
+  {
+    "url": "https://lakker.bandcamp.com/album/tundra?label=999120622&tab=music",
+    "type": "album",
+    "id": 2611190080,
+    "name": "Tundra",
+    "artist": {
+      "name": "Lakker"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2862016036_16.jpg"
+  },
+  {
+    "url": "https://secondstoreyappleblim.bandcamp.com/album/also?label=999120622&tab=music",
+    "type": "album",
+    "id": 27764934,
+    "name": "ALSO",
+    "artist": {
+      "name": "Second Storey & Appleblim"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2896003816_16.jpg"
+  },
+  {
+    "url": "https://tessela.bandcamp.com/album/bottom-out?label=999120622&tab=music",
+    "type": "album",
+    "id": 758030866,
+    "name": "Bottom Out",
+    "artist": {
+      "name": "Tessela"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2168663857_16.jpg"
+  },
+  {
+    "url": "https://paulatemple.bandcamp.com/album/deathvox?label=999120622&tab=music",
+    "type": "album",
+    "id": 3532696653,
+    "name": "Deathvox",
+    "artist": {
+      "name": "Paula Temple"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2769035107_16.jpg"
+  },
+  {
+    "url": "https://lakker.bandcamp.com/album/mountain-divide?label=999120622&tab=music",
+    "type": "album",
+    "id": 4171361710,
+    "name": "Mountain Divide",
+    "artist": {
+      "name": "Lakker"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1944879759_16.jpg"
+  },
+  {
+    "url": "https://paulwhite.bandcamp.com/album/shaker-notes?label=999120622&tab=music",
+    "type": "album",
+    "id": 2069265626,
+    "name": "Shaker Notes",
+    "artist": {
+      "name": "Paul White"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1753394619_16.jpg"
+  },
+  {
+    "url": "https://tessela.bandcamp.com/album/rough-2?label=999120622&tab=music",
+    "type": "album",
+    "id": 2570060902,
+    "name": "Rough 2",
+    "artist": {
+      "name": "Tessela"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a47951036_16.jpg"
+  },
+  {
+    "url": "https://lone.bandcamp.com/album/reality-testing?label=999120622&tab=music",
+    "type": "album",
+    "id": 3512830575,
+    "name": "Reality Testing",
+    "artist": {
+      "name": "Lone"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a605145250_16.jpg"
+  },
+  {
+    "url": "https://alexsmoke.bandcamp.com/album/rs1403?label=999120622&tab=music",
+    "type": "album",
+    "id": 2707439153,
+    "name": "RS1403",
+    "artist": {
+      "name": "Alex Smoke"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a890188131_16.jpg"
+  },
+  {
+    "url": "https://vondelpark-uk.bandcamp.com/album/seabed-remixed?label=999120622&tab=music",
+    "type": "album",
+    "id": 2508274424,
+    "name": "Seabed Remixed",
+    "artist": {
+      "name": "Vondelpark"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1448584201_16.jpg"
+  },
+  {
+    "url": "https://lakker.bandcamp.com/album/containing-a-thousand?label=999120622&tab=music",
+    "type": "album",
+    "id": 743577465,
+    "name": "Containing A Thousand",
+    "artist": {
+      "name": "Lakker"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1398224369_16.jpg"
+  },
+  {
+    "url": "https://tessela.bandcamp.com/album/nancys-pantry?label=999120622&tab=music",
+    "type": "album",
+    "id": 1250655717,
+    "name": "Nancy's Pantry",
+    "artist": {
+      "name": "Tessela"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a196994406_16.jpg"
+  },
+  {
+    "url": "https://airhead.bandcamp.com/album/for-years?label=999120622&tab=music",
+    "type": "album",
+    "id": 166559555,
+    "name": "For Years",
+    "artist": {
+      "name": "Airhead"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a4207151017_16.jpg"
+  },
+  {
+    "url": "https://alexsmoke.bandcamp.com/album/dust?label=999120622&tab=music",
+    "type": "album",
+    "id": 1547505902,
+    "name": "Dust",
+    "artist": {
+      "name": "Alex Smoke"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2641603063_16.jpg"
+  },
+  {
+    "url": "https://lone.bandcamp.com/album/airglow-fires?label=999120622&tab=music",
+    "type": "album",
+    "id": 1478513783,
+    "name": "Airglow Fires",
+    "artist": {
+      "name": "Lone"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3239753885_16.jpg"
+  },
+  {
+    "url": "https://paulatemple.bandcamp.com/album/colonized?label=999120622&tab=music",
+    "type": "album",
+    "id": 408702365,
+    "name": "Colonized",
+    "artist": {
+      "name": "Paula Temple"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1982863704_16.jpg"
+  },
+  {
+    "url": "https://egyptianhiphop.bandcamp.com/album/tobago?label=999120622&tab=music",
+    "type": "album",
+    "id": 3066835224,
+    "name": "Tobago",
+    "artist": {
+      "name": "Egyptian Hip Hop "
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1951464869_16.jpg"
+  },
+  {
+    "url": "https://vondelpark-uk.bandcamp.com/album/seabed?label=999120622&tab=music",
+    "type": "album",
+    "id": 2764621248,
+    "name": "Seabed",
+    "artist": {
+      "name": "Vondelpark"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3323998222_16.jpg"
+  },
+  {
+    "url": "https://spacedimensioncontroller.bandcamp.com/album/welcome-to-mikrosector-50?label=999120622&tab=music",
+    "type": "album",
+    "id": 1805534338,
+    "name": "Welcome To Mikrosector-50",
+    "artist": {
+      "name": "Space Dimension Controller"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a88746817_16.jpg"
+  },
+  {
+    "url": "https://spacedimensioncontroller.bandcamp.com/album/welcome-to-mikrosector-50-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 1917132746,
+    "name": "Welcome to Mikrosector-50 EP",
+    "artist": {
+      "name": "Space Dimension Controller"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1626466765_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/your-orders",
+    "type": "album",
+    "id": 3148684363,
+    "name": "Your Orders",
+    "artist": {
+      "name": "MP1A3"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3583575863_16.jpg"
+  },
+  {
+    "url": "https://egyptianhiphop.bandcamp.com/album/good-dont-sleep?label=999120622&tab=music",
+    "type": "album",
+    "id": 1138637328,
+    "name": "Good Don't Sleep",
+    "artist": {
+      "name": "Egyptian Hip Hop "
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2611209086_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/confidence-boost",
+    "type": "album",
+    "id": 3593461225,
+    "name": "Confidence Boost",
+    "artist": {
+      "name": "Trimbal"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1810874798_16.jpg"
+  },
+  {
+    "url": "https://airhead.bandcamp.com/album/pyramid-lake?label=999120622&tab=music",
+    "type": "album",
+    "id": 3165428143,
+    "name": "Pyramid Lake",
+    "artist": {
+      "name": "Airhead"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1623705923_16.jpg"
+  },
+  {
+    "url": "https://teengirlfantasy.bandcamp.com/album/tracer?label=999120622&tab=music",
+    "type": "album",
+    "id": 1686389727,
+    "name": "Tracer",
+    "artist": {
+      "name": "Teengirl Fantasy"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2401606299_16.jpg"
+  },
+  {
+    "url": "https://teengirlfantasy.bandcamp.com/album/motif?label=999120622&tab=music",
+    "type": "album",
+    "id": 4227741084,
+    "name": "Motif",
+    "artist": {
+      "name": "Teengirl Fantasy"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2971697955_16.jpg"
+  },
+  {
+    "url": "https://pariahuk.bandcamp.com/album/rift?label=999120622&tab=music",
+    "type": "album",
+    "id": 180431903,
+    "name": "Rift",
+    "artist": {
+      "name": "Pariah"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1950377780_16.jpg"
+  },
+  {
+    "url": "https://lone.bandcamp.com/album/galaxy-garden?label=999120622&tab=music",
+    "type": "album",
+    "id": 2161584641,
+    "name": "Galaxy Garden",
+    "artist": {
+      "name": "Lone"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1210552001_16.jpg"
+  },
+  {
+    "url": "https://lone.bandcamp.com/album/crystal-caverns-1991?label=999120622&tab=music",
+    "type": "album",
+    "id": 2603368653,
+    "name": "Crystal Caverns 1991",
+    "artist": {
+      "name": "Lone"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2440829563_16.jpg"
+  },
+  {
+    "url": "https://airhead.bandcamp.com/album/wait?label=999120622&tab=music",
+    "type": "album",
+    "id": 3420830886,
+    "name": "Wait",
+    "artist": {
+      "name": "Airhead"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a232358204_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/love-what-happened-here-ep",
+    "type": "album",
+    "id": 3741315912,
+    "name": "Love What Happened Here EP",
+    "artist": {
+      "name": "James Blake"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2913680252_16.jpg"
+  },
+  {
+    "url": "https://lone.bandcamp.com/track/cobra?label=999120622&tab=music",
+    "type": "track",
+    "id": 1290218780,
+    "name": "Cobra",
+    "artist": {
+      "name": "Lone"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2662959901_16.jpg"
+  },
+  {
+    "url": "https://spacedimensioncontroller.bandcamp.com/album/the-pathway-to-tiraquon6?label=999120622&tab=music",
+    "type": "album",
+    "id": 4184491559,
+    "name": "The Pathway To Tiraquon6",
+    "artist": {
+      "name": "Space Dimension Controller"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2802823314_16.jpg"
+  },
+  {
+    "url": "https://blawan.bandcamp.com/album/bohla-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 1419291293,
+    "name": "Bohla EP",
+    "artist": {
+      "name": "Blawan"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3793164408_16.jpg"
+  },
+  {
+    "url": "https://blawan.bandcamp.com/album/what-you-do-with-what-you-have?label=999120622&tab=music",
+    "type": "album",
+    "id": 1866574706,
+    "name": "What You Do With What You Have",
+    "artist": {
+      "name": "Blawan"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3039068658_16.jpg"
+  },
+  {
+    "url": "https://vondelpark-uk.bandcamp.com/album/nyc-stuff-and-nyc-bags-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 3116757356,
+    "name": "NYC Stuff And NYC Bags EP",
+    "artist": {
+      "name": "Vondelpark"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2169900367_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/lostwithiel-ep",
+    "type": "album",
+    "id": 2846423287,
+    "name": "Lostwithiel EP",
+    "artist": {
+      "name": "The Chain"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3014803355_16.jpg"
+  },
+  {
+    "url": "https://lone.bandcamp.com/album/echolocations-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 3370247183,
+    "name": "Echolocations EP",
+    "artist": {
+      "name": "Lone"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3639165008_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/ofi-remixes",
+    "type": "album",
+    "id": 839659349,
+    "name": "OFI Remixes",
+    "artist": {
+      "name": "Model 500"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2583012028_16.jpg"
+  },
+  {
+    "url": "https://vondelpark-uk.bandcamp.com/album/sauna-ep?label=999120622&tab=music",
+    "type": "album",
+    "id": 3104737011,
+    "name": "Sauna EP",
+    "artist": {
+      "name": "Vondelpark"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a160380263_16.jpg"
+  },
+  {
+    "url": "https://spacedimensioncontroller.bandcamp.com/album/temporary-thrillz?label=999120622&tab=music",
+    "type": "album",
+    "id": 3659719767,
+    "name": "Temporary Thrillz",
+    "artist": {
+      "name": "Space Dimension Controller"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2121451726_16.jpg"
+  },
+  {
+    "url": "https://untoldhemlock.bandcamp.com/album/stereo-freeze-mass-dreams-of-the-future?label=999120622&tab=music",
+    "type": "album",
+    "id": 1623537113,
+    "name": "Stereo Freeze / Mass Dreams Of The Future",
+    "artist": {
+      "name": "Untold "
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1790719838_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/klavierwerke-ep",
+    "type": "album",
+    "id": 3012424696,
+    "name": "Klavierwerke EP",
+    "artist": {
+      "name": "James Blake"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2134717297_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/ofi-huesca",
+    "type": "album",
+    "id": 1187205118,
+    "name": "OFI / Huesca",
+    "artist": {
+      "name": "Model 500"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a310081576_16.jpg"
+  },
+  {
+    "url": "https://pariahuk.bandcamp.com/album/safehouses?label=999120622&tab=music",
+    "type": "album",
+    "id": 2790753873,
+    "name": "Safehouses",
+    "artist": {
+      "name": "Pariah"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1891719072_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/digital-forest",
+    "type": "album",
+    "id": 3155196683,
+    "name": "Digital Forest",
+    "artist": {
+      "name": "Fabrice Lig"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3085416767_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/cmyk-ep",
+    "type": "album",
+    "id": 152390233,
+    "name": "CMYK EP",
+    "artist": {
+      "name": "James Blake"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2081273440_16.jpg"
+  },
+  {
+    "url": "https://pariahuk.bandcamp.com/album/detroit-falls-orpheus?label=999120622&tab=music",
+    "type": "album",
+    "id": 2496517762,
+    "name": "Detroit Falls / Orpheus",
+    "artist": {
+      "name": "Pariah"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3687004792_16.jpg"
+  },
+  {
+    "url": "https://kenishii.bandcamp.com/album/sleeping-madness-1999?label=999120622&tab=music",
+    "type": "album",
+    "id": 849950903,
+    "name": "Sleeping Madness (1999)",
+    "artist": {
+      "name": "Ken Ishii"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a454719831_16.jpg"
+  },
+  {
+    "url": "https://kenishii.bandcamp.com/album/metal-blue-america-1998?label=999120622&tab=music",
+    "type": "album",
+    "id": 935532955,
+    "name": "Metal Blue America (1998)",
+    "artist": {
+      "name": "Ken Ishii"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2024021178_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/selected-works-94-96-2",
+    "type": "album",
+    "id": 3645459532,
+    "name": "Selected Works 94-96",
+    "artist": {
+      "name": "Wax Doctor"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2263053517_16.jpg"
+  },
+  {
+    "url": "https://petevoyager.bandcamp.com/album/hypersleep-1997?label=999120622&tab=music",
+    "type": "album",
+    "id": 149274375,
+    "name": "Hypersleep (1997)",
+    "artist": {
+      "name": "PeteVoyager"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3340377468_16.jpg"
+  },
+  {
+    "url": "https://petevoyager.bandcamp.com/album/future-retro-1997?label=999120622&tab=music",
+    "type": "album",
+    "id": 756617157,
+    "name": "Future Retro (1997)",
+    "artist": {
+      "name": "Voyager"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2580496959_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/plastic-dreams-r-s-remixes",
+    "type": "album",
+    "id": 3113893066,
+    "name": "Plastic Dreams (R&S Remixes)",
+    "artist": {
+      "name": "Jaydee"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3287632890_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/vamp",
+    "type": "album",
+    "id": 3952755193,
+    "name": "Vamp",
+    "artist": {
+      "name": "Outlander"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3918678727_16.jpg"
+  },
+  {
+    "url": "https://kenishii.bandcamp.com/album/jelly-tones-1995?label=999120622&tab=music",
+    "type": "album",
+    "id": 2443814510,
+    "name": "Jelly Tones (1995)",
+    "artist": {
+      "name": "Ken Ishii"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2143691527_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/earth-nightfall-1995",
+    "type": "album",
+    "id": 3135427944,
+    "name": "Earth & Nightfall (1995)",
+    "artist": {
+      "name": "John Beltran"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3252440818_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/classics",
+    "type": "album",
+    "id": 694817979,
+    "name": "Classics",
+    "artist": {
+      "name": "Aphex Twin"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1820351389_16.jpg"
+  },
+  {
+    "url": "https://sunelectric.bandcamp.com/album/aaah-1994?label=999120622&tab=music",
+    "type": "album",
+    "id": 4039107832,
+    "name": "Aaah! (1994)",
+    "artist": {
+      "name": "Sun Electric"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3231801649_16.jpg"
+  },
+  {
+    "url": "https://robertleiner.bandcamp.com/album/different-journeys-1994?label=999120622&tab=music",
+    "type": "album",
+    "id": 1493845293,
+    "name": "Different Journeys (1994)",
+    "artist": {
+      "name": "The Source Experience"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1955653873_16.jpg"
+  },
+  {
+    "url": "https://kenishii.bandcamp.com/album/garden-on-the-palm-1993?label=999120622&tab=music",
+    "type": "album",
+    "id": 1176936699,
+    "name": "Garden On The Palm (1993)",
+    "artist": {
+      "name": "Ken Ishii"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2790340559_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/sonic-sunset-1994",
+    "type": "album",
+    "id": 2475617770,
+    "name": "Sonic Sunset (1994)",
+    "artist": {
+      "name": "Model 500"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3182304893_16.jpg"
+  },
+  {
+    "url": "https://kenishii.bandcamp.com/album/innerelements-1994?label=999120622&tab=music",
+    "type": "album",
+    "id": 184875543,
+    "name": "Innerelements (1994)",
+    "artist": {
+      "name": "Ken Ishii"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a2010174291_16.jpg"
+  },
+  {
+    "url": "https://sunelectric.bandcamp.com/album/kitchen-1993?label=999120622&tab=music",
+    "type": "album",
+    "id": 2275771891,
+    "name": "Kitchen (1993)",
+    "artist": {
+      "name": "Sun Electric"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a955703078_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/20hz-1993",
+    "type": "album",
+    "id": 3083695624,
+    "name": "20Hz (1993)",
+    "artist": {
+      "name": "Capricorn"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1329468118_16.jpg"
+  },
+  {
+    "url": "https://robertleiner.bandcamp.com/album/organized-noise-1993?label=999120622&tab=music",
+    "type": "album",
+    "id": 191154150,
+    "name": "Organized Noise (1993)",
+    "artist": {
+      "name": "Source"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1811468525_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/xylem-tube-ep-1992",
+    "type": "album",
+    "id": 3061580496,
+    "name": "Xylem Tube EP (1992)",
+    "artist": {
+      "name": "Aphex Twin"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1149097520_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/digeridoo-ep-1991",
+    "type": "album",
+    "id": 664550990,
+    "name": "Digeridoo EP (1991)",
+    "artist": {
+      "name": "Aphex Twin"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3384530135_16.jpg"
+  },
+  {
+    "url": "https://joeybeltram-rs.bandcamp.com/album/the-omen-1991?label=999120622&tab=music",
+    "type": "album",
+    "id": 3216488806,
+    "name": "The Omen (1991)",
+    "artist": {
+      "name": "Program 2 Beltram ‎"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3566852678_16.jpg"
+  },
+  {
+    "url": "https://joeybeltram-rs.bandcamp.com/album/beltram-vol-2-1991?label=999120622&tab=music",
+    "type": "album",
+    "id": 2054964190,
+    "name": "Beltram Vol. 2 (1991)",
+    "artist": {
+      "name": "Joey Beltram"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3123812159_16.jpg"
+  },
+  {
+    "url": "https://bandcamp.com/album/tranztechno-ep-vol-1-1991",
+    "type": "album",
+    "id": 3244208267,
+    "name": "Tranztechno EP Vol 1 (1991)",
+    "artist": {
+      "name": "Mundo Muzique ‎"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a51959396_16.jpg"
+  },
+  {
+    "url": "https://joeybeltram-rs.bandcamp.com/album/mentasm-1991?label=999120622&tab=music",
+    "type": "album",
+    "id": 3985571749,
+    "name": "Mentasm (1991)",
+    "artist": {
+      "name": "Second Phase"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a3047977012_16.jpg"
+  },
+  {
+    "url": "https://joeybeltram-rs.bandcamp.com/album/beltram-vol-1-1990?label=999120622&tab=music",
+    "type": "album",
+    "id": 3432312611,
+    "name": "Beltram Vol. 1 (1990)",
+    "artist": {
+      "name": "Joey Beltram"
+    },
+    "imageUrl": "https://f4.bcbits.com/img/a1773485173_16.jpg"
+  }
+]
+

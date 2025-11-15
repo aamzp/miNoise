@@ -1,0 +1,419 @@
+{
+  "type": "show",
+  "name": "The Hip-Hop Show",
+  "url": "https://bandcamp.com/radio?show=421",
+  "publishedDate": "29 Jan 2021 00:00:00 GMT",
+  "description": "Ovrkast joins the show to discuss his latest album, Try Again. Plus sounds from Potatohead People, Isaiah Mclane, and Boom Baptist.",
+  "shortDescription": "Ovrkast discusses his latest album, Try Again, plus appearances from Boom Baptist and Isaiah Mclane",
+  "imageCaption": "Hosted by <a href=\"https://stoneycreation.bandcamp.com/\"_blank\">Stoney Creation</a>. Illustration of <a href=“ https://itsovrkast.bandcamp.com\">Ovrkast</a> by <a href=\"https://mckayfelt.site/\"_blank\">McKay Felt</a>",
+  "screenImageUrl": "https://f4.bcbits.com/img/23443998_0",
+  "streamUrl": "https://bandcamp.com/stream_redirect?enc=mp3-128&track_id=1825658732&ts=1757684508&t=dd6ea57f96a3a000e16f95eb48a6afa31b2f7bdf",
+  "duration": 5133.84,
+  "imageUrl": "https://f4.bcbits.com/img/23443998_25.jpg",
+  "tracks": [
+    {
+      "id": 181993232,
+      "name": "time to go",
+      "url": "https://eighty9s.bandcamp.com/track/time-to-go",
+      "seekPosition": 0,
+      "artist": {
+        "name": "eighty9s",
+        "url": "https://eighty9s.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a1082190285_9.jpg",
+      "album": {
+        "name": "Past Time",
+        "url": "https://eighty9s.bandcamp.com/album/past-time"
+      }
+    },
+    {
+      "id": 4195016569,
+      "name": "What It Feels Like (feat. T3, Illa J & Kapok)",
+      "url": "https://potatoheadpeople.bandcamp.com/track/what-it-feels-like-feat-t3-illa-j-kapok-2",
+      "seekPosition": 106,
+      "artist": {
+        "name": "Potatohead People",
+        "url": "https://potatoheadpeople.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a56254833_9.jpg",
+      "album": {
+        "name": "Mellow Fantasy",
+        "url": "https://potatoheadpeople.bandcamp.com/album/mellow-fantasy"
+      }
+    },
+    {
+      "id": 1977314894,
+      "name": "Translate It ft. B-Money",
+      "url": "https://juggaknots.bandcamp.com/track/translate-it-ft-b-money",
+      "seekPosition": 313,
+      "artist": {
+        "name": "Breeze Brewin, Juggaknots",
+        "url": "https://juggaknots.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a2530516806_9.jpg",
+      "album": {
+        "name": "Breeze Brewin, Juggaknots - Hindsight",
+        "url": "https://juggaknots.bandcamp.com/album/breeze-brewin-juggaknots-hindsight"
+      }
+    },
+    {
+      "id": 4106640697,
+      "name": "FistfulofGreens",
+      "url": "https://yungmorpheus.bandcamp.com/track/fistfulofgreens",
+      "seekPosition": 460,
+      "artist": {
+        "name": "YUNGMORPHEUS & ewonee",
+        "url": "https://yungmorpheus.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a122830275_9.jpg",
+      "album": {
+        "name": "Thumbing Thru Foliage",
+        "url": "https://yungmorpheus.bandcamp.com/album/thumbing-thru-foliage"
+      }
+    },
+    {
+      "id": 3040071141,
+      "name": "When I'm Gone",
+      "url": "https://aaronxfairchild.bandcamp.com/track/when-im-gone",
+      "seekPosition": 575,
+      "artist": {
+        "name": "Aaron Fairchild",
+        "url": "https://aaronxfairchild.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a1569522923_9.jpg",
+      "album": {
+        "name": "The Sun Comes Through",
+        "url": "https://aaronxfairchild.bandcamp.com/album/the-sun-comes-through"
+      }
+    },
+    {
+      "id": 1132868970,
+      "name": "U callin' Me (ft. pink siifu & akeema-zane) [prod. swarvy]",
+      "url": "https://lojii.bandcamp.com/track/u-callin-me-ft-pink-siifu-akeema-zane-prod-swarvy",
+      "seekPosition": 780,
+      "artist": {
+        "name": "lojii",
+        "url": "https://lojii.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a23158227_9.jpg",
+      "album": {
+        "name": "lo&behold",
+        "url": "https://lojii.bandcamp.com/album/lo-behold-2"
+      }
+    },
+    {
+      "id": 2991772607,
+      "name": "Wings",
+      "url": "https://isaiahmostafa.bandcamp.com/track/wings",
+      "seekPosition": 955,
+      "artist": {
+        "name": "Isaiah Mostafa",
+        "url": "https://isaiahmostafa.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a231490898_9.jpg",
+      "album": {
+        "name": "The 37 Week Challenge",
+        "url": "https://isaiahmostafa.bandcamp.com/album/the-37-week-challenge"
+      }
+    },
+    {
+      "id": 52306822,
+      "name": "Press Play",
+      "url": "https://ashiakarana.bandcamp.com/track/press-play",
+      "seekPosition": 1123,
+      "artist": {
+        "name": "Ashia Karana",
+        "url": "https://ashiakarana.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a2001339741_9.jpg"
+    },
+    {
+      "id": 949260113,
+      "name": "4. 8thstrike_",
+      "url": "https://knxwledge.bandcamp.com/track/4-8thstrike",
+      "seekPosition": 1342,
+      "artist": {
+        "name": "Knxwledge.",
+        "url": "https://knxwledge.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a1776099330_9.jpg",
+      "album": {
+        "name": "VGM.8",
+        "url": "https://knxwledge.bandcamp.com/album/vgm-8"
+      }
+    },
+    {
+      "id": 3454033745,
+      "name": "Henny Bottles",
+      "url": "https://shawcalhoune.bandcamp.com/track/henny-bottles",
+      "seekPosition": 1538,
+      "artist": {
+        "name": "Shaw Calhoune",
+        "url": "https://shawcalhoune.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a3592642307_9.jpg",
+      "album": {
+        "name": "The Rudy Tape",
+        "url": "https://shawcalhoune.bandcamp.com/album/the-rudy-tape"
+      }
+    },
+    {
+      "id": 2018902519,
+      "name": "3 WAY PHONE CALL (feat. 3WAYSLIM, BIG KAHUNA OG, MONDAY NIGHT)",
+      "url": "https://schemeteamallstars.bandcamp.com/track/3-way-phone-call-feat-3wayslim-big-kahuna-og-monday-night",
+      "seekPosition": 1628,
+      "artist": {
+        "name": "Big Kahuna OG & Monday Night",
+        "url": "https://schemeteamallstars.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a309077249_9.jpg",
+      "album": {
+        "name": "SHARK REPORT",
+        "url": "https://schemeteamallstars.bandcamp.com/album/shark-report"
+      }
+    },
+    {
+      "id": 389625851,
+      "name": "Loonng Time Coming",
+      "url": "https://culturepower45.bandcamp.com/track/loonng-time-coming",
+      "seekPosition": 1833,
+      "artist": {
+        "name": "Primeridian x Rashid Hadee",
+        "url": "https://culturepower45.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a3904534507_9.jpg",
+      "album": {
+        "name": "Prime Diesel",
+        "url": "https://culturepower45.bandcamp.com/album/prime-diesel"
+      }
+    },
+    {
+      "id": 4045270647,
+      "name": "Toucan Wing",
+      "url": "https://boombaptist.bandcamp.com/track/toucan-wing",
+      "seekPosition": 2047,
+      "artist": {
+        "name": "BoomBaptist",
+        "url": "https://boombaptist.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a3906030308_9.jpg",
+      "album": {
+        "name": "Komfort Food",
+        "url": "https://boombaptist.bandcamp.com/album/komfort-food"
+      }
+    },
+    {
+      "id": 2287187413,
+      "name": "A Distant Night",
+      "url": "https://sweetsoularya.bandcamp.com/track/a-distant-night-2",
+      "seekPosition": 2262,
+      "artist": {
+        "name": "Arya",
+        "url": "https://sweetsoularya.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a2599977834_9.jpg",
+      "album": {
+        "name": "Peace Of Mind",
+        "url": "https://sweetsoularya.bandcamp.com/album/peace-of-mind"
+      }
+    },
+    {
+      "id": 775354187,
+      "name": "Awards (Intro) feat. Noah Archangel",
+      "url": "https://bohup.bandcamp.com/track/awards-intro-feat-noah-archangel",
+      "seekPosition": 2440,
+      "artist": {
+        "name": "The Band of the Hawk & Yeaux Majesty",
+        "url": "https://bohup.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a3760799760_9.jpg",
+      "album": {
+        "name": "Memorabilia",
+        "url": "https://bohup.bandcamp.com/album/memorabilia"
+      }
+    },
+    {
+      "id": 407181980,
+      "name": "AllPraise",
+      "url": "https://itsovrkast.bandcamp.com/track/allpraise",
+      "seekPosition": 2601,
+      "artist": {
+        "name": "ovrkast.",
+        "url": "https://itsovrkast.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a4154433266_9.jpg",
+      "album": {
+        "name": "Try Again",
+        "url": "https://itsovrkast.bandcamp.com/album/try-again"
+      }
+    },
+    {
+      "id": 1297721232,
+      "name": "Face Ft. Navy Blue",
+      "url": "https://itsovrkast.bandcamp.com/track/face-ft-navy-blue",
+      "seekPosition": 2856,
+      "artist": {
+        "name": "ovrkast.",
+        "url": "https://itsovrkast.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a4154433266_9.jpg",
+      "album": {
+        "name": "Try Again",
+        "url": "https://itsovrkast.bandcamp.com/album/try-again"
+      }
+    },
+    {
+      "id": 1069382799,
+      "name": "Church Ft. Demahjiae",
+      "url": "https://itsovrkast.bandcamp.com/track/church-ft-demahjiae",
+      "seekPosition": 3210,
+      "artist": {
+        "name": "ovrkast.",
+        "url": "https://itsovrkast.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a4154433266_9.jpg",
+      "album": {
+        "name": "Try Again",
+        "url": "https://itsovrkast.bandcamp.com/album/try-again"
+      }
+    },
+    {
+      "id": 1605555151,
+      "name": "Try Again",
+      "url": "https://itsovrkast.bandcamp.com/track/try-again",
+      "seekPosition": 3498,
+      "artist": {
+        "name": "ovrkast.",
+        "url": "https://itsovrkast.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a4154433266_9.jpg",
+      "album": {
+        "name": "Try Again",
+        "url": "https://itsovrkast.bandcamp.com/album/try-again"
+      }
+    },
+    {
+      "id": 4097577238,
+      "name": "Outro (its time)",
+      "url": "https://itsovrkast.bandcamp.com/track/outro-its-time",
+      "seekPosition": 3788,
+      "artist": {
+        "name": "ovrkast.",
+        "url": "https://itsovrkast.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a4154433266_9.jpg",
+      "album": {
+        "name": "Try Again",
+        "url": "https://itsovrkast.bandcamp.com/album/try-again"
+      }
+    },
+    {
+      "id": 1482278203,
+      "name": "The Intro(vert)",
+      "url": "https://jyps.bandcamp.com/track/the-intro-vert",
+      "seekPosition": 4060,
+      "artist": {
+        "name": "Jypsy",
+        "url": "https://jyps.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a1841901895_9.jpg",
+      "album": {
+        "name": "Born Wit It",
+        "url": "https://jyps.bandcamp.com/album/born-wit-it"
+      }
+    },
+    {
+      "id": 686529239,
+      "name": "swordfish",
+      "url": "https://jdreid.bandcamp.com/track/swordfish",
+      "seekPosition": 4190,
+      "artist": {
+        "name": "JD. REID",
+        "url": "https://jdreid.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a455432064_9.jpg",
+      "album": {
+        "name": "North West's Finest",
+        "url": "https://jdreid.bandcamp.com/album/north-wests-finest"
+      }
+    },
+    {
+      "id": 4203178317,
+      "name": "high rise in newark",
+      "url": "https://afrolab9000.bandcamp.com/track/high-rise-in-newark",
+      "seekPosition": 4286,
+      "artist": {
+        "name": "R.A.P. Ferreira",
+        "url": "https://afrolab9000.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a738960096_9.jpg",
+      "album": {
+        "name": "bob's son: R.A.P. Ferreira in the garden level cafe of the scallops hotel",
+        "url": "https://afrolab9000.bandcamp.com/album/bobs-son-r-a-p-ferreira-in-the-garden-level-cafe-of-the-scallops-hotel"
+      }
+    },
+    {
+      "id": 3529356148,
+      "name": "Volvo",
+      "url": "https://zekeultra.bandcamp.com/track/volvo-2",
+      "seekPosition": 4407,
+      "artist": {
+        "name": "ZekeUltra",
+        "url": "https://zekeultra.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a3185032099_9.jpg",
+      "album": {
+        "name": "From Time",
+        "url": "https://zekeultra.bandcamp.com/album/from-time"
+      }
+    },
+    {
+      "id": 1261986884,
+      "name": "if you slide",
+      "url": "https://baghead1.bandcamp.com/track/if-you-slide",
+      "seekPosition": 4532,
+      "artist": {
+        "name": "Baghead",
+        "url": "https://baghead1.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a1167110350_9.jpg"
+    },
+    {
+      "id": 1734245650,
+      "name": "Out The Window",
+      "url": "https://lovillage.bandcamp.com/track/out-the-window",
+      "seekPosition": 4613,
+      "artist": {
+        "name": "Lo Village",
+        "url": "https://lovillage.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a2948500240_9.jpg"
+    },
+    {
+      "id": 3336813687,
+      "name": "PROTECT feat Jack Stephenson Oliver",
+      "url": "https://morriarchi.bandcamp.com/track/protect-feat-jack-stephenson-oliver",
+      "seekPosition": 4841,
+      "artist": {
+        "name": "Morriarchi",
+        "url": "https://morriarchi.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a2544455082_9.jpg",
+      "album": {
+        "name": "Geography of Peace",
+        "url": "https://morriarchi.bandcamp.com/album/geography-of-peace"
+      }
+    },
+    {
+      "id": 2118178003,
+      "name": "Constellations (feat. King Isis)",
+      "url": "https://stari.bandcamp.com/track/constellations-feat-king-isis",
+      "seekPosition": 4977,
+      "artist": {
+        "name": "Stari",
+        "url": "https://stari.bandcamp.com"
+      },
+      "imageUrl": "https://f4.bcbits.com/img/a3631955375_9.jpg"
+    }
+  ]
+}

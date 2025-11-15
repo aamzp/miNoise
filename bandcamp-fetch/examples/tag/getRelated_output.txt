@@ -1,0 +1,393 @@
+{
+  "single": [
+    {
+      "tag": {
+        "type": "tag",
+        "name": "dark ambient",
+        "value": "dark-ambient"
+      },
+      "related": [
+        {
+          "type": "tag",
+          "name": "dungeon synth",
+          "value": "dungeon-synth"
+        },
+        {
+          "type": "tag",
+          "name": "drone ambient",
+          "value": "drone-ambient"
+        },
+        {
+          "type": "tag",
+          "name": "soundscapes",
+          "value": "soundscapes"
+        },
+        {
+          "type": "tag",
+          "name": "drone",
+          "value": "drone"
+        },
+        {
+          "type": "tag",
+          "name": "power electronics",
+          "value": "power-electronics"
+        },
+        {
+          "type": "tag",
+          "name": "atmospheric",
+          "value": "atmospheric"
+        },
+        {
+          "type": "tag",
+          "name": "ambient",
+          "value": "ambient"
+        },
+        {
+          "type": "tag",
+          "name": "field recordings",
+          "value": "field-recordings"
+        },
+        {
+          "type": "tag",
+          "name": "soundscape",
+          "value": "soundscape"
+        },
+        {
+          "type": "tag",
+          "name": "meditation",
+          "value": "meditation"
+        },
+        {
+          "type": "tag",
+          "name": "industrial",
+          "value": "industrial"
+        },
+        {
+          "type": "tag",
+          "name": "harsh noise",
+          "value": "harsh-noise"
+        },
+        {
+          "type": "tag",
+          "name": "darkwave",
+          "value": "darkwave"
+        },
+        {
+          "type": "tag",
+          "name": "noise",
+          "value": "noise"
+        },
+        {
+          "type": "tag",
+          "name": "ambient electronic",
+          "value": "ambient-electronic"
+        },
+        {
+          "type": "tag",
+          "name": "experimental electronic",
+          "value": "experimental-electronic"
+        },
+        {
+          "type": "tag",
+          "name": "soundtrack",
+          "value": "soundtrack"
+        },
+        {
+          "type": "tag",
+          "name": "avant-garde",
+          "value": "avant-garde"
+        },
+        {
+          "type": "tag",
+          "name": "black metal",
+          "value": "black-metal"
+        }
+      ]
+    },
+    {
+      "tag": {
+        "type": "tag",
+        "name": "industrial",
+        "value": "industrial"
+      },
+      "related": [
+        {
+          "type": "tag",
+          "name": "ebm",
+          "value": "ebm"
+        },
+        {
+          "type": "tag",
+          "name": "power electronics",
+          "value": "power-electronics"
+        },
+        {
+          "type": "tag",
+          "name": "industrial techno",
+          "value": "industrial-techno"
+        },
+        {
+          "type": "tag",
+          "name": "gothic",
+          "value": "gothic"
+        },
+        {
+          "type": "tag",
+          "name": "goth",
+          "value": "goth"
+        },
+        {
+          "type": "tag",
+          "name": "darkwave",
+          "value": "darkwave"
+        },
+        {
+          "type": "tag",
+          "name": "harsh noise",
+          "value": "harsh-noise"
+        },
+        {
+          "type": "tag",
+          "name": "noise",
+          "value": "noise"
+        },
+        {
+          "type": "tag",
+          "name": "dark",
+          "value": "dark"
+        },
+        {
+          "type": "tag",
+          "name": "dark ambient",
+          "value": "dark-ambient"
+        },
+        {
+          "type": "tag",
+          "name": "electro",
+          "value": "electro"
+        },
+        {
+          "type": "tag",
+          "name": "synthpop",
+          "value": "synthpop"
+        },
+        {
+          "type": "tag",
+          "name": "experimental electronic",
+          "value": "experimental-electronic"
+        },
+        {
+          "type": "tag",
+          "name": "drone",
+          "value": "drone"
+        },
+        {
+          "type": "tag",
+          "name": "techno",
+          "value": "techno"
+        },
+        {
+          "type": "tag",
+          "name": "experimental",
+          "value": "experimental"
+        },
+        {
+          "type": "tag",
+          "name": "idm",
+          "value": "idm"
+        },
+        {
+          "type": "tag",
+          "name": "post-punk",
+          "value": "post-punk"
+        },
+        {
+          "type": "tag",
+          "name": "synthwave",
+          "value": "synthwave"
+        },
+        {
+          "type": "tag",
+          "name": "ambient",
+          "value": "ambient"
+        }
+      ]
+    },
+    {
+      "tag": {
+        "type": "tag",
+        "name": "asia",
+        "value": "asia"
+      },
+      "related": [
+        {
+          "type": "tag",
+          "name": "asian",
+          "value": "asian"
+        },
+        {
+          "type": "tag",
+          "name": "theater",
+          "value": "theater"
+        },
+        {
+          "type": "tag",
+          "name": "japan",
+          "value": "japan"
+        },
+        {
+          "type": "tag",
+          "name": "japanese",
+          "value": "japanese"
+        },
+        {
+          "type": "tag",
+          "name": "taiwan",
+          "value": "taiwan"
+        },
+        {
+          "type": "tag",
+          "name": "ethnic",
+          "value": "ethnic"
+        },
+        {
+          "type": "tag",
+          "name": "film music",
+          "value": "film-music"
+        },
+        {
+          "type": "tag",
+          "name": "china",
+          "value": "china"
+        },
+        {
+          "type": "tag",
+          "name": "traditional",
+          "value": "traditional"
+        },
+        {
+          "type": "tag",
+          "name": "indonesia",
+          "value": "indonesia"
+        },
+        {
+          "type": "tag",
+          "name": "world music",
+          "value": "world-music"
+        },
+        {
+          "type": "tag",
+          "name": "world",
+          "value": "world"
+        },
+        {
+          "type": "tag",
+          "name": "soundtrack",
+          "value": "soundtrack"
+        },
+        {
+          "type": "tag",
+          "name": "tokyo",
+          "value": "tokyo"
+        },
+        {
+          "type": "tag",
+          "name": "field recordings",
+          "value": "field-recordings"
+        },
+        {
+          "type": "tag",
+          "name": "dub",
+          "value": "dub"
+        },
+        {
+          "type": "tag",
+          "name": "lofi",
+          "value": "lofi"
+        },
+        {
+          "type": "tag",
+          "name": "beats",
+          "value": "beats"
+        },
+        {
+          "type": "tag",
+          "name": "instrumental",
+          "value": "instrumental"
+        }
+      ]
+    }
+  ],
+  "combo": [
+    {
+      "type": "tag",
+      "name": "upbeat",
+      "value": "upbeat"
+    },
+    {
+      "type": "tag",
+      "name": "drones",
+      "value": "drones"
+    },
+    {
+      "type": "tag",
+      "name": "vapor",
+      "value": "vapor"
+    },
+    {
+      "type": "tag",
+      "name": "aesthetic",
+      "value": "aesthetic"
+    },
+    {
+      "type": "tag",
+      "name": "czech",
+      "value": "czech"
+    },
+    {
+      "type": "tag",
+      "name": "zlin",
+      "value": "zlin"
+    },
+    {
+      "type": "tag",
+      "name": "prague",
+      "value": "prague"
+    },
+    {
+      "type": "tag",
+      "name": "czechia",
+      "value": "czechia"
+    },
+    {
+      "type": "tag",
+      "name": "chillwave",
+      "value": "chillwave"
+    },
+    {
+      "type": "tag",
+      "name": "chill",
+      "value": "chill"
+    },
+    {
+      "type": "tag",
+      "name": "vaporwave",
+      "value": "vaporwave"
+    },
+    {
+      "type": "tag",
+      "name": "japan",
+      "value": "japan"
+    },
+    {
+      "type": "tag",
+      "name": "ambient",
+      "value": "ambient"
+    },
+    {
+      "type": "tag",
+      "name": "electronic",
+      "value": "electronic"
+    }
+  ]
+}

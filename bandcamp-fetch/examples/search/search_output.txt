@@ -1,0 +1,762 @@
+Search query: jazz. Item type: All. 18 results.
+-----------------------------------------------
+{
+  "items": [
+    {
+      "type": "label",
+      "name": "Bastard Jazz Recordings",
+      "url": "https://bastardjazz.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0040601762_28.jpg",
+      "location": "Brooklyn, New York"
+    },
+    {
+      "type": "label",
+      "name": "We Jazz Records",
+      "url": "https://wejazzrecords.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0033456124_28.jpg",
+      "location": "Helsinki, Finland"
+    },
+    {
+      "type": "label",
+      "name": "Concord Jazz",
+      "url": "https://concordjazz.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0020800855_28.jpg",
+      "location": "Los Angeles, California"
+    },
+    {
+      "type": "label",
+      "name": "Jazz Is Dead",
+      "url": "https://jazzisdead.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0019613576_28.jpg",
+      "location": "Los Angeles, California"
+    },
+    {
+      "type": "label",
+      "name": "Acid Jazz Records",
+      "url": "https://acidjazz.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0005692295_28.jpg",
+      "location": "UK"
+    },
+    {
+      "type": "artist",
+      "name": "Jazz In Britain",
+      "url": "https://jazzinbritain.co.uk",
+      "imageUrl": "https://f4.bcbits.com/img/0037178337_28.jpg",
+      "location": "England, UK",
+      "genre": "Jazz",
+      "tags": "British Jazz, Jazz Fusion, Jazz, Modern Jazz, Jazz Rock"
+    },
+    {
+      "type": "label",
+      "name": "Jazz Room Records",
+      "url": "https://jazzroomrecords.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0040865313_28.jpg",
+      "location": "London, UK"
+    },
+    {
+      "type": "artist",
+      "name": "Jazz Spastiks",
+      "url": "https://jazzspastiks.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0034788059_28.jpg",
+      "location": "UK",
+      "genre": "Hip-Hop/Rap",
+      "tags": "rap, alternative, hip hop, Hip-Hop/Rap, underground, instrumental"
+    },
+    {
+      "type": "label",
+      "name": "Millennium Jazz Music",
+      "url": "https://millenniumjazz.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0003984404_28.jpg",
+      "location": "London, UK"
+    },
+    {
+      "type": "artist",
+      "name": "Jazz Sabbath",
+      "url": "https://jazzsabbath.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0039432318_28.jpg",
+      "location": "UK",
+      "genre": "Jazz",
+      "tags": "jazzy, Jazz, black sabbath, jazz metal, jazz rock"
+    },
+    {
+      "type": "artist",
+      "name": "The Jazz Hop Café",
+      "url": "https://jazzhopcafe.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0037140812_28.jpg",
+      "location": "England, UK",
+      "genre": "Hip-Hop/Rap",
+      "tags": "chill beats, lofi, Hip-Hop/Rap, lofi jazz, jazz hop, the jazz hop cafe"
+    },
+    {
+      "type": "artist",
+      "name": "Spiritual Jazz",
+      "url": "https://spiritualjazz.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0011829726_28.jpg",
+      "location": "London, UK",
+      "genre": "Jazz",
+      "tags": "Jazz, Modal Jazz, Spiritual Jazz"
+    },
+    {
+      "type": "artist",
+      "name": "Modern Urban Jazz",
+      "url": "https://modernurbanjazz.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0025435106_28.jpg",
+      "location": "England, UK",
+      "genre": "Electronic",
+      "tags": "Breaks, Drum & Bass, Bass Music, Electronic"
+    },
+    {
+      "type": "artist",
+      "name": "British Progressive Jazz",
+      "url": "https://britishprogressivejazz.com",
+      "imageUrl": "https://f4.bcbits.com/img/0029537480_28.jpg",
+      "location": "London, UK",
+      "genre": "Jazz",
+      "tags": "prog rock, Jazz Fusion, Jazz, Jazz Rock, modal jazz"
+    },
+    {
+      "type": "label",
+      "name": "Super-Sonic Jazz Records",
+      "url": "https://super-sonic-jazz-records.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0018388156_28.jpg",
+      "location": "Amsterdam, Netherlands"
+    },
+    {
+      "type": "artist",
+      "name": "Adult Jazz",
+      "url": "https://adultjazz.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0034845203_28.jpg",
+      "location": "UK",
+      "genre": "Alternative",
+      "tags": "Alternative"
+    },
+    {
+      "type": "artist",
+      "name": "Jazz Emu",
+      "url": "https://jazzemu.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0038498888_28.jpg",
+      "location": "London, UK",
+      "genre": "Alternative",
+      "tags": "Alternative, Pop, Funk, R&B, Electronic"
+    },
+    {
+      "type": "label",
+      "name": "JAZZ & MILK",
+      "url": "https://jazzandmilk.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0022362718_28.jpg",
+      "location": "Cologne, Germany"
+    }
+  ],
+  "totalPages": 6
+}
+
+Search query: merge. Item type: Artists & labels. 18 results.
+-------------------------------------------------------------
+{
+  "items": [
+    {
+      "type": "label",
+      "name": "Merge Records",
+      "url": "https://mergerecords.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0018287817_28.jpg",
+      "location": "Durham, North Carolina"
+    },
+    {
+      "type": "artist",
+      "name": "Merge",
+      "url": "https://mergeband.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0029512726_28.jpg",
+      "location": "Germany",
+      "genre": "Alternative",
+      "tags": "electronic, Alternative, gothic, synthpop, germany"
+    },
+    {
+      "type": "artist",
+      "name": "Merge",
+      "url": "https://merge4.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/a2626147609_28.jpg",
+      "location": "Chicago, Illinois",
+      "genre": "Jazz",
+      "tags": "modern jazz, bass, Jazz, quintet, saxophone"
+    },
+    {
+      "type": "artist",
+      "name": "Merge",
+      "url": "https://thisismerge.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0011165847_28.jpg",
+      "location": "England, UK",
+      "genre": "Rock",
+      "tags": "pop rock, pop, Rock, alternative rock"
+    },
+    {
+      "type": "artist",
+      "name": "Merge",
+      "url": "https://merge.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/a2204167753_28.jpg",
+      "location": "Vancouver, British Columbia",
+      "genre": "Rock",
+      "tags": "Rock"
+    },
+    {
+      "type": "artist",
+      "name": "Merge Layers",
+      "url": "https://mergelayers.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0037067437_28.jpg",
+      "location": "Brescia, Italy",
+      "genre": "Electronic",
+      "tags": "House, dj tool, techno, club music, Electronic"
+    },
+    {
+      "type": "artist",
+      "name": "Merge Quintet",
+      "url": "https://mergequintet.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0003813575_28.jpg",
+      "location": "Chicago, Illinois",
+      "genre": "Jazz",
+      "tags": "modern, Jazz, quintet"
+    },
+    {
+      "type": "artist",
+      "name": "MERGE",
+      "url": "https://mergespartanjet-plexberkolover.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0027360854_28.jpg",
+      "location": "Richmond, Virginia",
+      "genre": "Alternative",
+      "tags": "dance, alternative, Alternative, pop, trip hop, bedroom pop"
+    },
+    {
+      "type": "label",
+      "name": "The Pastels Merge",
+      "url": "https://pastelsthe12.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0012734431_28.jpg",
+      "location": "Glasgow, UK"
+    },
+    {
+      "type": "artist",
+      "name": "Merge Beats",
+      "url": "https://mergebeats.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0006078072_28.jpg",
+      "location": "Bakersfield, California",
+      "genre": "Hip-Hop/Rap",
+      "tags": "Hip Hop, Hip-Hop/Rap, underground, instrumentals"
+    },
+    {
+      "type": "artist",
+      "name": "Merge Conflict",
+      "url": "https://mergeconflict.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0014637328_28.jpg",
+      "location": "Warsaw, Poland",
+      "genre": "Rock",
+      "tags": "Hard Rock, metal, doom, vintage rock, Rock, polish"
+    },
+    {
+      "type": "artist",
+      "name": "Merge2One",
+      "url": "https://merge2one.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0018259940_28.jpg",
+      "location": "Boston, Massachusetts",
+      "genre": "Funk",
+      "tags": "jazz, guitar solo, Funk, funk rock, Electronic"
+    },
+    {
+      "type": "artist",
+      "name": "Perge",
+      "url": "https://perge.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0006086709_28.jpg",
+      "location": "UK",
+      "genre": "Electronic",
+      "tags": "darksynth, Berlin School, progressive, ambient electronic, synthwave, Electronic"
+    },
+    {
+      "type": "artist",
+      "name": "attenuation circuit",
+      "url": "https://emerge.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0003392229_28.jpg",
+      "location": "Augsburg, Germany",
+      "genre": "Experimental",
+      "tags": "noise, Experimental, ambient, drone"
+    },
+    {
+      "type": "label",
+      "name": "eMERGENCY heARTS",
+      "url": "https://emergencyhearts.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0033068431_28.jpg",
+      "location": "Austin, Texas"
+    },
+    {
+      "type": "artist",
+      "name": "Merge",
+      "url": "https://mergednb.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0002032674_28.jpg",
+      "location": "Leeds, UK",
+      "genre": "Electronic",
+      "tags": "Jungle, Drum & Bass, Electronic"
+    },
+    {
+      "type": "artist",
+      "name": "MERGE",
+      "url": "https://mergeonmerge.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0013677342_28.jpg",
+      "location": "Los Angeles, California",
+      "genre": "Hip-Hop/Rap",
+      "tags": "jazz, Hip Hop, Hip-Hop, Hip-Hop/Rap, instrumentals, Rap"
+    },
+    {
+      "type": "artist",
+      "name": "Merge",
+      "url": "https://merge2.bandcamp.com",
+      "imageUrl": "https://f4.bcbits.com/img/0000200110_28.jpg",
+      "location": "Chicago, Illinois",
+      "genre": "Alternative",
+      "tags": "Alternative"
+    }
+  ],
+  "totalPages": 6
+}
+
+Search query: Coeur de pirate. Item type: Albums. 14 results.
+-------------------------------------------------------------
+{
+  "items": [
+    {
+      "type": "album",
+      "name": "Coeur de pirate",
+      "url": "https://musique.coeurdepirate.com/album/coeur-de-pirate",
+      "imageUrl": "https://f4.bcbits.com/img/a2201751482_16.jpg",
+      "artist": "Cœur de pirate",
+      "numTracks": 12,
+      "duration": 1860,
+      "releaseDate": "September 16, 2008",
+      "tags": "Québec, Pop, french pop, piano pop, Canada, Montréal, french"
+    },
+    {
+      "type": "album",
+      "name": "Blonde",
+      "url": "https://musique.coeurdepirate.com/album/blonde",
+      "imageUrl": "https://f4.bcbits.com/img/a1328452291_16.jpg",
+      "artist": "Cœur de pirate",
+      "numTracks": 12,
+      "duration": 2160,
+      "releaseDate": "November 7, 2011",
+      "tags": "Québec, montreal, Pop, french pop, piano pop, coeur de pirate, Canada, Montréal, amour, grosse boîte, french"
+    },
+    {
+      "type": "album",
+      "name": "Trauma",
+      "url": "https://musique.coeurdepirate.com/album/trauma",
+      "imageUrl": "https://f4.bcbits.com/img/a3799110102_16.jpg",
+      "artist": "Cœur de pirate",
+      "numTracks": 12,
+      "duration": 2760,
+      "releaseDate": "January 14, 2014",
+      "tags": "trauma, Québec, Pop, french pop, Dare To Care Records, piano pop, amy winehouse, cover songs, Canada, Montréal, french"
+    },
+    {
+      "type": "album",
+      "name": "Child of Light",
+      "url": "https://musique.coeurdepirate.com/album/child-of-light",
+      "imageUrl": "https://f4.bcbits.com/img/a0603109913_16.jpg",
+      "artist": "Cœur de pirate",
+      "numTracks": 18,
+      "duration": 3000,
+      "releaseDate": "April 29, 2014",
+      "tags": "Québec, Pop, french pop, piano pop, instrumental, Canada, Montréal, video game music, french"
+    },
+    {
+      "type": "album",
+      "name": "Roses",
+      "url": "https://musique.coeurdepirate.com/album/roses",
+      "imageUrl": "https://f4.bcbits.com/img/a3347055233_16.jpg",
+      "artist": "Cœur de pirate",
+      "numTracks": 11,
+      "duration": 2400,
+      "releaseDate": "August 28, 2015",
+      "tags": "Québec, Pop, french pop, piano pop, Canada, Montréal, french"
+    },
+    {
+      "type": "album",
+      "name": "Montréal Symphonique",
+      "url": "https://montrealsymphonique.bandcamp.com/album/montr-al-symphonique",
+      "imageUrl": "https://f4.bcbits.com/img/a3972424743_16.jpg",
+      "artist": "Cœur de pirate, Rufus Wainwright, Daniel Bélanger, Wyclef Jean, Diane Dufresne, Patrick Watson",
+      "numTracks": 31,
+      "duration": 6600,
+      "releaseDate": "November 3, 2017",
+      "tags": "Québec, cassical, musique classique, Diane Dufresne, Montreal, Symphonique, Daniel Bélanger, Classical, Canada, Montréal, orchestre"
+    },
+    {
+      "type": "album",
+      "name": "Perséides",
+      "url": "https://musique.coeurdepirate.com/album/pers-ides",
+      "imageUrl": "https://f4.bcbits.com/img/a3751956000_16.jpg",
+      "artist": "Cœur de pirate",
+      "numTracks": 10,
+      "duration": 1500,
+      "releaseDate": "April 30, 2021",
+      "tags": "Québec, Pop, french pop, piano pop, Canada, Montréal, french"
+    },
+    {
+      "type": "album",
+      "name": "Impossible à aimer",
+      "url": "https://musique.coeurdepirate.com/album/impossible-aimer",
+      "imageUrl": "https://f4.bcbits.com/img/a3147632514_16.jpg",
+      "artist": "Cœur de pirate",
+      "numTracks": 10,
+      "duration": 2040,
+      "releaseDate": "October 15, 2021",
+      "tags": "Québec, Pop, french pop, piano pop, Canada, Montréal, french"
+    },
+    {
+      "type": "album",
+      "name": "Prémonition",
+      "url": "https://musique.coeurdepirate.com/album/pr-monition-2",
+      "imageUrl": "https://f4.bcbits.com/img/a2454271957_16.jpg",
+      "artist": "Cœur de pirate",
+      "duration": 180,
+      "releaseDate": "January 19, 2018",
+      "tags": "Québec, Pop, french pop, piano pop, Canada, Montréal, french"
+    },
+    {
+      "type": "album",
+      "name": "Chansons tristes pour Noël",
+      "url": "https://musique.coeurdepirate.com/album/chansons-tristes-pour-no-l",
+      "imageUrl": "https://f4.bcbits.com/img/a2476670277_16.jpg",
+      "artist": "Cœur de pirate",
+      "numTracks": 3,
+      "duration": 600,
+      "releaseDate": "December 16, 2016",
+      "tags": "Québec, Pop, french pop, piano pop, coeur de pirate, Canada, Christmas, Montréal, french"
+    },
+    {
+      "type": "album",
+      "name": "Somnambule",
+      "url": "https://musique.coeurdepirate.com/album/somnambule",
+      "imageUrl": "https://f4.bcbits.com/img/a1903816474_16.jpg",
+      "artist": "Cœur de pirate",
+      "duration": 180,
+      "releaseDate": "April 13, 2018",
+      "tags": "Québec, Pop, french pop, piano pop, Canada, Montréal, french"
+    },
+    {
+      "type": "album",
+      "name": "Clou",
+      "url": "https://musique.coeurdepirate.com/album/clou",
+      "imageUrl": "https://f4.bcbits.com/img/a0422319817_16.jpg",
+      "artist": "Cœur de pirate",
+      "numTracks": 2,
+      "duration": 600,
+      "releaseDate": "August 25, 2022",
+      "tags": "Québec, Pop, french pop, piano pop, Canada, Montréal, french"
+    },
+    {
+      "type": "album",
+      "name": "en cas de tempête, ce jardin sera fermé.",
+      "url": "https://musique.coeurdepirate.com/album/en-cas-de-temp-te-ce-jardin-sera-ferm",
+      "imageUrl": "https://f4.bcbits.com/img/a0248413645_16.jpg",
+      "artist": "Cœur de pirate",
+      "numTracks": 10,
+      "duration": 1920,
+      "releaseDate": "June 1, 2018",
+      "tags": "Québec, Pop, french pop, piano pop, Canada, Montréal, french"
+    },
+    {
+      "type": "album",
+      "name": "Comme des enfants (Version originale et remix par Le Matos)",
+      "url": "https://musique.coeurdepirate.com/album/comme-des-enfants-version-originale-et-remix-par-le-matos",
+      "imageUrl": "https://f4.bcbits.com/img/a1250129776_16.jpg",
+      "artist": "Cœur de pirate",
+      "numTracks": 2,
+      "duration": 480,
+      "releaseDate": "September 7, 2010",
+      "tags": "Québec, Pop, french pop, piano pop, Canada, Montréal, french"
+    }
+  ],
+  "totalPages": 1
+}
+
+Search query: Coeur de pirate. Item type: Tracks. 18 results.
+-------------------------------------------------------------
+{
+  "items": [
+    {
+      "type": "track",
+      "name": "Comme des enfants",
+      "url": "https://musique.coeurdepirate.com/track/comme-des-enfants-2",
+      "imageUrl": "https://f4.bcbits.com/img/a2201751482_16.jpg",
+      "artist": "Cœur de pirate",
+      "album": "Coeur de pirate",
+      "releaseDate": "September 16, 2008"
+    },
+    {
+      "type": "track",
+      "name": "Ensemble",
+      "url": "https://musique.coeurdepirate.com/track/ensemble",
+      "imageUrl": "https://f4.bcbits.com/img/a2201751482_16.jpg",
+      "artist": "Cœur de pirate",
+      "album": "Coeur de pirate",
+      "releaseDate": "September 16, 2008"
+    },
+    {
+      "type": "track",
+      "name": "Francis",
+      "url": "https://musique.coeurdepirate.com/track/francis",
+      "imageUrl": "https://f4.bcbits.com/img/a2201751482_16.jpg",
+      "artist": "Cœur de pirate",
+      "album": "Coeur de pirate",
+      "releaseDate": "September 16, 2008"
+    },
+    {
+      "type": "track",
+      "name": "Intermission",
+      "url": "https://musique.coeurdepirate.com/track/intermission",
+      "imageUrl": "https://f4.bcbits.com/img/a2201751482_16.jpg",
+      "artist": "Cœur de pirate",
+      "album": "Coeur de pirate",
+      "releaseDate": "September 16, 2008"
+    },
+    {
+      "type": "track",
+      "name": "Fondu au noir",
+      "url": "https://musique.coeurdepirate.com/track/fondu-au-noir",
+      "imageUrl": "https://f4.bcbits.com/img/a2201751482_16.jpg",
+      "artist": "Cœur de pirate",
+      "album": "Coeur de pirate",
+      "releaseDate": "September 16, 2008"
+    },
+    {
+      "type": "track",
+      "name": "T'es belle - Coeur de pirate",
+      "url": "https://pianovoix.bandcamp.com/track/tes-belle-coeur-de-pirate",
+      "imageUrl": "https://f4.bcbits.com/img/a3645401914_16.jpg",
+      "artist": "pianovoix",
+      "releaseDate": "October 15, 2020",
+      "tags": "Paris, Pop, France, IDF, piano, chanson française"
+    },
+    {
+      "type": "track",
+      "name": "C'était Salement Romantique (Coeur de Pirate)",
+      "url": "https://alicianight.bandcamp.com/track/c-tait-salement-romantique-coeur-de-pirate",
+      "imageUrl": "https://f4.bcbits.com/img/a1215277442_16.jpg",
+      "artist": "Alicia Night",
+      "releaseDate": "October 2, 2018",
+      "tags": "Pays de la Loire, France, Cholet, Rock"
+    },
+    {
+      "type": "track",
+      "name": "Jeter un sort (feat. Coeur de pirate)",
+      "url": "https://alexnevsky.bandcamp.com/track/jeter-un-sort-feat-coeur-de-pirate",
+      "imageUrl": "https://f4.bcbits.com/img/a3550838341_16.jpg",
+      "artist": "Alex Nevsky",
+      "album": "Nos Eldorados",
+      "releaseDate": "November 11, 2016"
+    },
+    {
+      "type": "track",
+      "name": "Francis (Coeur de Pirate cover)",
+      "url": "https://jeneiffel.bandcamp.com/track/francis-coeur-de-pirate-cover",
+      "imageUrl": "https://f4.bcbits.com/img/a0532659386_16.jpg",
+      "artist": "Jen Eiffel",
+      "album": "Covers",
+      "releaseDate": "March 26, 2014"
+    },
+    {
+      "type": "track",
+      "name": "Adieu (Lincoln Remix)",
+      "url": "https://lincolnplease.bandcamp.com/track/adieu-lincoln-remix",
+      "imageUrl": "https://f4.bcbits.com/img/a3583685498_16.jpg",
+      "artist": "Cœur de pirate",
+      "releaseDate": "December 2, 2014",
+      "tags": "San Diego, Hip Hop, California, House, dark, bass, United States, piano, Funk, future, Dance, groove, Electronic"
+    },
+    {
+      "type": "track",
+      "name": "Coeur de pirate",
+      "url": "https://sergemonette.bandcamp.com/track/coeur-de-pirate",
+      "imageUrl": "https://f4.bcbits.com/img/a3469921391_16.jpg",
+      "artist": "Monette",
+      "album": "Sonnez l'éveil",
+      "releaseDate": "March 28, 2020",
+      "tags": "francophone, franco, ontario, AFO, ONfr, folk rock"
+    },
+    {
+      "type": "track",
+      "name": "Coeur de pirate (feat. Olengda)",
+      "url": "https://insiderecords.bandcamp.com/track/coeur-de-pirate-feat-olengda",
+      "imageUrl": "https://f4.bcbits.com/img/a2920419453_16.jpg",
+      "artist": "Inside Records",
+      "releaseDate": "March 12, 2021",
+      "tags": "dance, electro, Paris, electronic, France, IDF"
+    },
+    {
+      "type": "track",
+      "name": "Damso - Coeur de Pirate (Tom Monjo Shatta Edit)",
+      "url": "https://tommonjo.bandcamp.com/track/damso-coeur-de-pirate-tom-monjo-shatta-edit",
+      "imageUrl": "https://f4.bcbits.com/img/a1367659933_16.jpg",
+      "artist": "Tom Monjo",
+      "album": "Tom Monjo Edit Pack Vol.1",
+      "releaseDate": "January 31, 2023"
+    },
+    {
+      "type": "track",
+      "name": "Coeur de pirate - Place de la republique (Rauschhaus Kuschelhouse edit) (djnodj edit)",
+      "url": "https://djnodj.bandcamp.com/track/coeur-de-pirate-place-de-la-republique-rauschhaus-kuschelhouse-edit-djnodj-edit",
+      "imageUrl": "https://f4.bcbits.com/img/a0795995370_16.jpg",
+      "artist": "dj no dj",
+      "releaseDate": "March 1, 2013",
+      "tags": "house, chill, Washington, Pop, United States, Seattle, nibblicious, remix, minimal, 122, djnodj, tech, experimental dub pop"
+    },
+    {
+      "type": "track",
+      "name": "Crier tout bas",
+      "url": "https://montrealsymphonique.bandcamp.com/track/crier-tout-bas",
+      "imageUrl": "https://f4.bcbits.com/img/a3972424743_16.jpg",
+      "artist": "Cœur de pirate, Orchestre symphonique de Montréal",
+      "album": "Montréal Symphonique",
+      "releaseDate": "November 3, 2017"
+    },
+    {
+      "type": "track",
+      "name": "Coeur de Pirate- Place de la République (Stingray remix)",
+      "url": "https://drstingray.bandcamp.com/track/coeur-de-pirate-place-de-la-r-publique-stingray-remix",
+      "imageUrl": "https://f4.bcbits.com/img/a0866391113_16.jpg",
+      "artist": "Dr Stingray",
+      "releaseDate": "May 2, 2014",
+      "tags": "Trip-Hop, Trap, Ontario, Synthpop, Electronica, Toronto, Canada, Remix, French House, Electronic"
+    },
+    {
+      "type": "track",
+      "name": "Dans tes rêves (ft. Coeur de pirate)",
+      "url": "https://omnikromofficiel.bandcamp.com/track/dans-tes-r-ves-ft-coeur-de-pirate",
+      "imageUrl": "https://f4.bcbits.com/img/a1848345881_16.jpg",
+      "artist": "Omnikrom",
+      "album": "Comme à la télévision",
+      "releaseDate": "May 19, 2009"
+    },
+    {
+      "type": "track",
+      "name": "Coeur de pirate - Comme Des Enfants  DJ EDDY REDRUM",
+      "url": "https://djeddyredrums.bandcamp.com/track/coeur-de-pirate-comme-des-enfants-dj-eddy-redrum",
+      "imageUrl": "https://f4.bcbits.com/img/a2327662548_16.jpg",
+      "artist": "DJ EDDY REDRUMS",
+      "releaseDate": "August 3, 2024",
+      "tags": "France, Experimental, REDRUMS"
+    }
+  ],
+  "totalPages": 8
+}
+
+Search query: merge. Item type: Fans. 17 results.
+-------------------------------------------------
+{
+  "items": [
+    {
+      "type": "fan",
+      "name": "Merge",
+      "url": "https://bandcamp.com/Merge",
+      "imageUrl": "https://f4.bcbits.com/img/0004033550_28.jpg",
+      "genre": "Alternative"
+    },
+    {
+      "type": "fan",
+      "name": "merge_e",
+      "url": "https://bandcamp.com/merge_e",
+      "genre": "Metal"
+    },
+    {
+      "type": "fan",
+      "name": "merge_musique",
+      "url": "https://bandcamp.com/merge_musique"
+    },
+    {
+      "type": "fan",
+      "name": "merge4989",
+      "url": "https://bandcamp.com/merge4989",
+      "imageUrl": "https://f4.bcbits.com/img/0011180189_28.jpg",
+      "genre": "Alternative"
+    },
+    {
+      "type": "fan",
+      "name": "merge225",
+      "url": "https://bandcamp.com/merge225",
+      "imageUrl": "https://f4.bcbits.com/img/0032446043_28.jpg",
+      "genre": "Electronic"
+    },
+    {
+      "type": "fan",
+      "name": "merge909",
+      "url": "https://bandcamp.com/merge909",
+      "genre": "Punk"
+    },
+    {
+      "type": "fan",
+      "name": "merge216",
+      "url": "https://bandcamp.com/merge216",
+      "genre": "Comedy"
+    },
+    {
+      "type": "fan",
+      "name": "merge_conflicts",
+      "url": "https://bandcamp.com/merge_conflicts",
+      "genre": "Electronic"
+    },
+    {
+      "type": "fan",
+      "name": "merge810",
+      "url": "https://bandcamp.com/merge810",
+      "genre": "Electronic"
+    },
+    {
+      "type": "fan",
+      "name": "dj_merge",
+      "url": "https://bandcamp.com/dj_merge",
+      "genre": "Electronic"
+    },
+    {
+      "type": "fan",
+      "name": "merge_conflict",
+      "url": "https://bandcamp.com/merge_conflict"
+    },
+    {
+      "type": "fan",
+      "name": "merge2one",
+      "url": "https://bandcamp.com/merge2one",
+      "imageUrl": "https://f4.bcbits.com/img/0024536409_28.jpg",
+      "genre": "Funk"
+    },
+    {
+      "type": "fan",
+      "name": "y-n-merge",
+      "url": "https://bandcamp.com/y-n-merge",
+      "genre": "Metal"
+    },
+    {
+      "type": "fan",
+      "name": "wintereaglee",
+      "url": "https://bandcamp.com/heavy_merge",
+      "imageUrl": "https://f4.bcbits.com/img/0022254557_28.jpg",
+      "genre": "Electronic"
+    },
+    {
+      "type": "fan",
+      "name": "TheMerge",
+      "url": "https://bandcamp.com/norlaine",
+      "imageUrl": "https://f4.bcbits.com/img/0023783739_28.jpg",
+      "genre": "Pop"
+    },
+    {
+      "type": "fan",
+      "name": "Outshift",
+      "url": "https://bandcamp.com/alister_merge",
+      "imageUrl": "https://f4.bcbits.com/img/0026869092_28.jpg"
+    },
+    {
+      "type": "fan",
+      "name": "Matt Melvin",
+      "url": "https://bandcamp.com/merge5",
+      "imageUrl": "https://f4.bcbits.com/img/0006048796_28.jpg",
+      "genre": "Alternative"
+    }
+  ],
+  "totalPages": 6
+}
+
