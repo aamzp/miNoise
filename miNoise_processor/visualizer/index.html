@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>miNoise — Test Visualizer</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        #graph-container {
+            position: absolute;
+            inset: 0;
+        }
+
+        /* PANEL LATERAL */
+        #info-panel {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 320px;
+            height: 100%;
+            background: rgba(20, 20, 20, 0.95);
+            color: #e6e6e6;
+            padding: 16px;
+            overflow-y: auto;
+            display: none;
+            border-left: 1px solid #444;
+        }
+
+        #info-panel img {
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+
+        #close-panel {
+            float: right;
+            cursor: pointer;
+            font-size: 22px;
+            margin-top: -6px;
+        }
+
+        h2,
+        h3 {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="graph-container"></div>
+
+    <div id="info-panel">
+        <span id="close-panel">✖</span>
+        <div id="panel-content"></div>
+    </div>
+
+    <!-- ForceGraph3D -->
+    <script src="https://unpkg.com/3d-force-graph"></script>
+
+    <!-- Solo este script: tu main.js -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+flask
+flask-cors
+python-dotenv
+requests
+git+https://github.com/RustyRin/bandcamp-api.git
+networkx
+pyvis
+sentence-transformers
+umap-learn
+matplotlib
+pandas

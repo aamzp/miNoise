@@ -1,7 +1,11 @@
 {
+  "name": "miNoise",
+  "version": "1.0.0",
+  "type": "module",
   "dependencies": {
-    "@react-three/drei": "^10.7.4",
-    "@react-three/fiber": "^9.3.0",
-    "three": "^0.179.1"
+    "3d-force-graph": "^1.79.0",
+    "bandcamp-fetch": "^3.0.0",
+    "dotenv": "^17.2.3",
+    "node-fetch": "^3.3.2"
   }
 }
