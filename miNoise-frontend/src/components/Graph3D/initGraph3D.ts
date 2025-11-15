@@ -109,33 +109,82 @@ export function initGraph3D({
         panel.style.display = "block";
 
         panelContent.innerHTML = `
-        <span id="inner-close-panel" style="cursor:pointer">✖</span>
+        <span 
+            id="inner-close-panel" 
+            style="
+                cursor:pointer;
+                font-size:11px;
+                float:right;
+                opacity:0.8;
+            "
+        >
+            ✖
+        </span>
 
-        <h2 style="margin-bottom:4px; font-size:20px; font-weight:600;">${node.title}</h2>
-        <h3 style="margin-top:0; color:#9ecbff; font-weight:400;">${node.artist}</h3>
+        <h2 style="
+            margin:0 0 4px 0;
+            font-size:13px;
+            font-weight:600;
+        ">
+            ${node.title}
+        </h2>
 
-        <div style="margin:12px 0; text-align:center;">
+        <h3 style="
+            margin:0 0 8px 0;
+            color:#9ecbff;
+            font-weight:400;
+            font-size:11px;
+        ">
+            ${node.artist}
+        </h3>
+
+        <div style="margin:8px 0 10px 0; text-align:center;">
             <iframe
-                style="border:0; width:264px; height:264px;"
+                style="border:0; width:100%; max-width:180px; height:180px;"
                 src="${node.embed_url}"
-                seamless>
-            </iframe>
+                seamless
+            ></iframe>
         </div>
 
-        <p><strong>Genre:</strong> ${node.genre || "n/a"}</p>
-        <p><strong>Release:</strong> ${node.release_date || "n/a"}</p>
-        <p><strong>Tracks:</strong> ${node.tracks_count || "n/a"}</p>
-        <p><strong>Duration:</strong> ${Math.round(node.duration_total || 0)} sec</p>
+        <p style="margin:4px 0;"><strong>Genre:</strong> ${node.genre || "n/a"}</p>
+        <p style="margin:4px 0;"><strong>Release:</strong> ${node.release_date || "n/a"}</p>
+        <p style="margin:4px 0;"><strong>Tracks:</strong> ${node.tracks_count || "n/a"}</p>
+        <p style="margin:4px 0;"><strong>Duration:</strong> ${Math.round(node.duration_total || 0)} sec</p>
 
-        <p><strong>Artist location:</strong> ${node.artist_location || "n/a"}</p>
-
-        <p><strong>Description:</strong><br>
-            ${node.description || ""}
+        <p style="margin:6px 0 8px 0;">
+            <strong>Artist location:</strong> ${node.artist_location || "n/a"}
         </p>
 
-        <h3>Links</h3>
-        ${node.url ? `<p><a href="${node.url}" target="_blank" style="color:#6cf">Album page</a></p>` : ""}
-        ${node.artist_url ? `<p><a href="${node.artist_url}" target="_blank" style="color:#6cf">Artist page</a></p>` : ""}
+        <p style="margin:6px 0 10px 0;">
+            <strong>Description:</strong><br/>
+            <span style="opacity:0.9;">
+                ${node.description || ""}
+            </span>
+        </p>
+
+        <h3 style="
+            margin:4px 0 4px 0;
+            font-size:11px;
+            font-weight:600;
+        ">
+            Links
+        </h3>
+
+        ${node.url ? `
+            <p style="margin:2px 0;">
+                <a href="${node.url}" target="_blank" style="color:#6cf; font-size:11px;">
+                    Album page
+                </a>
+            </p>
+        ` : ""}
+
+        ${node.artist_url ? `
+            <p style="margin:2px 0;">
+                <a href="${node.artist_url}" target="_blank" style="color:#6cf; font-size:11px;">
+                    Artist page
+                </a>
+            </p>
+        ` : ""}
     `;
 
         document.getElementById("inner-close-panel")!.onclick = closePanel;
@@ -231,11 +280,11 @@ export function initGraph3D({
             // si es tag, expandimos
             if (node.type === "tag") {
                 expandTag(node);
-                closePanel(); // cierra panel si estaba abierto
+                // ❌ ya NO cerramos el panel aquí
                 return;
             }
 
-            // si es álbum, mostramos el panel
+            // si es álbum, mostramos (o actualizamos) el panel
             if (node.type === "album") {
                 showAlbumPanel(node);
             }
@@ -332,6 +381,8 @@ export function initGraph3D({
             const pos = curve.getPoint(obj.userData.t);
             dot.position.set(pos.x, pos.y, pos.z);
         });
+
+
     });
 
     setTimeout(() => {
@@ -350,8 +401,43 @@ export function initGraph3D({
     // ==========================================
     let fullData: any = null;
     let currentMode: "tags" | "expanded" = "tags";  // 👈 nuevo
-
     let currentLayer: "tags" | "expanded" = "tags";
+
+    // movimiento de cámara en modo idle
+    let isIdle = false;
+    let isIdleStopping = false;
+
+    let idleAngle = 0;
+    let idleRadius = 1400;
+    let idleY = 200;
+    let idleAnimationId: number | null = null;
+
+    const IDLE_BASE_SPEED = 0.0018;  // velocidad máxima del idle (ya la usabas)
+    const IDLE_EASE_STEP = 0.02;     // qué tan rápido acelera / desacelera
+
+    // Targets a los que vamos “leyendo”
+    let idleTargetRadius = 1400;
+    let idleTargetY = 200;
+    let idleSpeed = 0.0015;
+    let idleTargetSpeed = 0.0015;
+    let idleTargetTimerId: number | null = null;
+
+    function scheduleNextIdleTarget() {
+        if (!isIdle) return;
+
+        // Pequeñas variaciones alrededor de donde ya estamos
+        idleTargetRadius = idleRadius * (0.9 + Math.random() * 0.25); // entre 0.9x y 1.15x
+        idleTargetY = idleY + (Math.random() * 120 - 60);             // ±60 en altura
+
+        // velocidad moderada
+        idleTargetSpeed = 0.0004 + Math.random() * 0.0006;
+
+        // siguiente cambio de target entre 6 y 10 segundos
+        idleTargetTimerId = window.setTimeout(() => {
+            scheduleNextIdleTarget();
+        }, 6000 + Math.random() * 4000);
+    }
+
 
     function showBaseTagLayer() {
         console.log("🔁 showBaseTagLayer() llamada");
@@ -418,6 +504,9 @@ export function initGraph3D({
 
             // 3) ir a capa base de tags (cámara + orbit random viven ahí)
             showBaseTagLayer();
+
+            // 4) arrancar inmediatamente el movimiento idle "al rededor"
+            startIdleCameraMotion();
         })
         .catch(err => console.error("❌ Error cargando datos:", err));
 
@@ -450,7 +539,8 @@ export function initGraph3D({
 
     function expandTag(tagNode: any) {
         if (!fullData) return;
-        currentMode = "expanded"
+        currentMode = "expanded";
+        currentLayer = "expanded";
         const visible = new Set<string>();
 
         const normLabel = normalizeTag(tagNode.label);
@@ -553,14 +643,179 @@ export function initGraph3D({
         expandTag(tagNode);
     };
 
+    //------------------------------------------------------------
+    // ⭐ Movimiento suave de cámara sin cambiar de capa ni nodo
+    //------------------------------------------------------------
+    function smoothCameraMove(x: number, y: number, z: number, ms = 1500) {
+        const cam = Graph.camera();
+        const controls = Graph.controls?.();
+
+        if (controls) {
+            controls.autoRotate = false;   // ⛔ detener autogiro
+        }
+
+        const start = { x: cam.position.x, y: cam.position.y, z: cam.position.z };
+        const end = { x, y, z };
+        const startTime = performance.now();
+
+        function animate() {
+            const t = Math.min((performance.now() - startTime) / ms, 1);
+            const k = t * (2 - t); // easing suave
+
+            cam.position.set(
+                start.x + (end.x - start.x) * k,
+                start.y + (end.y - start.y) * k,
+                start.z + (end.z - start.z) * k
+            );
+
+            cam.lookAt(0, 0, 0);
+
+            if (t < 1) {
+                requestAnimationFrame(animate);
+            } else {
+                // 🔄 reactivar auto-rotación suavemente
+                if (controls) {
+                    setTimeout(() => {
+                        controls.autoRotate = true;
+                    }, 400);
+                }
+            }
+        }
+
+        animate();
+    }
+
+    function startIdleCameraMotion() {
+        // si ya estamos en idle (y no estamos frenando), no hacemos nada
+        if (isIdle && !isIdleStopping) return;
+
+        const controls = Graph.controls?.();
+        if (controls) {
+            controls.autoRotate = false; // apagamos autoRotate mientras estamos en idle
+        }
+
+        const cam = Graph.camera();
+        const pos = cam.position.clone();
+
+        // radio según posición actual
+        idleRadius = Math.sqrt(pos.x * pos.x + pos.z * pos.z);
+        if (!isFinite(idleRadius) || idleRadius < 200) {
+            idleRadius = 900; // fallback razonable
+        }
+
+        idleAngle = Math.atan2(pos.z, pos.x); // ángulo actual
+        idleY = pos.y;                        // mantenemos altura actual
+
+        // targets iniciales = estado actual
+        idleTargetRadius = idleRadius;
+        idleTargetY = idleY;
+
+        // 👇 CLAVE: empezamos con velocidad 0 y vamos acelerando hacia targetSpeed
+        idleSpeed = 0;                // arranca desde parado
+        idleTargetSpeed = 0.0008;     // velocidad "bonita" máxima
+
+        isIdle = true;
+        isIdleStopping = false;
+
+        // empezamos a generar nuevos objetivos cada cierto tiempo (tu función existente)
+        scheduleNextIdleTarget();
+
+        const step = () => {
+            if (!isIdle) return;
+
+            const cam = Graph.camera();
+
+            // LERP suave hacia los targets
+            const lerpFactor = isIdleStopping ? 0.05 : 0.012;
+
+            idleRadius += (idleTargetRadius - idleRadius) * lerpFactor;
+            idleY += (idleTargetY - idleY) * lerpFactor;
+            idleSpeed += (idleTargetSpeed - idleSpeed) * lerpFactor;
+
+            idleRadius += (idleTargetRadius - idleRadius) * lerpFactor;
+            idleY += (idleTargetY - idleY) * lerpFactor;
+            idleSpeed += (idleTargetSpeed - idleSpeed) * lerpFactor;
+
+            // avanzar ángulo usando la velocidad suavizada
+            idleAngle += idleSpeed;
+
+            const x = Math.cos(idleAngle) * idleRadius;
+            const z = Math.sin(idleAngle) * idleRadius;
+
+            // pequeño “bobbing” vertical para que no sea una línea plana
+            const bob = Math.sin(idleAngle * 0.9) * 15;
+
+            cam.position.set(x, idleY + bob, z);
+            cam.lookAt(0, 0, 0);
+
+            // 🧊 Fade-out suave: si estamos frenando y la velocidad ya es muy baja, cortamos aquí
+            if (isIdleStopping && Math.abs(idleSpeed) < 0.00003) {
+                isIdle = false;
+                isIdleStopping = false;
+
+                if (idleTargetTimerId !== null) {
+                    window.clearTimeout(idleTargetTimerId);
+                    idleTargetTimerId = null;
+                }
+
+                idleAnimationId = null;
+
+                const controls = Graph.controls?.();
+                if (controls) {
+                    controls.autoRotate = true; // volvemos al autoRotate normal
+                }
+
+                return; // no pedimos otro frame
+            }
+
+            idleAnimationId = requestAnimationFrame(step);
+        };
+
+        idleAnimationId = requestAnimationFrame(step);
+    }
+
+
+
+    function stopIdleCameraMotion() {
+        if (!isIdle) return;
+
+        // En vez de cortar de golpe, pedimos que vaya frenando
+        isIdleStopping = true;
+
+        // la cámara deja de recibir nuevos targets locos
+        if (idleTargetTimerId !== null) {
+            window.clearTimeout(idleTargetTimerId);
+            idleTargetTimerId = null;
+        }
+
+        // que el "destino" de la velocidad sea 0
+        idleTargetSpeed = 0;
+
+        // opcional: fijar también radio/altura para que no siga viajando mientras frena
+        idleTargetRadius = idleRadius;
+        idleTargetY = idleY;
+
+        // NO cancelamos aquí el animationFrame ni encendemos autoRotate.
+        // Eso lo hace el bloque "fade-out" dentro de step(), cuando la velocidad ya es casi 0.
+    }
+
     return {
         cleanup: () => {
             console.log("🧹 Cleaning up ForceGraph3D");
-            window.removeEventListener("resize", handleResize); // 👈 importante
+            window.removeEventListener("resize", handleResize);
+            stopIdleCameraMotion();
             container.innerHTML = "";
         },
         expandTagFromSearch: (Graph as any).expandTagFromSearch,
         expandTagFromSearchTag: (Graph as any).expandTagFromSearchTag,
-        showBaseTagLayer
+        showBaseTagLayer,
+
+        // 👉 Nuevo método disponible desde Graph3D.tsx
+        smoothCameraMove,
+        // // ⭐ Nuevos
+        startIdleCameraMotion,
+        stopIdleCameraMotion,
+        // 👇 Nuevo: lo estabas usando desde React pero no existía
+        getCurrentLayer: () => currentLayer
     };
 }

@@ -18,18 +18,48 @@ export default function Graph3D() {
     const [query, setQuery] = useState("");
     const [results, setResults] = useState<any[]>([]);
     const [allAlbums, setAllAlbums] = useState<any[]>([]);
+    // sugerencia de tags
+    const [suggestedTags, setSuggestedTags] = useState<any[]>([]);
 
-    // --- CARGAR SÓLO LISTA DE ÁLBUMES ---
+    const MAX_TAG_LABEL_CHARS = 14; // ajusta a gusto
+
+    function formatTagLabel(label: string = "") {
+        if (!label) return "";
+        if (label.length <= MAX_TAG_LABEL_CHARS) return label;
+        return label.slice(0, MAX_TAG_LABEL_CHARS - 1) + "…";
+    }
+
+
+
+    // --- CARGAR LISTAS DE ÁLBUMES Y TAGS ---
     useEffect(() => {
         fetch(DATA_URL)
             .then(res => res.json())
             .then(json => {
-                const albums = json.nodes.filter((n: any) => n.type === "album");
-                const tags = json.nodes.filter((n: any) => n.type === "tag");
+                const albums = json.nodes
+                    .filter((n: any) => n.type === "album")
+                    .map((a: any) => ({
+                        ...a,
+                        _searchTitle: (a.title || "").toLowerCase(),
+                        _searchArtist: (a.artist || "").toLowerCase(),
+                        _searchRelease: (a.release_date || "").toLowerCase(),
+                        _searchLocation: (a.artist_location || a.location || "").toLowerCase() // 👈 NUEVO
+                    }));
+
+                const tags = json.nodes
+                    .filter((n: any) => n.type === "tag")
+                    .map((t: any) => ({
+                        ...t,
+                        _searchLabel: (t.label || "").toLowerCase()
+                    }));
+
                 setAllAlbums(albums);
                 setAllTags(tags);
+                // 🔹 inicializar sugerencias:
+                pickRandomTags(tags)
             });
     }, []);
+
 
     // --- INICIALIZAR GRAFO ---
     useEffect(() => {
@@ -54,6 +84,7 @@ export default function Graph3D() {
 
             console.log(">>> Después de initGraph3D");
 
+
             // ================================
             //   LÓGICA DE INACTIVIDAD AQUÍ
             // ================================
@@ -62,7 +93,7 @@ export default function Graph3D() {
                 return;
             }
 
-            const IDLE_MS = 20000; // milisegundos sin mover mouse/scroll para “apretar Tags”
+            const IDLE_MS = 8000; // milisegundos sin mover mouse/scroll para “apretar Tags”
 
             const resetIdle = () => {
                 if (!apiRef.current?.showBaseTagLayer) return;
@@ -75,21 +106,23 @@ export default function Graph3D() {
                 // programamos que, si no hay actividad, se llame a showBaseTagLayer
                 idleTimeoutRef.current = window.setTimeout(() => {
                     const api = apiRef.current;
+                    if (!api) return;
 
-                    // ⚠️ Solo si SIGUES en capa de TAGS
-                    if (
-                        api &&
-                        api.showBaseTagLayer &&
-                        api.getCurrentLayer &&
-                        api.getCurrentLayer() === "tags"
-                    ) {
-                        api.showBaseTagLayer();
+                    // Solo si SIGUES en capa de TAGS, activamos el movimiento suave
+                    if (api.getCurrentLayer && api.getCurrentLayer() === "tags") {
+                        if (api.startIdleCameraMotion) {
+                            api.startIdleCameraMotion();
+                        }
                     }
+                    // 👇 importante: ya NO llamamos a showBaseTagLayer aquí
                 }, IDLE_MS);
             };
 
             const handleActivity = () => {
                 resetIdle();
+                if (apiRef.current?.stopIdleCameraMotion) {
+                    apiRef.current.stopIdleCameraMotion();
+                }
             };
 
             // Escuchamos actividad del usuario sobre el canvas
@@ -99,7 +132,7 @@ export default function Graph3D() {
             el.addEventListener("touchstart", handleActivity);
 
             // Arrancamos el primer temporizador de inactividad
-            resetIdle();
+            //resetIdle();
 
             // función de limpieza
             cleanupListeners = () => {
@@ -122,6 +155,7 @@ export default function Graph3D() {
             if (cleanupListeners) cleanupListeners();
         };
     }, []);
+
     // --- MANEJAR CLICK EN RESULTADO ---
     function handleResultClick(item: any) {
         setQuery("");
@@ -152,6 +186,28 @@ export default function Graph3D() {
         setResults([]);
     }
 
+    function pickRandomTags(sourceTags: any[]) {
+        if (!sourceTags || sourceTags.length === 0) return;
+
+        const copy = [...sourceTags];
+        // shuffle simple
+        copy.sort(() => Math.random() - 0.5);
+        setSuggestedTags(copy.slice(0, 4));
+    }
+
+    function handleSuggestedTagClick(tag: any) {
+        if (!apiRef.current?.expandTagFromSearchTag) return;
+
+        apiRef.current.expandTagFromSearchTag(tag);
+        setQuery("");
+        setResults([]);
+    }
+
+    function handleRefreshSuggestions() {
+        pickRandomTags(allTags);
+    }
+
+
 
 
     return (
@@ -160,12 +216,13 @@ export default function Graph3D() {
             <style>
                 {`
 /* ===========================
-   TIPOGRAFÍA GLOBAL SEARCH
+   ESTILO GENERAL UI
 =========================== */
 .search-box {
     font-family: "Inter", sans-serif;
     color: #f4f4f4;
     letter-spacing: 0.2px;
+    font-size: 11px;
 }
 
 /* ===== Input con icono ===== */
@@ -179,199 +236,288 @@ export default function Graph3D() {
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 15px;
+    font-size: 14px;
     opacity: 0.7;
     pointer-events: none;
 }
 
 .search-input-wrapper input {
     width: 100%;
-    padding: 10px 14px 10px 34px; /* deja espacio para la lupa */
-    border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.15);
-    background: rgba(20,20,25,0.85);
+    padding: 8px 12px 8px 32px; /* deja espacio para la lupa */
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(15,15,25,0.9);
     color: #f4f4f4;
-    font-size: 14px;
+    font-size: 11px;
     letter-spacing: 0.2px;
     outline: none;
-    transition: 0.25s border, 0.25s background;
+    transition: 0.25s border, 0.25s background, 0.25s box-shadow;
 }
 
 .search-input-wrapper input::placeholder {
-    color: rgba(255,255,255,0.35);
+    color: rgba(255,255,255,0.4);
 }
 
 .search-input-wrapper input:focus {
-    background: rgba(35,35,45,0.9);
-    border-color: rgba(160,200,255,0.4);
-    box-shadow: 0 0 12px rgba(80,150,255,0.25);
+    background: rgba(25,25,40,0.95);
+    border-color: rgba(160,200,255,0.5);
+    box-shadow: 0 0 12px rgba(80,150,255,0.35);
 }
 
 /* ===== Resultados ===== */
 .search-results {
-    margin-top: 8px;
-    background: rgba(10,10,14,0.9);
+    margin-top: 6px;
+    background: rgba(15,15,25,0.96);
     border-radius: 10px;
     padding: 6px;
-    box-shadow: 0 0 18px rgba(0,0,0,0.45);
-    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 0 18px rgba(0,0,0,0.6);
+    border: 1px solid rgba(255,255,255,0.08);
     max-height: 260px;
     overflow-y: auto;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(8px);
     font-family: "Inter", sans-serif;
 }
 
+/* Cada fila de resultado */
 .search-item {
-    padding: 10px;
-    border-radius: 6px;
+    padding: 8px 10px;
+    border-radius: 8px;
     margin: 2px 0;
-    transition: background 0.2s;
+    transition: background 0.18s, transform 0.12s;
 }
 
 .search-item:hover {
-    background: rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.06);
     cursor: pointer;
+    transform: translateX(1px);
 }
 
 /* ===== TIPOGRAFÍA DE RESULTADOS ===== */
 .search-item strong {
     display: block;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 600;
     color: #ffffff;
 }
 
 .search-item span {
     display: block;
-    margin-top: 2px;
-    font-size: 13px;
+    margin-top: 1px;
+    font-size: 10px;
     color: #b9d5ff; /* azul suave */
     font-weight: 500;
 }
 
 .search-item div {
-    font-size: 11px;
-    margin-top: 4px;
+    font-size: 10px;
+    margin-top: 3px;
     color: #c8c8c8;
     opacity: 0.75;
 }
-
 `}
             </style>
 
-            {/* 🔎 SEARCH BAR + BOTÓN ATRÁS */}
+            {/* 🔎 SEARCH BAR + TAGS SUGERIDOS */}
             <div
                 className="search-box"
                 style={{
                     position: "absolute",
                     top: 20,
                     left: 20,
-                    width: 360,   // un poquito más ancho para que quepan botón + input
+                    width: 360,   // ancho total del header (columna tags + búsqueda)
                     zIndex: 20
                 }}
             >
-                <div style={{ display: "flex", gap: 8, marginBottom: 6 }}>
-                    <button
-                        onClick={handleBackClick}
-                        style={{
-                            padding: "6px 10px",
-                            borderRadius: 6,
-                            border: "1px solid rgba(255,255,255,0.25)",
-                            background: "rgba(10,10,20,0.9)",
-                            color: "#f4f4f4",
-                            fontSize: 12,
-                            cursor: "pointer",
-                            whiteSpace: "nowrap"
-                        }}
-                    >
-                        🔙 Tags
-                    </button>
-
-                    <input
-                        type="text"
-                        placeholder="🔍 Buscar tag, álbum, artista o año..."
-                        value={query}
-                        onChange={(e) => {
-                            const q = e.target.value.toLowerCase();
-                            setQuery(q);
-
-                            if (q.length < 2) {
-                                setResults([]);
-                                return;
-                            }
-
-                            // 🔹 Coincidencias de TAGS
-                            const tagMatches = allTags.filter((t: any) =>
-                                t.label?.toLowerCase().includes(q)
-                            );
-
-                            // 🔹 Coincidencias de ALBUMS
-                            const albumMatches = allAlbums.filter((a: any) =>
-                                (a.title?.toLowerCase().includes(q)) ||
-                                (a.artist?.toLowerCase().includes(q)) ||
-                                (a.release_date?.toLowerCase().includes(q))
-                            );
-
-                            // Opcional: primero tags, luego álbums
-                            const combined = [
-                                ...tagMatches,
-                                ...albumMatches
-                            ].slice(0, 20);
-
-                            setResults(combined);
-                        }}
-                        style={{
-                            flex: 1,
-                            padding: "8px 12px",
-                            borderRadius: "6px",
-                            border: "none",
-                            outline: "none",
-                            background: "rgba(255,255,255,0.1)",
-                            color: "white",
-                        }}
-                    />
-                </div>
-
-                {results.length > 0 && (
+                <div
+                    style={{
+                        display: "flex",
+                        gap: 8,
+                        alignItems: "flex-start"
+                    }}
+                >
+                    {/* 📌 Columna izquierda: botón Tags + lista vertical de sugeridos */}
                     <div
-                        className="search-results"
                         style={{
-                            marginTop: 6,
-                            background: "rgba(20,20,20,0.85)",
-                            borderRadius: 8,
-                            padding: 6,
-                            maxHeight: 260,
-                            overflowY: "auto",
-                            boxShadow: "0 0 12px rgba(0,0,0,0.5)"
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: 6,
+                            minWidth: 120
                         }}
                     >
-                        {results.map((item) => (
-                            <div
-                                key={item.id}
-                                className="search-item"
-                                onClick={() => handleResultClick(item)}
+                        <button
+                            onClick={handleBackClick}
+                            style={{
+                                padding: "6px 10px",
+                                borderRadius: 8,
+                                border: "1px solid rgba(255,255,255,0.25)",
+                                background: "rgba(10,10,20,0.9)",
+                                color: "#f4f4f4",
+                                fontSize: 12,
+                                cursor: "pointer",
+                                whiteSpace: "nowrap",
+                                textAlign: "left"
+                            }}
+                        >
+                            ⬅️ Tags
+                        </button>
+
+                        {suggestedTags.slice(0, 4).map((tag: any) => (
+                            <button
+                                key={tag.id}
+                                onClick={() => handleSuggestedTagClick(tag)}
+                                style={{
+                                    width: "100%",
+                                    borderRadius: 999,
+                                    border: "1px solid rgba(255,255,255,0.18)",
+                                    background: "rgba(15,15,25,0.9)",
+                                    padding: "3px 8px",
+                                    color: "#f4f4f4",
+                                    fontSize: 9,
+                                    cursor: "pointer",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    gap: 6,
+                                    textAlign: "left"
+                                }}
                             >
-                                {item.type === "tag" ? (
-                                    <>
-                                        <strong>#{item.label}</strong>
-                                        <div style={{ fontSize: 11, opacity: 0.7 }}>
-                                            Tag · muestra álbumes relacionados
-                                        </div>
-                                    </>
-                                ) : (
-                                    <>
-                                        <strong>{item.title}</strong>
-                                        <span style={{ color: "#aaa" }}> — {item.artist}</span>
-                                        <div style={{ fontSize: 11, opacity: 0.7 }}>
-                                            {item.release_date}
-                                        </div>
-                                    </>
-                                )}
-                            </div>
+                                <span style={{ fontSize: 10 }}>🏷️</span>
+                                <span>#{formatTagLabel(tag.label)}</span>
+                            </button>
                         ))}
+
+                        <button
+                            onClick={handleRefreshSuggestions}
+                            style={{
+                                width: "100%",
+                                borderRadius: 999,
+                                border: "1px solid rgba(255,255,255,0.25)",
+                                background: "rgba(10,10,20,0.95)",
+                                padding: "4px 10px",
+                                color: "#b9d5ff",
+                                fontSize: 11,
+                                cursor: "pointer",
+                                display: "flex",
+                                alignItems: "center",
+                                gap: 6,
+                                textAlign: "left",
+                                whiteSpace: "nowrap"
+                            }}
+                        >
+                            <span>🔄</span>
+                            <span>Actualizar</span>
+                        </button>
                     </div>
-                )}
+
+                    {/* 🔍 Columna derecha: input de búsqueda + resultados (MISMA COLUMNA) */}
+                    <div
+                        style={{
+                            position: "relative",
+                            width: 260,                 // 👈 ancho fijo para input + resultados
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: 6
+                        }}
+                    >
+                        <div className="search-input-wrapper">
+                            <span className="search-icon">🔍</span>
+                            <input
+                                type="text"
+                                placeholder="Buscar tag, álbum, artista o año..."
+                                value={query}
+                                onChange={(e) => {
+                                    const q = e.target.value.toLowerCase();
+                                    setQuery(q);
+
+                                    if (q.length < 2) {
+                                        setResults([]);
+                                        return;
+                                    }
+
+                                    // 🔎 Tags que hacen match
+                                    const tagMatches = allTags.filter((t: any) =>
+                                        t._searchLabel?.includes(q)
+                                    );
+
+                                    // 🔎 Álbumes que hacen match (título, artista, fecha o locación)
+                                    const albumMatches = allAlbums.filter((a: any) =>
+                                        a._searchTitle?.includes(q) ||
+                                        a._searchArtist?.includes(q) ||
+                                        a._searchRelease?.includes(q) ||
+                                        a._searchLocation?.includes(q)      // 👈 locación también busca
+                                    );
+
+                                    // 🎛 Límites
+                                    const MAX_TOTAL = 20;
+                                    const MAX_PER_GROUP = 10;
+
+                                    const tagSlice = tagMatches.slice(0, MAX_PER_GROUP);
+                                    const albumSlice = albumMatches.slice(0, MAX_PER_GROUP);
+
+                                    // 🤝 Intercalar tags y álbumes para que se vea balanceado
+                                    const mixed: any[] = [];
+                                    const maxLen = Math.max(tagSlice.length, albumSlice.length);
+
+                                    for (let i = 0; i < maxLen; i++) {
+                                        if (i < tagSlice.length) mixed.push(tagSlice[i]);
+                                        if (i < albumSlice.length) mixed.push(albumSlice[i]);
+                                    }
+
+                                    setResults(mixed.slice(0, MAX_TOTAL));
+                                }}
+
+                            />
+                        </div>
+
+                        {/* Resultados de búsqueda – mismo ancho que el input */}
+                        {results.length > 0 && (
+                            <div
+                                className="search-results"
+                                style={{
+                                    position: "absolute",
+                                    top: "115%",            // debajo del input
+                                    left: 0,
+                                    width: "100%",         // 👈 mismo ancho que el input
+                                    boxSizing: "border-box",
+                                    marginTop: 4
+                                }}
+                            >
+                                {results.map((item) => (
+                                    <div
+                                        key={item.id}
+                                        className="search-item"
+                                        onClick={() => handleResultClick(item)}
+                                    >
+                                        {item.type === "tag" ? (
+                                            <>
+                                                <strong>#{item.label}</strong>
+                                                <div style={{ fontSize: 11, opacity: 0.7 }}>
+                                                    Tag · muestra álbumes relacionados
+                                                </div>
+                                            </>
+                                        ) : (
+                                            <>
+                                                <strong>{item.title}</strong>
+                                                <span style={{ color: "#aaa" }}> — {item.artist}</span>
+                                                <div style={{ fontSize: 8, opacity: 0.7 }}>
+                                                    {item.release_date}
+                                                    {item.artist_location && (
+                                                        <>
+                                                            {" · "}
+                                                            <span style={{ color: "#b9d5ff" }}>{item.artist_location}</span>
+                                                        </>
+                                                    )}
+                                                </div>
+                                            </>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                </div>
             </div>
+
+
 
 
             {/* 🎵 CONTENEDOR DEL GRAFO */}
@@ -392,28 +538,30 @@ export default function Graph3D() {
                 ref={panelRef}
                 id="info-panel"
                 style={{
-                    boxSizing: "border-box",   // 👈 clave
+                    boxSizing: "border-box",
                     display: "none",
                     position: "absolute",
                     right: 0,
                     top: 0,
-                    width: "320px",
+                    width: "210px",
                     height: "100%",
-                    background: "rgba(25,25,35,0.65)",
+                    background: "rgba(15,15,25,0.96)",
                     backdropFilter: "blur(12px)",
-                    boxShadow: "0 0 22px rgba(0,0,0,0.4)",
-                    borderLeft: "1px solid rgba(255,255,255,0.05)",
+                    boxShadow: "0 0 22px rgba(0,0,0,0.5)",
+                    borderLeft: "1px solid rgba(255,255,255,0.08)",
                     color: "#e6e6e6",
-                    padding: "16px",
+                    padding: "12px",
                     overflowY: "auto",
                     zIndex: 20,
                     fontFamily: "Inter, sans-serif",
+                    fontSize: "11px",
                     lineHeight: "1.45",
                     letterSpacing: "0.2px"
                 }}
             >
                 <div ref={panelContentRef}></div>
             </div>
+
         </div>
     );
 }
