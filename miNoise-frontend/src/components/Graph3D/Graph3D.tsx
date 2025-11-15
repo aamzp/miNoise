@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { initGraph3D } from "./initGraph3D";
 
-const DATA_URL = new URL("./data/tag_album_embedded_graph_FINAL.json", import.meta.url).href;
+const DATA_URL = "https://aamzp.github.io/miNoise/visualizer/data/tag_album_embedded_graph_FINAL.json";
 
 
 
