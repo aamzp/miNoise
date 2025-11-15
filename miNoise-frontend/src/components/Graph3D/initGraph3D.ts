@@ -12,6 +12,7 @@ interface InitParams {
 // puedes ajustar estos dos números hasta que te guste
 const TAG_BASE_SIZE = 32;    // tamaño visual de los TAGS
 const ALBUM_BASE_SIZE = 34;  // tamaño visual de los ALBUMES
+const MAX_DESC_CHARS = 320; // máximo de caracteres en descripción del panel
 
 // === Parámetros de cámara / rotación ===
 const CAMERA_BASE_RADIUS = 900;    // qué tan lejos está la cámara
@@ -108,6 +109,18 @@ export function initGraph3D({
     function showAlbumPanel(node: any) {
         panel.style.display = "block";
 
+        // 📝 Normalizar / truncar descripción
+        let rawDesc = (node.description || "").trim();
+        let safeDesc: string;
+
+        if (!rawDesc) {
+            safeDesc = "no data 🤓. More info in links";
+        } else if (rawDesc.length > MAX_DESC_CHARS) {
+            safeDesc = rawDesc.slice(0, MAX_DESC_CHARS - 1) + "… [More info in links]";
+        } else {
+            safeDesc = rawDesc;
+        }
+
         panelContent.innerHTML = `
         <span 
             id="inner-close-panel" 
@@ -140,7 +153,7 @@ export function initGraph3D({
 
         <div style="margin:8px 0 10px 0; text-align:center;">
             <iframe
-                style="border:0; width:100%; max-width:180px; height:180px;"
+                style="border:0; width:100%; max-width:160px; height:160px;"
                 src="${node.embed_url}"
                 seamless
             ></iframe>
@@ -157,8 +170,8 @@ export function initGraph3D({
 
         <p style="margin:6px 0 10px 0;">
             <strong>Description:</strong><br/>
-            <span style="opacity:0.9;">
-                ${node.description || ""}
+            <span style="opacity:0.9;font-size:8px;">
+                ${safeDesc}
             </span>
         </p>
 
@@ -546,48 +559,59 @@ export function initGraph3D({
         const normLabel = normalizeTag(tagNode.label);
         visible.add(tagNode.id);
 
-        // Encontrar álbumes
-        const albums = fullData.nodes.filter(n =>
+        // Encontrar álbumes asociados al tag
+        const albums = fullData.nodes.filter((n: any) =>
             n.type === "album" &&
             n.clean_tags?.map(normalizeTag).includes(normLabel)
         );
 
-        albums.forEach(a => visible.add(a.id));
+        albums.forEach((a: any) => visible.add(a.id));
 
         // Mostrar solo tag + álbumes
         Graph.nodeVisibility((n: any) => visible.has(n.id));
         Graph.linkVisibility(false);
 
-        // ==== FADE-IN SENCILLO Y SEGURO ====
-
-        albums.forEach(album => {
+        // ==== FADE-IN SENCILLO PARA ÁLBUMES ====
+        albums.forEach((album: any) => {
             const sprite: any = Graph.nodeThreeObject()(album);
 
             if (!sprite || !sprite.material) return;
 
-            // Comenzamos invisible
             sprite.material.transparent = true;
             sprite.material.opacity = 0;
 
             let t = 0;
-
             function fade() {
-                t += 0.04; // velocidad
+                t += 0.04;
                 if (t > 1) t = 1;
 
-                const ease = t * t * (3 - 2 * t); // ease-in-out
-
+                const ease = t * t * (3 - 2 * t);
                 sprite.material.opacity = ease;
 
                 if (t < 1) requestAnimationFrame(fade);
             }
-
             requestAnimationFrame(fade);
         });
 
-        // Zoom suave
-        setTimeout(() => Graph.zoomToFit(800), 300);
+        // 🎯 ENFOCAR AL TAG, PERO MÁS LEJOS (menos zoom que flyToNode)
+        setTimeout(() => {
+            const baseDist = 260; // antes era 100 → ahora más lejos
+            const x = tagNode.x ?? tagNode.fx;
+            const y = tagNode.y ?? tagNode.fy;
+            const z = tagNode.z ?? tagNode.fz;
+
+            Graph.cameraPosition(
+                {
+                    x: x + baseDist,
+                    y: y + baseDist * 0.12,
+                    z: z + baseDist
+                },
+                { x, y, z },
+                800 // duración de la animación
+            );
+        }, 300);
     }
+
 
     // 🔸 Búsqueda por ALBUM (ya funcionando, ahora resolviendo por id interno)
     (Graph as any).expandTagFromSearch = (albumFromSearch: any) => {

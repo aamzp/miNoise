@@ -189,9 +189,17 @@ export default function Graph3D() {
     function pickRandomTags(sourceTags: any[]) {
         if (!sourceTags || sourceTags.length === 0) return;
 
-        const copy = [...sourceTags];
-        // shuffle simple
-        copy.sort(() => Math.random() - 0.5);
+        // 👇 Preferimos tags SIN números en el label
+        const noNumberTags = sourceTags.filter((t: any) =>
+            t.label && !/\d/.test(t.label)   // true si NO hay dígitos
+        );
+
+        // Si hay suficientes, usamos los “bonitos”; si no, usamos todos
+        const pool = noNumberTags.length >= 4 ? noNumberTags : sourceTags;
+
+        const copy = [...pool];
+        copy.sort(() => Math.random() - 0.5);   // shuffle sencillo
+
         setSuggestedTags(copy.slice(0, 4));
     }
 
@@ -404,7 +412,7 @@ export default function Graph3D() {
                             }}
                         >
                             <span>🔄</span>
-                            <span>Actualizar</span>
+                            <span>Otros tags</span>
                         </button>
                     </div>
 
