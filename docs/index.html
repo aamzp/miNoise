@@ -11,6 +11,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap"
         rel="stylesheet" />
 
+
+
     <style>
         :root {
             --bg: #05060a;
@@ -28,7 +30,7 @@
             --shadow-glow: 0 0 30px rgba(88, 215, 255, 0.5);
             --radius: 14px;
             --radius-lg: 22px;
-            --header-h: 70px;
+            --header-h: 52px;
             --max-w: 1080px;
         }
 
@@ -160,6 +162,8 @@
             background: linear-gradient(90deg, rgba(5, 6, 10, 0.96), rgba(8, 10, 16, 0.96));
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
             box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+            padding-top: 4px;
+            padding-bottom: 4px;
         }
 
         .header-inner {
@@ -200,7 +204,8 @@
         nav a {
             text-decoration: none;
             color: var(--text-sub);
-            padding: 6px 10px;
+            padding: 4px 8px;
+            font-size: 12px;
             border-radius: 999px;
             border: 1px solid transparent;
             background: rgba(255, 255, 255, 0.02);
@@ -225,25 +230,26 @@
 
         /* VISUALIZADOR (full width + más alto) */
         .viewer-wrapper {
-            margin-top: 6px;
-            margin-bottom: 72px;
-            /* “muerde” los márgenes laterales para ocupar casi todo el viewport */
-            margin-left: -22px;
-            margin-right: -22px;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: calc(100vh - var(--header-h));
+            /* 👈 antes era 100vh */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
         }
 
         .viewer-container {
-            width: 100vw;
-            /* ocupa el ancho del viewport */
-            max-width: 100%;
-            height: min(920px,
-                    calc(100vh - var(--header-h) + 60px));
-            /* un poco más alto que antes */
-            border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-            border: 1px solid rgba(255, 255, 255, 0.06);
+            width: 100%;
+            height: 860px;
+            /* 👈 antes era 100vh */
+            min-width: 1366px;
+            min-height: 860px;
+            max-width: 1600px;
+            max-height: 860px;
             background: #000;
             overflow: hidden;
-            box-shadow: var(--shadow-strong), var(--shadow-glow);
         }
 
         .viewer-container iframe {
@@ -529,6 +535,16 @@
             text-decoration: underline;
         }
 
+        .header-title {
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .header-title:hover {
+            color: var(--accent);
+            text-shadow: 0 0 12px rgba(88, 215, 255, 0.6);
+        }
+
         /* Responsive */
         @media (max-width: 720px) {
             .header-inner {
@@ -536,7 +552,12 @@
             }
 
             .header-title {
-                font-size: 14px;
+                cursor: pointer;
+            }
+
+            .header-title:hover {
+                color: var(--accent);
+                text-shadow: 0 0 12px rgba(88, 215, 255, 0.6);
             }
 
             nav {
@@ -544,52 +565,47 @@
             }
 
             main {
+                padding-top: 0;
                 padding-inline: 10px;
             }
 
-            .viewer-wrapper {
-                margin-left: -10px;
-                margin-right: -10px;
-                margin-bottom: 52px;
-            }
 
-            .viewer-container {
-                height: calc(100vh - var(--header-h));
-                border-radius: 0;
-            }
         }
     </style>
 </head>
 
 <body>
+    <!-- HEADER + NAV -->
+    <header>
+        <div class="header-inner">
+            <a href="#visualizador" class="header-title" style="text-decoration:none;color:inherit;">
+                <span class="icon">🎵</span>
+                <span>miNoise — Repositorio para exploración nuevas tendencias musicales</span>
+            </a>
+            <nav>
+                <a href="#modulos" data-scroll>Módulos</a>
+                <a href="#pipeline" data-scroll>Pipeline</a>
+                <a href="#codigo" data-scroll>Código &amp; datos</a>
+                <a href="#filosofia" data-scroll>Filosofía</a>
+            </nav>
+        </div>
+
+    </header>
+    <!-- VISUALIZADOR ARRIBA -->
+    <section class="viewer-wrapper" id="visualizador">
+        <div class="viewer-container">
+            <iframe src="./visualizer/"></iframe>
+        </div>
+    </section>
     <!-- Loader -->
     <div class="loader">
         <div class="loader-icon"></div>
     </div>
 
-    <!-- HEADER + NAV -->
-    <header>
-        <div class="header-inner">
-            <div class="header-title">
-                <span class="icon">🎵</span>
-                <span>miNoise — Repositorio para exploración nuevas tendencias musicales</span>
-            </div>
-            <nav>
-                <a href="#modulos">Módulos</a>
-                <a href="#pipeline">Pipeline</a>
-                <a href="#codigo">Código &amp; datos</a>
-                <a href="#filosofia">Filosofía</a>
-            </nav>
-        </div>
-    </header>
+
 
     <main>
-        <!-- VISUALIZADOR ARRIBA -->
-        <section class="viewer-wrapper" id="visualizador">
-            <div class="viewer-container">
-                <iframe src="./visualizer/"></iframe>
-            </div>
-        </section>
+
 
         <!-- INTRO -->
         <section class="intro-block">
@@ -817,6 +833,83 @@
             <span>Hecho con datos de Bandcamp, Three.js y mucho ruido bonito ✨</span>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            // --- Scroll suave para los enlaces del nav ---
+            document.querySelectorAll('[data-scroll]').forEach(link => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+
+                    const id = link.getAttribute("href").substring(1);
+                    const target = document.getElementById(id);
+                    if (!target) return;
+
+                    const rect = target.getBoundingClientRect();
+                    const targetY = rect.top + window.scrollY - 52; // alto header
+
+                    smoothScrollTo(targetY, 950);
+                });
+            });
+
+            // --- Scroll al inicio si se hace click en el título ---
+            const title = document.querySelector(".header-title");
+            if (title) {
+                title.addEventListener("click", (e) => {
+                    e.preventDefault();  // Cancelar el href
+                    smoothScrollTo(0, 900); // ir al inicio real
+                });
+            }
+        });
+
+        // --- Función de easing cubic para el scroll ---
+        function smoothScrollTo(targetY, duration = 900) {
+            const startY = window.scrollY;
+            const diff = targetY - startY;
+            const start = performance.now();
+
+            function step(ts) {
+                const progress = Math.min((ts - start) / duration, 1);
+                const ease =
+                    progress < 0.5
+                        ? 4 * progress * progress * progress
+                        : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
+                window.scrollTo(0, startY + diff * ease);
+
+                if (progress < 1) requestAnimationFrame(step);
+            }
+
+            requestAnimationFrame(step);
+        }
+    </script>
+
 </body>
+
+<script>
+    function smoothScrollTo(targetY, duration = 950) {
+        const startY = window.scrollY;
+        const difference = targetY - startY;
+        const startTime = performance.now();
+
+        function step(currentTime) {
+            const elapsed = currentTime - startTime;
+            const t = Math.min(elapsed / duration, 1);
+
+            // EASING suave cubic
+            const ease = t < 0.5
+                ? 4 * t * t * t
+                : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+            window.scrollTo(0, startY + difference * ease);
+
+            if (t < 1) requestAnimationFrame(step);
+        }
+
+        requestAnimationFrame(step);
+    }
+
+
+</script>
 
 </html>
